@@ -6,8 +6,12 @@ Caryl Churchill
 body, tw-story {
 	background: black;
 	font-family: Consolas;
-	color: limegreen;
+	color: #D3D3D3;
 
+}
+
+h1, h2, h3, h4 {
+	color: limegreen;
 }
 
 tw-icon {
@@ -34,8 +38,8 @@ tw-passage {
 <h4><i>by Caryl Churchill</i></h4>
 <h6><i>Twined by Ken Alba</i></h6>
 
-[[readme->00.00 NOTE ON TEXT]] // [[start->Table of Contents - 01]]
-[[debug mode - table of contents->Table of Contents - Sections]]
+[[readme->00.00]] // [[start->Table of Contents - 01]]
+
 ::Table of Contents - Sections
 <h2>Table of Contents: Sections</h2>
 [[Section 1->Table of Contents - 01]]
@@ -48,126 +52,139 @@ tw-passage {
 [[Section 8->Table of Contents - 08]]
 [[Section 9->Table of Contents - 09]]
 
+::Section Arrays
+
+(set: $_1Scenes to(a:"01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07"))
+(set: $_2Scenes to(a:"02.01", "02.02", "02.03", "02.04", "02.05", "02.06", "02.07"))
+(set: $_3Scenes to(a:"03.01", "03.02", "03.03", "03.04", "03.05", "03.06", "03.07"))
+(set: $_4Scenes to(a:"04.01", "04.02", "04.03", "04.04", "04.05", "04.06", "04.07"))
+(set: $_5Scenes to(a:"05.01", "05.02", "05.03", "05.04", "05.05", "05.06", "05.07"))
+(set: $_6Scenes to(a:"06.01", "06.02", "06.03", "06.04", "06.05", "06.06", "06.07"))
+(set: $_7Scenes to(a:"07.01", "07.02", "07.03", "07.04", "07.05", "07.06", "07.07"))
+(set: $_8Scenes to(a:"08.01"))
+(set: $_randomScenes to(a:"10.01", "10.02", "10.03", "10.04", "10.05", "10.06", "10.07", "10.08", "10.09", "10.10", "10.11", "10.12", "10.13", "10.14", "10.15", "10.16", "10.17", "10.18", "10.19"))
+(set: $_depressionScenes to(a:"09.01", "09.02", "09.03", "09.04", "09.05", "09.06", "09.07", "09.08", "09.09", "09.10", "09.11"))
+
 ::Table of Contents - 01
 <h2>Section 1</h2>
-(if: (history:) contains "01.01 SECRET" and contains "01.02 CENSUS" and contains "01.03 FAN" and contains "01.04 TORTURE" and contains "01.05 LAB" and contains "01.06 SLEEP" and contains "01.07 REMOTE")[[[next section->Table of Contents - 02]]]
-(unless: (history:) contains "01.01 SECRET")[[[SECRET->01.01 SECRET]]]
-(unless: (history:) contains "01.02 CENSUS")[[[CENSUS->01.02 CENSUS]]]
-(unless: (history:) contains "01.03 FAN")[[[FAN->01.03 FAN]]]
-(unless: (history:) contains "01.04 TORTURE")[[[TORTURE->01.04 TORTURE]]]
-(unless: (history:) contains "01.05 LAB")[[[LAB->01.05 LAB]]]
-(unless: (history:) contains "01.06 SLEEP")[[[SLEEP->01.06 SLEEP]]]
-(unless: (history:) contains "01.07 REMOTE")[[[REMOTE->01.07 REMOTE]]]
+(if: (history:) contains "01.01" and contains "01.02" and contains "01.03" and contains "01.04" and contains "01.05" and contains "01.06" and contains "01.07")[[[next section->Table of Contents - 02]]]
+(unless: (history:) contains "01.01")[[[SECRET->01.01]]]
+(unless: (history:) contains "01.02")[[[CENSUS->01.02]]]
+(unless: (history:) contains "01.03")[[[FAN->01.03]]]
+(unless: (history:) contains "01.04")[[[TORTURE->01.04]]]
+(unless: (history:) contains "01.05")[[[LAB->01.05]]]
+(unless: (history:) contains "01.06")[[[SLEEP->01.06]]]
+(unless: (history:) contains "01.07")[[[REMOTE->01.07]]]
 
 ::Table of Contents - 02
 <h2>Section 2</h2>
-(if: (history:) contains "02.01 IRRATIONAL" and contains "02.02 AFFAIR" and contains "02.03 MOTHER" and contains "02.04 FIRED" and contains "02.05 MESSAGE" and contains "02.06 GRASS" and contains "02.07 TERMINAL")[[[next section->Table of Contents - 03]]]
-(unless: (history:) contains "02.01 IRRATIONAL")[[[IRRATIONAL->02.01 IRRATIONAL]]]
-(unless: (history:) contains "02.02 AFFAIR")[[[AFFAIR->02.02 AFFAIR]]]
-(unless: (history:) contains "02.03 MOTHER")[[[MOTHER->02.03 MOTHER]]]
-(unless: (history:) contains "02.04 FIRED")[[[FIRED->02.04 FIRED]]]
-(unless: (history:) contains "02.05 MESSAGE")[[[MESSAGE->02.05 MESSAGE]]]
-(unless: (history:) contains "02.06 GRASS")[[[GRASS->02.06 GRASS]]]
-(unless: (history:) contains "02.07 TERMINAL")[[[TERMINAL->02.07 TERMINAL]]]
+(if: (history:) contains "02.01" and contains "02.02" and contains "02.03" and contains "02.04" and contains "02.05" and contains "02.06" and contains "02.07")[[[next section->Table of Contents - 03]]]
+(unless: (history:) contains "02.01")[[[IRRATIONAL->02.01]]]
+(unless: (history:) contains "02.02")[[[AFFAIR->02.02]]]
+(unless: (history:) contains "02.03")[[[MOTHER->02.03]]]
+(unless: (history:) contains "02.04")[[[FIRED->02.04]]]
+(unless: (history:) contains "02.05")[[[MESSAGE->02.05]]]
+(unless: (history:) contains "02.06")[[[GRASS->02.06]]]
+(unless: (history:) contains "02.07")[[[TERMINAL->02.07]]]
 
 ::Table of Contents - 03
 <h2>Section 3</h2>
-(if: (history:) contains "03.01 SCHIZOPHRENIC" and contains "03.02 SPIES" and contains "03.03 DREAM" and contains "03.04 RECLUSE" and contains "03.05 GOD'S VOICE" and contains "03.06 THE CHILD WHO DIDN'T KNOW FEAR")[[[next section->Table of Contents - 04]]]
-(unless: (history:) contains "03.01 SCHIZOPHRENIC")[[[SCHIZOPHRENIC->03.01 SCHIZOPHRENIC]]]
-(unless: (history:) contains "03.02 SPIES")[[[SPIES->03.02 SPIES]]]
-(unless: (history:) contains "03.03 DREAM")[[[DREAM->03.03 DREAM]]]
-(unless: (history:) contains "03.04 RECLUSE")[[[RECLUSE->03.04 RECLUSE]]]
-(unless: (history:) contains "03.05 GOD'S VOICE")[[[GOD'S VOICE->03.05 GOD'S VOICE]]]
-(unless: (history:) contains "03.06 THE CHILD WHO DIDN'T KNOW FEAR")[[[THE CHILD WHO DIDN'T KNOW FEAR->03.06 THE CHILD WHO DIDN'T KNOW FEAR]]]
-(unless: (history:) contains "03.07 STAR")[[[STAR->03.07 STAR]]]
+(if: (history:) contains "03.01" and contains "03.02" and contains "03.03" and contains "03.04" and contains "03.05" and contains "03.06")[[[next section->Table of Contents - 04]]]
+(unless: (history:) contains "03.01")[[[SCHIZOPHRENIC->03.01]]]
+(unless: (history:) contains "03.02")[[[SPIES->03.02]]]
+(unless: (history:) contains "03.03")[[[DREAM->03.03]]]
+(unless: (history:) contains "03.04")[[[RECLUSE->03.04]]]
+(unless: (history:) contains "03.05")[[[GOD'S VOICE->03.05]]]
+(unless: (history:) contains "03.06")[[[THE CHILD WHO DIDN'T KNOW FEAR->03.06]]]
+(unless: (history:) contains "03.07")[[[STAR->03.07]]]
 
 ::Table of Contents - 04
 <h2>Section 4</h2>
-(if: (history:) contains "04.01 WEDDING VIDEO" and contains "04.02 SAVANT" and contains "04.03 EX" and contains "04.04 MEMORY HOUSE" and contains "04.05 DINNER" and contains "04.06 PIANO" and contains "04.07 FLASHBACK")[[[next section->Table of Contents - 05]]]
-(unless: (history:) contains "04.01 WEDDING VIDEO")[[[WEDDING VIDEO->04.01 WEDDING VIDEO]]]
-(unless: (history:) contains "04.02 SAVANT")[[[SAVANT->04.02 SAVANT]]]
-(unless: (history:) contains "04.03 EX")[[[EX->04.03 EX]]]
-(unless: (history:) contains "04.04 MEMORY HOUSE")[[[MEMORY HOUSE->04.04 MEMORY HOUSE]]]
-(unless: (history:) contains "04.05 DINNER")[[[DINNER->04.05 DINNER]]]
-(unless: (history:) contains "04.06 PIANO")[[[PIANO->04.06 PIANO]]]
-(unless: (history:) contains "04.07 FLASHBACK")[[[FLASHBACK->04.07 FLASHBACK]]]
+(if: (history:) contains "04.01" and contains "04.02" and contains "04.03" and contains "04.04" and contains "04.05" and contains "04.06" and contains "04.07")[[[next section->Table of Contents - 05]]]
+(unless: (history:) contains "04.01")[[[WEDDING VIDEO->04.01]]]
+(unless: (history:) contains "04.02")[[[SAVANT->04.02]]]
+(unless: (history:) contains "04.03")[[[EX->04.03]]]
+(unless: (history:) contains "04.04")[[[MEMORY HOUSE->04.04]]]
+(unless: (history:) contains "04.05")[[[DINNER->04.05]]]
+(unless: (history:) contains "04.06")[[[PIANO->04.06]]]
+(unless: (history:) contains "04.07")[[[FLASHBACK->04.07]]]
 
 ::Table of Contents - 05
 <h2>Section 5</h2>
-(if: (history:) contains "05.01 LINGUIST" and contains "05.02 MATHS" and contains "05.03 SEX" and contains "05.04 GOD" and contains "05.05 RASH" and contains "05.06 CHILDREN" and contains "05.07 SHRINK")[[[next section->Table of Contents - 06]]]
-(unless: (history:) contains "05.01 LINGUIST")[[[LINGUIST->05.01 LINGUIST]]]
-(unless: (history:) contains "05.02 MATHS")[[[MATHS->05.02 MATHS]]]
-(unless: (history:) contains "05.03 SEX")[[[SEX->05.03 SEX]]]
-(unless: (history:) contains "05.04 GOD")[[[GOD->05.04 GOD]]]
-(unless: (history:) contains "05.05 RASH")[[[RASH->05.05 RASH]]]
-(unless: (history:) contains "05.06 CHILDREN")[[[CHILDREN->05.06 CHILDREN]]]
-(unless: (history:) contains "05.07 SHRINK")[[[SHRINK->05.07 SHRINK]]]
+(if: (history:) contains "05.01" and contains "05.02" and contains "05.03" and contains "05.04" and contains "05.05" and contains "05.06" and contains "05.07")[[[next section->Table of Contents - 06]]]
+(unless: (history:) contains "05.01")[[[LINGUIST->05.01]]]
+(unless: (history:) contains "05.02")[[[MATHS->05.02]]]
+(unless: (history:) contains "05.03")[[[SEX->05.03]]]
+(unless: (history:) contains "05.04")[[[GOD->05.04]]]
+(unless: (history:) contains "05.05")[[[RASH->05.05]]]
+(unless: (history:) contains "05.06")[[[CHILDREN->05.06]]]
+(unless: (history:) contains "05.07")[[[SHRINK->05.07]]]
 
 ::Table of Contents - 06
 <h2>Section 6</h2>
-(if: (history:) contains "06.01 THE CHILD WHO DIDN'T KNOW SORRY" and contains "06.02 CLIMATE" and contains "06.03 CENSOR" and contains "06.04 WIFE" and contains "06.05 DECISION" and contains "06.06 THE CHILD WHO DIDN'T KNOW PAIN" and contains "06.07 EARTHQUAKE")[[[next section->Table of Contents - 07]]]
-(unless: (history:) contains "06.01 THE CHILD WHO DIDN'T KNOW SORRY")[[[THE CHILD WHO DIDN'T KNOW SORRY->06.01 THE CHILD WHO DIDN'T KNOW SORRY]]]
-(unless: (history:) contains "06.02 CLIMATE")[[[CLIMATE->06.02 CLIMATE]]]
-(unless: (history:) contains "06.03 CENSOR")[[[CENSOR->06.03 CENSOR]]]
-(unless: (history:) contains "06.04 WIFE")[[[WIFE->06.04 WIFE]]]
-(unless: (history:) contains "06.05 DECISION")[[[DECISION->06.05 DECISION]]]
-(unless: (history:) contains "06.06 THE CHILD WHO DIDN'T KNOW PAIN")[[[THE CHILD WHO DIDN'T KNOW PAIN->06.06 THE CHILD WHO DIDN'T KNOW PAIN]]]
-(unless: (history:) contains "06.07 EARTHQUAKE")[[[EARTHQUAKE->06.07 EARTHQUAKE]]]
+(if: (history:) contains "06.01" and contains "06.02" and contains "06.03" and contains "06.04" and contains "06.05" and contains "06.06" and contains "06.07")[[[next section->Table of Contents - 07]]]
+(unless: (history:) contains "06.01")[[[THE CHILD WHO DIDN'T KNOW SORRY->06.01]]]
+(unless: (history:) contains "06.02")[[[CLIMATE->06.02]]]
+(unless: (history:) contains "06.03")[[[CENSOR->06.03]]]
+(unless: (history:) contains "06.04")[[[WIFE->06.04]]]
+(unless: (history:) contains "06.05")[[[DECISION->06.05]]]
+(unless: (history:) contains "06.06")[[[THE CHILD WHO DIDN'T KNOW PAIN->06.06]]]
+(unless: (history:) contains "06.07")[[[EARTHQUAKE->06.07]]]
 
 ::Table of Contents - 07
 <h2>Section 7</h2>
-(if: (history:) contains "07.01 CHINESE POETRY" and contains "07.02 MANIC" and contains "07.03 GRIEF" and contains "07.04 FATE" and contains "07.05 STONE" and contains "07.06 VIRTUAL" and contains "07.07 SMALL THING")[[[last section->Table of Contents - 08]]]
-(unless: (history:) contains "07.01 CHINESE POETRY")[[[CHINESE POETRY->07.01 CHINESE POETRY]]]
-(unless: (history:) contains "07.02 MANIC")[[[MANIC->07.02 MANIC]]]
-(unless: (history:) contains "07.03 GRIEF")[[[GRIEF->07.03 GRIEF]]]
-(unless: (history:) contains "07.04 FATE")[[[FATE->07.04 FATE]]]
-(unless: (history:) contains "07.05 STONE")[[[STONE->07.05 STONE]]]
-(unless: (history:) contains "07.06 VIRTUAL")[[[VIRTUAL->07.06 VIRTUAL]]]
-(unless: (history:) contains "07.07 SMALL THING")[[[SMALL THING->07.07 SMALL THING]]]
+(if: (history:) contains "07.01" and contains "07.02" and contains "07.03" and contains "07.04" and contains "07.05" and contains "07.06" and contains "07.07")[[[last section->Table of Contents - 08]]]
+(unless: (history:) contains "07.01")[[[CHINESE POETRY->07.01]]]
+(unless: (history:) contains "07.02")[[[MANIC->07.02]]]
+(unless: (history:) contains "07.03")[[[GRIEF->07.03]]]
+(unless: (history:) contains "07.04")[[[FATE->07.04]]]
+(unless: (history:) contains "07.05")[[[STONE->07.05]]]
+(unless: (history:) contains "07.06")[[[VIRTUAL->07.06]]]
+(unless: (history:) contains "07.07")[[[SMALL THING->07.07]]]
 
 ::Table of Contents - 08
 <h2>Section 8</h2>
-[[01 - FACTS (LAST SCENE)->08.01 FACTS (LAST SCENE)]]
+[[01 - FACTS (LAST SCENE)->08.01]]
 
 ::Table of Contents - 09
 <h2>Section 9</h2>
-(unless: (history:) contains "09.00 RANDOM")[[[RANDOM->09.00 RANDOM]]
-[[09.01.00 DEPRESSION]]
-[[09.01.01 DEPRESSION (1)]]
-[[09.01.02 DEPRESSION (2)]]
-[[09.01.03 DEPRESSION (3)]]
-[[09.01.04 DEPRESSION (4)]]
-[[09.01.05 DEPRESSION (5)]]
-[[09.01.06 DEPRESSION (6)]]
-[[09.01.07 DEPRESSION (7)]]
-[[09.01.08 DEPRESSION (8)]]
-[[09.01.09 DEPRESSION (9)]]
-[[09.01.10 DEPRESSION (10)]]
-(unless: (history:) contains "09.02 SEMAPHORE")[[[SEMAPHORE->09.02 SEMAPHORE]]
-(unless: (history:) contains "09.03 MORSE")[[[MORSE->09.03 MORSE]]
-(unless: (history:) contains "09.04 SIGN LANGUAGE")[[[SIGN LANGUAGE->09.04 SIGN LANGUAGE]]
-(unless: (history:) contains "09.05 BIRDSONG")[[[BIRDSONG->09.05 BIRDSONG]]
-(unless: (history:) contains "09.06 DANCE")[[[DANCE->09.06 DANCE]]
-(unless: (history:) contains "09.07 FLAGS")[[[FLAGS->09.07 FLAGS]]
-(unless: (history:) contains "09.08 PAINTING")[[[PAINTING->09.08 PAINTING]]
-(unless: (history:) contains "09.09 PIG LATIN")[[[PIG LATIN->09.09 PIG LATIN]]
-(unless: (history:) contains "09.10 SANTA")[[[SANTA->09.10 SANTA]]
-(unless: (history:) contains "09.11 TABLES")[[[TABLES->09.11 TABLES]]
-(unless: (history:) contains "09.12 GENES")[[[GENES->09.12 GENES]]
-(unless: (history:) contains "09.13 DOG")[[[DOG->09.13 DOG]]
-(unless: (history:) contains "09.14 KEYS")[[[KEYS->09.14 KEYS]]
-(unless: (history:) contains "09.15 MAGAZINE")[[[MAGAZINE->09.15 MAGAZINE]]
-(unless: (history:) contains "09.16 GOOGLE")[[[GOOGLE->09.16 GOOGLE]]
-(unless: (history:) contains "09.17 TWITTER")[[[TWITTER->09.17 TWITTER]]
-(unless: (history:) contains "09.18 ZEN")[[[ZEN->09.18 ZEN]]
-(unless: (history:) contains "09.19 COLD")[[[COLD->09.19 COLD]]
-(unless: (history:) contains "09.20 SILENCE")[[[SILENCE->09.20 SILENCE]]
-(unless: (history:) contains "00.00 NOTE ON TEXT")[[[NOTE ON TEXT->00.00 NOTE ON TEXT]]
-(unless: (history:) contains "00.01 NOTE ON TXT")[[[NOTE ON TXT->00.01 NOTE ON TXT]]
+(unless: (history:) contains "09.00")[[[RANDOM->09.00]]
+[[09.01.00]]
+[[09.01.01]]
+[[09.01.02]]
+[[09.01.03]]
+[[09.01.04]]
+[[09.01.05]]
+[[09.01.06]]
+[[09.01.07]]
+[[09.01.08]]
+[[09.01.09]]
+[[09.01.10]]
+(unless: (history:) contains "09.02")[[[SEMAPHORE->09.02]]
+(unless: (history:) contains "09.03")[[[MORSE->09.03]]
+(unless: (history:) contains "09.04")[[[SIGN LANGUAGE->09.04]]
+(unless: (history:) contains "09.05")[[[BIRDSONG->09.05]]
+(unless: (history:) contains "09.06")[[[DANCE->09.06]]
+(unless: (history:) contains "09.07")[[[FLAGS->09.07]]
+(unless: (history:) contains "09.08")[[[PAINTING->09.08]]
+(unless: (history:) contains "09.09")[[[PIG LATIN->09.09]]
+(unless: (history:) contains "09.10")[[[SANTA->09.10]]
+(unless: (history:) contains "09.11")[[[TABLES->09.11]]
+(unless: (history:) contains "09.12")[[[GENES->09.12]]
+(unless: (history:) contains "09.13")[[[DOG->09.13]]
+(unless: (history:) contains "09.14")[[[KEYS->09.14]]
+(unless: (history:) contains "09.15")[[[MAGAZINE->09.15]]
+(unless: (history:) contains "09.16")[[[GOOGLE->09.16]]
+(unless: (history:) contains "09.17")[[[TWITTER->09.17]]
+(unless: (history:) contains "09.18")[[[ZEN->09.18]]
+(unless: (history:) contains "09.19")[[[COLD->09.19]]
+(unless: (history:) contains "09.20")[[[SILENCE->09.20]]
+(unless: (history:) contains "00.00")[[[NOTE ON TEXT->00.00]]
+(unless: (history:) contains "00.01")[[[NOTE ON TXT->00.01]]
 
-(unless: (history:) contains "00.00 NOTE ON TEXT")[[[next->00.00 NOTE ON TEXT]]
+(unless: (history:) contains "00.00")[[[next->00.00]]
 
-::00.00 NOTE ON TEXT
+::00.00
 ## NOTE ON TEXT 
 
 - The sections should be played in the order given but the scenes can be played in any order within each section. To access the next section, visit each available scene. 
@@ -175,14 +192,14 @@ tw-passage {
 - The characters are different in every scene. The only possible exception to this are the random Depression scenes, which could be the same two people, or the same depressed person with different others. 
 
 [[start->Table of Contents - 01]]
-::00.01 NOTE ON TXT
+::00.01
 ## NOTE ON TXT 
 
 - Sections 1-7 are normal sections. 8 is the Final Scene. 9 is random. 
 
 [[return->Table of Contents - 00]]
 
-::01.01 SECRET
+::01.01
 ## SECRET 
 
 - Please please tell me 
@@ -240,7 +257,7 @@ tw-passage {
 
 [[return->Table of Contents - 01]]
 
-::01.02 CENSUS
+::01.02
 ## CENSUS 
 
 - Why do they need to know all this stuff? 
@@ -254,7 +271,7 @@ tw-passage {
 
 [[return->Table of Contents - 01]]
 
-::01.03 FAN
+::01.03
 ## FAN 
 
 - Love him so much 
@@ -319,7 +336,7 @@ tw-passage {
 
 [[return->Table of Contents - 01]]
 
-::01.04 TORTURE
+::01.04
 ## TORTURE 
 
 - He's wearing me out. 
@@ -335,7 +352,7 @@ tw-passage {
 
 [[return->Table of Contents - 01]]
 
-::01.05 LAB
+::01.05
 ## LAB 
 
 - So we hatch a batch of eggs in the lab 
@@ -405,7 +422,7 @@ tw-passage {
 
 [[return->Table of Contents - 01]]
 
-::01.06 SLEEP
+::01.06
 ## SLEEP 
 
 - I can't sleep. 
@@ -420,7 +437,7 @@ tw-passage {
 
 [[return->Table of Contents - 01]]
 
-::01.07 REMOTE
+::01.07
 ## REMOTE 
 
 - You don't seem to have a tv. 
@@ -442,7 +459,7 @@ tw-passage {
 
 [[return->Table of Contents - 01]]
 
-::02.01 IRRATIONAL
+::02.01
 ## IRRATIONAL 
 
 - Is an irrational number real? 
@@ -460,7 +477,7 @@ tw-passage {
 
 [[return->Table of Contents - 02]]
 
-::02.02 AFFAIR
+::02.02
 ## AFFAIR 
 
 - I don't know if I should tell you. 
@@ -480,7 +497,7 @@ tw-passage {
 
 [[return->Table of Contents - 02]]
 
-::02.03 MOTHER
+::02.03
 ## MOTHER 
 
 - While Mum's out 
@@ -522,7 +539,7 @@ tw-passage {
 
 [[return->Table of Contents - 02]]
 
-::02.04 FIRED
+::02.04
 ## FIRED 
 
 - You shouldn't fire people by email. 
@@ -537,7 +554,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 02]]
 
-::02.05 MESSAGE
+::02.05
 ## MESSAGE 
 
 - It's a message 
@@ -558,7 +575,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 02]]
 
-::02.06 GRASS
+::02.06
 ## GRASS 
 
 - What did you do that for? 
@@ -603,7 +620,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 02]]
 
-::02.07 TERMINAL
+::02.07
 ## TERMINAL 
 
 - Doctor, one thing before I go. Can you tell me how long I've got? 
@@ -614,7 +631,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 02]]
 
-::03.01 SCHIZOPHRENIC
+::03.01
 ## SCHIZOPHRENIC 
 
 - How do you know I'm evil? 
@@ -636,7 +653,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 03]]
 
-::03.02 SPIES
+::03.02
 ## SPIES 
 
 - So we went to war on a completely 
@@ -660,7 +677,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 03]]
 
-::03.03 DREAM
+::03.03
 ## DREAM 
 
 - I had this dream last night, I was in a garden and there was blackberries, big bushes of brambles, I was picking them, and a butterfly flew across and I could see this orange-and-black buttterfly really clearly on a yellow rose, but then the whole thing was a dance because I was at the ballet. And I looked all those things up on a website about dreams, blackberry, butterfly, ballet, and every single one means infidelity. So now I know he's cheating. 
@@ -677,7 +694,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 03]]
 
-::03.04 RECLUSE
+::03.04
 ## RECLUSE 
 
   //Two inside, one outside the door who can be heard.// 
@@ -742,7 +759,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 03]]
 
-::03.05 GOD'S VOICE
+::03.05
 ## GOD'S VOICE 
 
 - God told you to do it? 
@@ -790,7 +807,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 03]]
 
-::03.06 THE CHILD WHO DIDN'T KNOW FEAR
+::03.06
 ## THE CHILD WHO DIDN'T KNOW FEAR 
 
   //One person tells a story to another.// 
@@ -798,7 +815,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 03]]
 
-::03.07 STAR
+::03.07
 ## STAR 
 
 - It takes the light two point eight million years to get here. 
@@ -810,7 +827,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 03]]
 
-::04.01 WEDDING VIDEO
+::04.01
 ## WEDDING VIDEO 
 
   //Several people.// 
@@ -858,7 +875,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 04]]
 
-::04.02 SAVANT
+::04.02
 ## SAVANT 
 
 - What did you have for lunch on October the third 1998? 
@@ -879,7 +896,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 04]]
 
-::04.03 EX
+::04.03
 ## EX 
 
 - I'm glad we've done it, just to see 
@@ -931,7 +948,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 04]]
 
-::04.04 MEMORY HOUSE
+::04.04
 ## MEMORY HOUSE 
 
 - to improve my mind 
@@ -1087,7 +1104,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 04]]
 
-::04.05 DINNER
+::04.05
 ## DINNER 
 
 - I did tell you 
@@ -1101,7 +1118,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 04]]
 
-::04.06 PIANO
+::04.06
 ## PIANO 
 
   //Three people.// 
@@ -1117,7 +1134,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 04]]
 
-::04.07 FLASHBACK
+::04.07
 ## FLASHBACK 
 
 - Breathe 
@@ -1135,7 +1152,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 04]]
 
-::05.01 LINGUIST
+::05.01
 ## LINGUIST 
 
 - How many languages do you know? 
@@ -1156,7 +1173,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 05]]
 
-::05.02 MATHS
+::05.02
 ## MATHS 
 
 - I don't want to spend an evening with them again. 
@@ -1178,7 +1195,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 05]]
 
-::05.03 SEX
+::05.03
 ## SEX 
 
 - What sex evolved to do is get information from two sets of genes so you get offspring that's not identifcal to you. Otherwise you just keep getting the same thing over and over again like hydra or starfish. So sex essentially is information. 
@@ -1188,7 +1205,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 05]]
 
-::05.04 GOD
+::05.04
 ## GOD 
 
 - God gives your life meaning. You've said that. 
@@ -1206,7 +1223,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 05]]
 
-::05.05 RASH
+::05.05
 ## RASH 
 
 - It's just a rash. 
@@ -1219,7 +1236,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 05]]
 
-::05.06 CHILDREN
+::05.06
 ## CHILDREN 
 
 - You can't have children? 
@@ -1237,7 +1254,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 05]]
 
-::05.07 SHRINK
+::05.07
 ## SHRINK 
 
 - It used to just be pain 
@@ -1267,7 +1284,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 05]]
 
-::06.01 THE CHILD WHO DIDN'T KNOW SORRY
+::06.01
 ## THE CHILD WHO DIDN'T KNOW SORRY 
 
 - You have to say you're sorry. 
@@ -1278,7 +1295,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 06]]
 
-::06.02 CLIMATE
+::06.02
 ## CLIMATE 
 
 - I'm frightened. 
@@ -1295,7 +1312,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 06]]
 
-::06.03 CENSOR
+::06.03
 ## CENSOR 
 
 - Page forty-two. 
@@ -1313,7 +1330,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 06]]
 
-::06.04 WIFE
+::06.04
 ## WIFE 
 
 - But I am your wife. 
@@ -1335,7 +1352,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 06]]
 
-::06.05 DECISION
+::06.05
 ## DECISION 
 
 - I've written down all the reasons to leave the country and all the reasons to stay. 
@@ -1349,7 +1366,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 06]]
 
-::06.06 THE CHILD WHO DIDN'T KNOW PAIN
+::06.06
 ## THE CHILD WHO DIDN'T KNOW PAIN 
 
 - But what is it? 
@@ -1408,7 +1425,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 06]]
 
-::06.07 EARTHQUAKE
+::06.07
 ## EARTHQUAKE 
 
 - Have you seen the earthquake? There's this building my god you think things are solid but they just break. 
@@ -1426,7 +1443,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 06]]
 
-::07.01 CHINESE POETRY
+::07.01
 ## CHINESE POETRY 
 
 'The girl waits at the door of her house on the mountain.' 
@@ -1440,7 +1457,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 07]]
 
-::07.02 MANIC
+::07.02
 ## MANIC 
 
 - My god, look at that flower, thank you so much, have you ever seen such a red, red is blood and bullfights and seeing red is anger but red is joyful, red is celebration, 
@@ -1455,7 +1472,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 07]]
 
-::07.03 GRIEF
+::07.03
 ## GRIEF 
 
 - Are you sleeping? 
@@ -1469,7 +1486,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 07]]
 
-::07.04 FATE
+::07.04
 ## FATE 
 
 - I'm just saying you've got no choice 
@@ -1513,7 +1530,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 07]]
 
-::07.05 STONE
+::07.05
 ## STONE 
 
 - He's got a special stone. 
@@ -1544,7 +1561,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 07]]
 
-::07.06 VIRTUAL
+::07.06
 ## VIRTUAL 
 
 - I don't care what you say 
@@ -1617,7 +1634,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 07]]
 
-::07.07 SMALL THING
+::07.07
 ## SMALL THING 
 
 - What are you looking at? 
@@ -1629,7 +1646,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 [[return->Table of Contents - 07]]
 
-::08.01 FACTS (LAST SCENE)
+::08.01
 ## FACTS (LAST SCENE) 
 
 - Who was the president of Coca-Cola from nineteen twenty-five to seven? 
@@ -1669,136 +1686,112 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 ## END OF THE LINE
 (history:)
 
-::09.00 RANDOM
+::09.00
 ## RANDOM 
 
 - These things can happen in any section. DEPRESSION is an essential part of the play. The other random items[::09.01-19] are optional. 
-##-19] are optional.
 
-::09.::01.00 DEPRESSION
-## DEPRESSION 
+::09.01
+## DEPRESSION 1
 
   //Each of these is a separate random item. Each is said by one person to another who doesn't respond. The characters can be the same each time, or the depressed person can be the same and the others different, or they can all be different.//
 
-::09.::01.01 DEPRESSION [1]
-## DEPRESSION [1] 
+::09.02
+## DEPRESSION 2
 
 - we could go for a walk it's a beautiful
 
-::09.::01.02 DEPRESSION [2]
-## DEPRESSION [2] 
+::09.03
+## DEPRESSION 3
 
 - there's an exhibition of expressionist
 
-::09.::01.03 DEPRESSION [3]
-## DEPRESSION [3] 
+::09.04
+## DEPRESSION 4
 
 - chicken tikka masala
 
-::09.::01.04 DEPRESSION [4]
-## DEPRESSION [4] 
+::09.05
+## DEPRESSION 5
 
 - programme starts at 6.40 or if you'd rather we could
 
-::09.::01.05 DEPRESSION [5]
-## DEPRESSION [5] 
+::09.06
+## DEPRESSION 6
 
 - glass of red or
 
-::09.::01.06 DEPRESSION [6]
-## DEPRESSION [6] 
+::09.07
+## DEPRESSION 7
 
 - thinking of taking one of the kittens there's a ginger one or a
 
-::09.::01.07 DEPRESSION [7]
-## DEPRESSION [7] 
+::09.08
+## DEPRESSION 8
 
 - maybe you could read them a story tonight or
 
-::09.::01.08 DEPRESSION [8]
-## DEPRESSION [8] 
+::09.09
+## DEPRESSION 9
 
 - the difficulty of getting the Israelis and Palestinians to
 
-::09.::01.09 DEPRESSION [9]
-## DEPRESSION [9] 
+::09.10
+## DEPRESSION 10
 
 - and he only has two months to live so I thought we could
 
-::09.::01.10 DEPRESSION [10]
-## DEPRESSION [10] 
+::09.11
+## DEPRESSION 11
 
 - a fountain of antimatter in the Milkyy Way that nobody knew 
 
-(unless: (history:) contains "09.02 SEMAPHORE")[[[next->09.02 SEMAPHORE]]
-
-::09.02 SEMAPHORE
+::10.01
 ## SEMAPHORE 
 
 
-[[return->Table of Contents - 09]]
-
-::09.03 MORSE
+::10.02
 ## MORSE 
 
 
-[[return->Table of Contents - 09]]
-
-::09.04 SIGN LANGUAGE
+::10.03
 ## SIGN LANGUAGE 
 
 
-[[return->Table of Contents - 09]]
-
-::09.05 BIRDSONG
+::10.04
 ## BIRDSONG 
 
 
-[[return->Table of Contents - 09]]
-
-::09.06 DANCE
+::10.05
 ## DANCE 
 
 
-[[return->Table of Contents - 09]]
-
-::09.07 FLAGS
+::10.06
 ## FLAGS 
 
 
-[[return->Table of Contents - 09]]
-
-::09.08 PAINTING
+::10.07
 ## PAINTING 
 
   //Someone has a large canvas and is flicking paint at it.// 
 
-[[return->Table of Contents - 09]]
-
-::09.09 PIG LATIN
+::10.08
 ## PIG LATIN 
 
 - Ancay ouyay eakspay igpay atinlay? 
 
-[[return->Table of Contents - 09]]
-
-::09.10 SANTA
+::10.09
 ## SANTA 
 
 - Father Christmas lands his sleigh on the roof and comes down the chimney with his big sack of toys and he'll put presents in your stocking 
 
-[[return->Table of Contents - 09]]
-
-::09.11 TABLES
+::10.10
 ## TABLES 
 
 - Seven sevens are forty-nine, seven eights are fifty-six, seven nines are sixty-three, seven tens are seventy, seveven elevens are seventy-seven, seven twelves are eighty-four, seven thirteens are ninety-one 
 
-[[return->Table of Contents - 09]]
-
-::09.12 GENES
+::10.11
 ## GENES 
-
 
 - AGT TCG AGC CCT TGA CTT GAT TGT GCA TAC 
 - CGT GCT TGA GTC ATG TTG CAC AAC TTG TCG 
@@ -1810,61 +1803,49 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - GCC GAC TTT GAC CGG AGT GGT TGT ACC TTG 
 - GTC AGG AAT TGA ACG 
 
-[[return->Table of Contents - 09]]
-
-::09.13 DOG
+::10.12
 ## DOG 
 
 - Come. Sit. Stay. Come. Good dog. Fetch. Drop it. Fetch. Good dog. Roll over. Good dog. Come. Heel. No. Come. 
 
-[[return->Table of Contents - 09]]
-
-::09.14 KEYS
+::10.13
 ## KEYS 
 
 - You don't know where I put the car keys, do you? 
 
-[[return->Table of Contents - 09]]
-
-::09.15 MAGAZINE
+::10.14
 ## MAGAZINE 
 
 - she's lost two stone... he was going to leave her... look, he's coming out of a club with an unnamed blonde... 
 
-[[return->Table of Contents - 09]]
-
-::09.16 GOOGLE
+::10.15
 ## GOOGLE 
 
 - There's a train at 4.22 gets in at half-past eight. 
 
-[[return->Table of Contents - 09]]
-
-::09.17 TWITTER
+::10.16
 ## TWITTER 
 
 - He's in the kitchen cooking spaghetti and he's upset about the news from Tripoli. 
 
-[[return->Table of Contents - 09]]
-
-::09.18 ZEN
+::10.17
 ## ZEN 
 
 - What's the sound of one hand clapping? I've heard that one. 
 
-[[return->Table of Contents - 09]]
-
-::09.19 COLD
+::10.18
 ## COLD 
 
   //Someone sneezes.// 
 
-[[return->Table of Contents - 09]]
-
-::09.20 SILENCE
+::10.19
 ## SILENCE 
 
   //This can happen more than once, for different lengths of time.//
 
 ::Twee2Settings [twee2]
 @story_start_name = 'TitlePage'
+
+::StoryIFID[twee2]
+Twee2::build_config.story_ifid = '85feb792-1a28-4ac3-9f22-20bb321192b3'
+

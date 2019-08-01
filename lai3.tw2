@@ -11,7 +11,7 @@ body, tw-story {
 }
 
 tw-icon {
-	opacity: 1;
+	opacity: 0;
 	color: grey;
 }
 
@@ -35,6 +35,8 @@ tw-passage {
 <h6><i>Twined by Ken Alba</i></h6>
 
 [[readme->00.00 NOTE ON TEXT]] // [[start->Table of Contents - 01]]
+[[debug mode - table of contents->Table of Contents - Sections]]
+[[debug to arrays ->Section Arrays]]
 
 ::Table of Contents - Sections
 <h2>Table of Contents: Sections</h2>
@@ -48,90 +50,95 @@ tw-passage {
 [[Section 8->Table of Contents - 08]]
 [[Section 9->Table of Contents - 09]]
 
+::Section Arrays
+
+(set: $_1Scenes to(a:"01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07"))
+(set: $_2Scenes to(a:"02.01", "02.02", "02.03", "02.04", "02.05", "02.06", "02.07"))
+(set: $_3Scenes to(a:"03.01", "03.02", "03.03", "03.04", "03.05", "03.06", "03.07"))
+(set: $_4Scenes to(a:"04.01", "04.02", "04.03", "04.04", "04.05", "04.06", "04.07"))
+(set: $_5Scenes to(a:"05.01", "05.02", "05.03", "05.04", "05.05", "05.06", "05.07"))
+(set: $_6Scenes to(a:"06.01", "06.02", "06.03", "06.04", "06.05", "06.06", "06.07"))
+(set: $_7Scenes to(a:"07.01", "07.02", "07.03", "07.04", "07.05", "07.06", "07.07"))
+(set: $_8Scenes to(a:"08.01"))
+(set: $_randomScenes to(a:"10.01", "10.02", "10.03", "10.04", "10.05", "10.06", "10.07", "10.08", "10.09", "10.10", "10.11", "10.12", "10.13", "10.14", "10.15", "10.16", "10.17", "10.18", "10.19"))
+(set: $_depressionScenes to(a:"09.01", "09.02", "09.03", "09.04", "09.05", "09.06", "09.07", "09.08", "09.09", "09.10"))
+
 ::Table of Contents - 01
 <h2>Section 1</h2>
-
-(unless: (history:) contains "01.01 SECRET")[[[SECRET->01.01 SECRET]]]
-[[CENSUS->01.02 CENSUS]]
-[[FAN->01.03 FAN]]
-[[TORTURE->01.04 TORTURE]]
-[[LAB->01.05 LAB]]
-[[SLEEP->01.06 SLEEP]]
-[[REMOTE->01.07 REMOTE]]
-
 (if: (history:) contains "01.01 SECRET" and contains "01.02 CENSUS" and contains "01.03 FAN" and contains "01.04 TORTURE" and contains "01.05 LAB" and contains "01.06 SLEEP" and contains "01.07 REMOTE")[[[next section->Table of Contents - 02]]]
+(unless: (history:) contains "01.01 SECRET")[[[SECRET->01.01 SECRET]]]
+(unless: (history:) contains "01.02 CENSUS")[[[CENSUS->01.02 CENSUS]]]
+(unless: (history:) contains "01.03 FAN")[[[FAN->01.03 FAN]]]
+(unless: (history:) contains "01.04 TORTURE")[[[TORTURE->01.04 TORTURE]]]
+(unless: (history:) contains "01.05 LAB")[[[LAB->01.05 LAB]]]
+(unless: (history:) contains "01.06 SLEEP")[[[SLEEP->01.06 SLEEP]]]
+(unless: (history:) contains "01.07 REMOTE")[[[REMOTE->01.07 REMOTE]]]
 
 ::Table of Contents - 02
 <h2>Section 2</h2>
-[[IRRATIONAL->02.01 IRRATIONAL]]
-[[AFFAIR->02.02 AFFAIR]]
-[[MOTHER->02.03 MOTHER]]
-[[FIRED->02.04 FIRED]]
-[[MESSAGE->02.05 MESSAGE]]
-[[GRASS->02.06 GRASS]]
-[[TERMINAL->02.07 TERMINAL]]
-
 (if: (history:) contains "02.01 IRRATIONAL" and contains "02.02 AFFAIR" and contains "02.03 MOTHER" and contains "02.04 FIRED" and contains "02.05 MESSAGE" and contains "02.06 GRASS" and contains "02.07 TERMINAL")[[[next section->Table of Contents - 03]]]
+(unless: (history:) contains "02.01 IRRATIONAL")[[[IRRATIONAL->02.01 IRRATIONAL]]]
+(unless: (history:) contains "02.02 AFFAIR")[[[AFFAIR->02.02 AFFAIR]]]
+(unless: (history:) contains "02.03 MOTHER")[[[MOTHER->02.03 MOTHER]]]
+(unless: (history:) contains "02.04 FIRED")[[[FIRED->02.04 FIRED]]]
+(unless: (history:) contains "02.05 MESSAGE")[[[MESSAGE->02.05 MESSAGE]]]
+(unless: (history:) contains "02.06 GRASS")[[[GRASS->02.06 GRASS]]]
+(unless: (history:) contains "02.07 TERMINAL")[[[TERMINAL->02.07 TERMINAL]]]
 
 ::Table of Contents - 03
 <h2>Section 3</h2>
-[[SCHIZOPHRENIC->03.01 SCHIZOPHRENIC]]
-[[SPIES->03.02 SPIES]]
-[[DREAM->03.03 DREAM]]
-[[RECLUSE->03.04 RECLUSE]]
-[[GOD'S VOICE->03.05 GOD'S VOICE]]
-[[THE CHILD WHO DIDN'T KNOW FEAR->03.06 THE CHILD WHO DIDN'T KNOW FEAR]]
-[[STAR->03.07 STAR]]
-
 (if: (history:) contains "03.01 SCHIZOPHRENIC" and contains "03.02 SPIES" and contains "03.03 DREAM" and contains "03.04 RECLUSE" and contains "03.05 GOD'S VOICE" and contains "03.06 THE CHILD WHO DIDN'T KNOW FEAR")[[[next section->Table of Contents - 04]]]
+(unless: (history:) contains "03.01 SCHIZOPHRENIC")[[[SCHIZOPHRENIC->03.01 SCHIZOPHRENIC]]]
+(unless: (history:) contains "03.02 SPIES")[[[SPIES->03.02 SPIES]]]
+(unless: (history:) contains "03.03 DREAM")[[[DREAM->03.03 DREAM]]]
+(unless: (history:) contains "03.04 RECLUSE")[[[RECLUSE->03.04 RECLUSE]]]
+(unless: (history:) contains "03.05 GOD'S VOICE")[[[GOD'S VOICE->03.05 GOD'S VOICE]]]
+(unless: (history:) contains "03.06 THE CHILD WHO DIDN'T KNOW FEAR")[[[THE CHILD WHO DIDN'T KNOW FEAR->03.06 THE CHILD WHO DIDN'T KNOW FEAR]]]
+(unless: (history:) contains "03.07 STAR")[[[STAR->03.07 STAR]]]
 
 ::Table of Contents - 04
 <h2>Section 4</h2>
-[[WEDDING VIDEO->04.01 WEDDING VIDEO]]
-[[SAVANT->04.02 SAVANT]]
-[[EX->04.03 EX]]
-[[MEMORY HOUSE->04.04 MEMORY HOUSE]]
-[[DINNER->04.05 DINNER]]
-[[PIANO->04.06 PIANO]]
-[[FLASHBACK->04.07 FLASHBACK]]
-
 (if: (history:) contains "04.01 WEDDING VIDEO" and contains "04.02 SAVANT" and contains "04.03 EX" and contains "04.04 MEMORY HOUSE" and contains "04.05 DINNER" and contains "04.06 PIANO" and contains "04.07 FLASHBACK")[[[next section->Table of Contents - 05]]]
+(unless: (history:) contains "04.01 WEDDING VIDEO")[[[WEDDING VIDEO->04.01 WEDDING VIDEO]]]
+(unless: (history:) contains "04.02 SAVANT")[[[SAVANT->04.02 SAVANT]]]
+(unless: (history:) contains "04.03 EX")[[[EX->04.03 EX]]]
+(unless: (history:) contains "04.04 MEMORY HOUSE")[[[MEMORY HOUSE->04.04 MEMORY HOUSE]]]
+(unless: (history:) contains "04.05 DINNER")[[[DINNER->04.05 DINNER]]]
+(unless: (history:) contains "04.06 PIANO")[[[PIANO->04.06 PIANO]]]
+(unless: (history:) contains "04.07 FLASHBACK")[[[FLASHBACK->04.07 FLASHBACK]]]
 
 ::Table of Contents - 05
 <h2>Section 5</h2>
-[[LINGUIST->05.01 LINGUIST]]
-[[MATHS->05.02 MATHS]]
-[[SEX->05.03 SEX]]
-[[GOD->05.04 GOD]]
-[[RASH->05.05 RASH]]
-[[CHILDREN->05.06 CHILDREN]]
-[[SHRINK->05.07 SHRINK]]
-
 (if: (history:) contains "05.01 LINGUIST" and contains "05.02 MATHS" and contains "05.03 SEX" and contains "05.04 GOD" and contains "05.05 RASH" and contains "05.06 CHILDREN" and contains "05.07 SHRINK")[[[next section->Table of Contents - 06]]]
+(unless: (history:) contains "05.01 LINGUIST")[[[LINGUIST->05.01 LINGUIST]]]
+(unless: (history:) contains "05.02 MATHS")[[[MATHS->05.02 MATHS]]]
+(unless: (history:) contains "05.03 SEX")[[[SEX->05.03 SEX]]]
+(unless: (history:) contains "05.04 GOD")[[[GOD->05.04 GOD]]]
+(unless: (history:) contains "05.05 RASH")[[[RASH->05.05 RASH]]]
+(unless: (history:) contains "05.06 CHILDREN")[[[CHILDREN->05.06 CHILDREN]]]
+(unless: (history:) contains "05.07 SHRINK")[[[SHRINK->05.07 SHRINK]]]
 
 ::Table of Contents - 06
 <h2>Section 6</h2>
-[[THE CHILD WHO DIDN'T KNOW SORRY->06.01 THE CHILD WHO DIDN'T KNOW SORRY]]
-[[CLIMATE->06.02 CLIMATE]]
-[[CENSOR->06.03 CENSOR]]
-[[WIFE->06.04 WIFE]]
-[[DECISION->06.05 DECISION]]
-[[THE CHILD DIDN'T KNOW PAIN->06.06 THE CHILD DIDN'T KNOW PAIN]]
-[[EARTHQUAKE->06.07 EARTHQUAKE]]
-
-(if: (history:) contains "06.01 THE CHILD WHO DIDN'T KNOW SORRY" and contains "06.02 CLIMATE" and contains "06.03 CENSOR" and contains "06.04 WIFE" and contains "06.06 THE CHILD WHO DIDN'T KNOW PAIN" and contains "06.07 EARTHQUAKE")[[[next section->Table of Contents - 07]]]
+(if: (history:) contains "06.01 THE CHILD WHO DIDN'T KNOW SORRY" and contains "06.02 CLIMATE" and contains "06.03 CENSOR" and contains "06.04 WIFE" and contains "06.05 DECISION" and contains "06.06 THE CHILD WHO DIDN'T KNOW PAIN" and contains "06.07 EARTHQUAKE")[[[next section->Table of Contents - 07]]]
+(unless: (history:) contains "06.01 THE CHILD WHO DIDN'T KNOW SORRY")[[[THE CHILD WHO DIDN'T KNOW SORRY->06.01 THE CHILD WHO DIDN'T KNOW SORRY]]]
+(unless: (history:) contains "06.02 CLIMATE")[[[CLIMATE->06.02 CLIMATE]]]
+(unless: (history:) contains "06.03 CENSOR")[[[CENSOR->06.03 CENSOR]]]
+(unless: (history:) contains "06.04 WIFE")[[[WIFE->06.04 WIFE]]]
+(unless: (history:) contains "06.05 DECISION")[[[DECISION->06.05 DECISION]]]
+(unless: (history:) contains "06.06 THE CHILD WHO DIDN'T KNOW PAIN")[[[THE CHILD WHO DIDN'T KNOW PAIN->06.06 THE CHILD WHO DIDN'T KNOW PAIN]]]
+(unless: (history:) contains "06.07 EARTHQUAKE")[[[EARTHQUAKE->06.07 EARTHQUAKE]]]
 
 ::Table of Contents - 07
 <h2>Section 7</h2>
-[[CHINESE POETRY->07.01 CHINESE POETRY]]
-[[MANIC->07.02 MANIC]]
-[[GRIEF->07.03 GRIEF]]
-[[FATE->07.04 FATE]]
-[[STONE->07.05 STONE]]
-[[VIRTUAL->07.06 VIRTUAL]]
-[[SMALL THING->07.07 SMALL THING]]
-
-(if: (history:) contains "07.01 CHINESE POETRY" and contains "07.02 MANIAC" and contains "07.03 GRIEF" and contains "07.04 FATE" and contains "07.05 STONE" and contains "07.06 VIRTUAL" and contains "07.07 SMALL THING")[[[last section->Table of Contents - 08]]]
+(if: (history:) contains "07.01 CHINESE POETRY" and contains "07.02 MANIC" and contains "07.03 GRIEF" and contains "07.04 FATE" and contains "07.05 STONE" and contains "07.06 VIRTUAL" and contains "07.07 SMALL THING")[[[last section->Table of Contents - 08]]]
+(unless: (history:) contains "07.01 CHINESE POETRY")[[[CHINESE POETRY->07.01 CHINESE POETRY]]]
+(unless: (history:) contains "07.02 MANIC")[[[MANIC->07.02 MANIC]]]
+(unless: (history:) contains "07.03 GRIEF")[[[GRIEF->07.03 GRIEF]]]
+(unless: (history:) contains "07.04 FATE")[[[FATE->07.04 FATE]]]
+(unless: (history:) contains "07.05 STONE")[[[STONE->07.05 STONE]]]
+(unless: (history:) contains "07.06 VIRTUAL")[[[VIRTUAL->07.06 VIRTUAL]]]
+(unless: (history:) contains "07.07 SMALL THING")[[[SMALL THING->07.07 SMALL THING]]]
 
 ::Table of Contents - 08
 <h2>Section 8</h2>
@@ -139,7 +146,7 @@ tw-passage {
 
 ::Table of Contents - 09
 <h2>Section 9</h2>
-[[RANDOM->09.00 RANDOM]]
+(unless: (history:) contains "09.00 RANDOM")[[[RANDOM->09.00 RANDOM]]
 [[09.01.00 DEPRESSION]]
 [[09.01.01 DEPRESSION (1)]]
 [[09.01.02 DEPRESSION (2)]]
@@ -151,29 +158,29 @@ tw-passage {
 [[09.01.08 DEPRESSION (8)]]
 [[09.01.09 DEPRESSION (9)]]
 [[09.01.10 DEPRESSION (10)]]
-[[SEMAPHORE->09.02 SEMAPHORE]]
-[[MORSE->09.03 MORSE]]
-[[SIGN LANGUAGE->09.04 SIGN LANGUAGE]]
-[[BIRDSONG->09.05 BIRDSONG]]
-[[DANCE->09.06 DANCE]]
-[[FLAGS->09.07 FLAGS]]
-[[PAINTING->09.08 PAINTING]]
-[[PIG LATIN->09.09 PIG LATIN]]
-[[SANTA->09.10 SANTA]]
-[[TABLES->09.11 TABLES]]
-[[GENES->09.12 GENES]]
-[[DOG->09.13 DOG]]
-[[KEYS->09.14 KEYS]]
-[[MAGAZINE->09.15 MAGAZINE]]
-[[GOOGLE->09.16 GOOGLE]]
-[[TWITTER->09.17 TWITTER]]
-[[ZEN->09.18 ZEN]]
-[[COLD->09.19 COLD]]
-[[SILENCE->09.20 SILENCE]]
-[[NOTE ON TEXT->00.00 NOTE ON TEXT]]
-[[NOTE ON TXT->00.01 NOTE ON TXT]]
+(unless: (history:) contains "09.02 SEMAPHORE")[[[SEMAPHORE->09.02 SEMAPHORE]]
+(unless: (history:) contains "09.03 MORSE")[[[MORSE->09.03 MORSE]]
+(unless: (history:) contains "09.04 SIGN LANGUAGE")[[[SIGN LANGUAGE->09.04 SIGN LANGUAGE]]
+(unless: (history:) contains "09.05 BIRDSONG")[[[BIRDSONG->09.05 BIRDSONG]]
+(unless: (history:) contains "09.06 DANCE")[[[DANCE->09.06 DANCE]]
+(unless: (history:) contains "09.07 FLAGS")[[[FLAGS->09.07 FLAGS]]
+(unless: (history:) contains "09.08 PAINTING")[[[PAINTING->09.08 PAINTING]]
+(unless: (history:) contains "09.09 PIG LATIN")[[[PIG LATIN->09.09 PIG LATIN]]
+(unless: (history:) contains "09.10 SANTA")[[[SANTA->09.10 SANTA]]
+(unless: (history:) contains "09.11 TABLES")[[[TABLES->09.11 TABLES]]
+(unless: (history:) contains "09.12 GENES")[[[GENES->09.12 GENES]]
+(unless: (history:) contains "09.13 DOG")[[[DOG->09.13 DOG]]
+(unless: (history:) contains "09.14 KEYS")[[[KEYS->09.14 KEYS]]
+(unless: (history:) contains "09.15 MAGAZINE")[[[MAGAZINE->09.15 MAGAZINE]]
+(unless: (history:) contains "09.16 GOOGLE")[[[GOOGLE->09.16 GOOGLE]]
+(unless: (history:) contains "09.17 TWITTER")[[[TWITTER->09.17 TWITTER]]
+(unless: (history:) contains "09.18 ZEN")[[[ZEN->09.18 ZEN]]
+(unless: (history:) contains "09.19 COLD")[[[COLD->09.19 COLD]]
+(unless: (history:) contains "09.20 SILENCE")[[[SILENCE->09.20 SILENCE]]
+(unless: (history:) contains "00.00 NOTE ON TEXT")[[[NOTE ON TEXT->00.00 NOTE ON TEXT]]
+(unless: (history:) contains "00.01 NOTE ON TXT")[[[NOTE ON TXT->00.01 NOTE ON TXT]]
 
-[[next->00.00 NOTE ON TEXT]]
+(unless: (history:) contains "00.00 NOTE ON TEXT")[[[next->00.00 NOTE ON TEXT]]
 
 ::00.00 NOTE ON TEXT
 ## NOTE ON TEXT 
@@ -885,7 +892,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Rain in the morning but it cleared up. Rain in the evening. Rain the next morning. 
 - June the sixth 20::04. 
 
-[[next->04.03 EX]]
+[[return->Table of Contents - 04]]
 
 ::04.03 EX
 ## EX 
@@ -1341,7 +1348,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - But I am... Let me touch you. If you'd see what it feels like to touch me. If we made love you'd know it was me because there are things we like to do and no one else would know that, if I was a stranger pretending to be her I wouldn't know those things, you'd feel you were back with me, you would I know; please. 
 - You disgust me. You frighten me. What are you? 
 
-[[next->06.05 DECISION]]
+[[return->Table of Contents - 06]]
 
 ::06.05 DECISION
 ## DECISION 
@@ -1355,10 +1362,10 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Based on what? The facts don't add up. 
 - I'd rather you stayed here. Does that help?
 
-[[return->Table of Contents - 05]]
+[[return->Table of Contents - 06]]
 
-::06.06 THE CHILD DIDN'T KNOW PAIN
-## THE CHILD DIDN'T KNOW PAIN 
+::06.06 THE CHILD WHO DIDN'T KNOW PAIN
+## THE CHILD WHO DIDN'T KNOW PAIN 
 
 - But what is it? 
 - Pain is pain, it's just 
@@ -1738,7 +1745,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
 - a fountain of antimatter in the Milkyy Way that nobody knew 
 
-[[next->09.02 SEMAPHORE]]
+(unless: (history:) contains "09.02 SEMAPHORE")[[[next->09.02 SEMAPHORE]]
 
 ::09.02 SEMAPHORE
 ## SEMAPHORE 
