@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="LOVE AND INFORMATION" startnode="1" creator="Twee2" creator-version="0.5.0" ifid="85feb792-1a28-4ac3-9f22-20bb321192b3" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story {
+<tw-storydata name="LOVE AND INFORMATION" startnode="2" creator="Twee2" creator-version="0.5.0" ifid="85feb792-1a28-4ac3-9f22-20bb321192b3" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story {
 	background: black;
 	font-family: Consolas;
 	color: #D3D3D3;
@@ -40,15 +40,28 @@ tw-passage {
 	color: white;
 	opacity: 1;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="TitlePage" tags="" position="">&lt;h1&gt;Love and Information&lt;/h1&gt;
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Section Arrays" tags="startup" position="">{
+(set: $SectionOne to(a:"01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07"))
+(set: $SectionTwo to(a:"02.01", "02.02", "02.03", "02.04", "02.05", "02.06", "02.07"))
+(set: $SectionThree to(a:"03.01", "03.02", "03.03", "03.04", "03.05", "03.06", "03.07"))
+(set: $SectionFour to(a:"04.01", "04.02", "04.03", "04.04", "04.05", "04.06", "04.07"))
+(set: $SectionFive to(a:"05.01", "05.02", "05.03", "05.04", "05.05", "05.06", "05.07"))
+(set: $SectionSix to(a:"06.01", "06.02", "06.03", "06.04", "06.05", "06.06", "06.07"))
+(set: $SectionSeven to(a:"07.01", "07.02", "07.03", "07.04", "07.05", "07.06", "07.07"))
+(set: $SectionEight to(a:"08.01"))
+(set: $SectionTen to(a:"10.01", "10.02", "10.03", "10.04", "10.05", "10.06", "10.07", "10.08", "10.09", "10.10", "10.11", "10.12", "10.13", "10.14", "10.15", "10.16", "10.17", "10.18", "10.19"))
+(set: $SectionNine to(a:"09.01", "09.02", "09.03", "09.04", "09.05", "09.06", "09.07", "09.08", "09.09", "09.10", "09.11"))
+}</tw-passagedata><tw-passagedata pid="2" name="TitlePage" tags="" position="">&lt;h1&gt;Love and Information&lt;/h1&gt;
 &lt;h4&gt;&lt;i&gt;by Caryl Churchill&lt;/i&gt;&lt;/h4&gt;
 &lt;h6&gt;&lt;i&gt;Twined by Ken Alba&lt;/i&gt;&lt;/h6&gt;
 
 [[readme-&gt;00.00]] // [[start-&gt;Table of Contents - 01]]
-[[debug room]]</tw-passagedata><tw-passagedata pid="2" name="debug room" tags="" position="">[[Table of Contents - Sections]]
-(cycling-link: "Mew", "Miao", "Mrr", "Mlem")
-the following code will generate a list of all of the links in the scene.
-(for: each _scene, ...$SectionOne)[[[(print:(_scene of $SceneTitles))-&gt;_scene]]&lt;br&gt;]</tw-passagedata><tw-passagedata pid="3" name="notes" tags="" position="">So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ expressions on both sides.</tw-passagedata><tw-passagedata pid="4" name="Table of Contents - Sections" tags="" position="">&lt;h2&gt;Table of Contents: Sections&lt;/h2&gt;
+[[debug room]]</tw-passagedata><tw-passagedata pid="3" name="debug room" tags="" position="">$SectionNine
+{(set: $first to (either: ...$SectionNine))}
+[[$first]]
+{(set: $SectionNine to $SectionNine - (a: $first))}
+$SectionNine
+(for:)</tw-passagedata><tw-passagedata pid="4" name="Table of Contents - Sections" tags="" position="">&lt;h2&gt;Table of Contents: Sections&lt;/h2&gt;
 [[Section 1-&gt;Table of Contents - 01]]
 [[Section 2-&gt;Table of Contents - 02]]
 [[Section 3-&gt;Table of Contents - 03]]
@@ -58,7 +71,7 @@ the following code will generate a list of all of the links in the scene.
 [[Section 7-&gt;Table of Contents - 07]]
 [[Section 8-&gt;Table of Contents - 08]]
 [[Section 9-&gt;Table of Contents - 09]]</tw-passagedata><tw-passagedata pid="5" name="Table of Contents - 01" tags="" position="">&lt;h2&gt;Section 1&lt;/h2&gt;
-(if: (history:) contains all of $SectionOne)[[[next section-&gt;Table of Contents - 02]]]
+(if: (history:) contains "01.01" and contains "01.02" and contains "01.03" and contains "01.04" and contains "01.05" and contains "01.06" and contains "01.07")[[[next section-&gt;Table of Contents - 02]]]
 (unless: (history:) contains "01.01")[[[SECRET-&gt;01.01]]]
 (unless: (history:) contains "01.02")[[[CENSUS-&gt;01.02]]]
 (unless: (history:) contains "01.03")[[[FAN-&gt;01.03]]]
@@ -66,7 +79,7 @@ the following code will generate a list of all of the links in the scene.
 (unless: (history:) contains "01.05")[[[LAB-&gt;01.05]]]
 (unless: (history:) contains "01.06")[[[SLEEP-&gt;01.06]]]
 (unless: (history:) contains "01.07")[[[REMOTE-&gt;01.07]]]</tw-passagedata><tw-passagedata pid="6" name="Table of Contents - 02" tags="" position="">&lt;h2&gt;Section 2&lt;/h2&gt;
-(if: (history:) contains all of $SectionTwo)[[[next section-&gt;Table of Contents - 03]]]
+(if: (history:) contains "02.01" and contains "02.02" and contains "02.03" and contains "02.04" and contains "02.05" and contains "02.06" and contains "02.07")[[[next section-&gt;Table of Contents - 03]]]
 (unless: (history:) contains "02.01")[[[IRRATIONAL-&gt;02.01]]]
 (unless: (history:) contains "02.02")[[[AFFAIR-&gt;02.02]]]
 (unless: (history:) contains "02.03")[[[MOTHER-&gt;02.03]]]
@@ -74,7 +87,7 @@ the following code will generate a list of all of the links in the scene.
 (unless: (history:) contains "02.05")[[[MESSAGE-&gt;02.05]]]
 (unless: (history:) contains "02.06")[[[GRASS-&gt;02.06]]]
 (unless: (history:) contains "02.07")[[[TERMINAL-&gt;02.07]]]</tw-passagedata><tw-passagedata pid="7" name="Table of Contents - 03" tags="" position="">&lt;h2&gt;Section 3&lt;/h2&gt;
-(if: (history:) contains all of $SectionThree)[[[next section-&gt;Table of Contents - 04]]]
+(if: (history:) contains "03.01" and contains "03.02" and contains "03.03" and contains "03.04" and contains "03.05" and contains "03.06")[[[next section-&gt;Table of Contents - 04]]]
 (unless: (history:) contains "03.01")[[[SCHIZOPHRENIC-&gt;03.01]]]
 (unless: (history:) contains "03.02")[[[SPIES-&gt;03.02]]]
 (unless: (history:) contains "03.03")[[[DREAM-&gt;03.03]]]
@@ -82,7 +95,7 @@ the following code will generate a list of all of the links in the scene.
 (unless: (history:) contains "03.05")[[[GOD'S VOICE-&gt;03.05]]]
 (unless: (history:) contains "03.06")[[[THE CHILD WHO DIDN'T KNOW FEAR-&gt;03.06]]]
 (unless: (history:) contains "03.07")[[[STAR-&gt;03.07]]]</tw-passagedata><tw-passagedata pid="8" name="Table of Contents - 04" tags="" position="">&lt;h2&gt;Section 4&lt;/h2&gt;
-(if: (history:) contains all of $SectionFour)[[[next section-&gt;Table of Contents - 05]]]
+(if: (history:) contains "04.01" and contains "04.02" and contains "04.03" and contains "04.04" and contains "04.05" and contains "04.06" and contains "04.07")[[[next section-&gt;Table of Contents - 05]]]
 (unless: (history:) contains "04.01")[[[WEDDING VIDEO-&gt;04.01]]]
 (unless: (history:) contains "04.02")[[[SAVANT-&gt;04.02]]]
 (unless: (history:) contains "04.03")[[[EX-&gt;04.03]]]
@@ -90,7 +103,7 @@ the following code will generate a list of all of the links in the scene.
 (unless: (history:) contains "04.05")[[[DINNER-&gt;04.05]]]
 (unless: (history:) contains "04.06")[[[PIANO-&gt;04.06]]]
 (unless: (history:) contains "04.07")[[[FLASHBACK-&gt;04.07]]]</tw-passagedata><tw-passagedata pid="9" name="Table of Contents - 05" tags="" position="">&lt;h2&gt;Section 5&lt;/h2&gt;
-(if: (history:) contains all of $SectionFive)[[[next section-&gt;Table of Contents - 06]]]
+(if: (history:) contains "05.01" and contains "05.02" and contains "05.03" and contains "05.04" and contains "05.05" and contains "05.06" and contains "05.07")[[[next section-&gt;Table of Contents - 06]]]
 (unless: (history:) contains "05.01")[[[LINGUIST-&gt;05.01]]]
 (unless: (history:) contains "05.02")[[[MATHS-&gt;05.02]]]
 (unless: (history:) contains "05.03")[[[SEX-&gt;05.03]]]
@@ -98,7 +111,7 @@ the following code will generate a list of all of the links in the scene.
 (unless: (history:) contains "05.05")[[[RASH-&gt;05.05]]]
 (unless: (history:) contains "05.06")[[[CHILDREN-&gt;05.06]]]
 (unless: (history:) contains "05.07")[[[SHRINK-&gt;05.07]]]</tw-passagedata><tw-passagedata pid="10" name="Table of Contents - 06" tags="" position="">&lt;h2&gt;Section 6&lt;/h2&gt;
-(if: (history:) contains all of $SectionSix)[[[next section-&gt;Table of Contents - 07]]]
+(if: (history:) contains "06.01" and contains "06.02" and contains "06.03" and contains "06.04" and contains "06.05" and contains "06.06" and contains "06.07")[[[next section-&gt;Table of Contents - 07]]]
 (unless: (history:) contains "06.01")[[[THE CHILD WHO DIDN'T KNOW SORRY-&gt;06.01]]]
 (unless: (history:) contains "06.02")[[[CLIMATE-&gt;06.02]]]
 (unless: (history:) contains "06.03")[[[CENSOR-&gt;06.03]]]
@@ -106,7 +119,7 @@ the following code will generate a list of all of the links in the scene.
 (unless: (history:) contains "06.05")[[[DECISION-&gt;06.05]]]
 (unless: (history:) contains "06.06")[[[THE CHILD WHO DIDN'T KNOW PAIN-&gt;06.06]]]
 (unless: (history:) contains "06.07")[[[EARTHQUAKE-&gt;06.07]]]</tw-passagedata><tw-passagedata pid="11" name="Table of Contents - 07" tags="" position="">&lt;h2&gt;Section 7&lt;/h2&gt;
-(if: (history:) contains all of $SectionSeven)[[[last section-&gt;Table of Contents - 08]]]
+(if: (history:) contains "07.01" and contains "07.02" and contains "07.03" and contains "07.04" and contains "07.05" and contains "07.06" and contains "07.07")[[[last section-&gt;Table of Contents - 08]]]
 (unless: (history:) contains "07.01")[[[CHINESE POETRY-&gt;07.01]]]
 (unless: (history:) contains "07.02")[[[MANIC-&gt;07.02]]]
 (unless: (history:) contains "07.03")[[[GRIEF-&gt;07.03]]]
@@ -159,7 +172,7 @@ the following code will generate a list of all of the links in the scene.
 
 - Sections 1-7 are normal sections. 8 is the Final Scene. 9 is random. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="16" name="01.01" tags="" position="">## SECRET 
+[[return-&gt;Table of Contents - 00]]</tw-passagedata><tw-passagedata pid="16" name="01.01" tags="" position="">## SECRET 
 
 - Please please tell me 
 - no 
@@ -214,8 +227,7 @@ the following code will generate a list of all of the links in the scene.
 - how could you 
 - I did. 
 
-(link: "TestReturn")[(goto: (history: )'s last)]
-[[return-&gt;((history: )'s last)]]</tw-passagedata><tw-passagedata pid="17" name="01.02" tags="" position="">## CENSUS 
+[[return-&gt;Table of Contents - 01]]</tw-passagedata><tw-passagedata pid="17" name="01.02" tags="" position="">## CENSUS 
 
 - Why do they need to know all this stuff? 
 - They're doing research. It guides their policy. They use it to help people. 
@@ -226,7 +238,7 @@ the following code will generate a list of all of the links in the scene.
 - They won't know. 
 - They know you exist. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="18" name="01.03" tags="" position="">## FAN 
+[[return-&gt;Table of Contents - 01]]</tw-passagedata><tw-passagedata pid="18" name="01.03" tags="" position="">## FAN 
 
 - Love him so much 
 - love him more than you 
@@ -288,7 +300,7 @@ the following code will generate a list of all of the links in the scene.
 - I won't be able to sleep 
 - what are we going to do? 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="19" name="01.04" tags="" position="">## TORTURE 
+[[return-&gt;Table of Contents - 01]]</tw-passagedata><tw-passagedata pid="19" name="01.04" tags="" position="">## TORTURE 
 
 - He's wearing me out. 
 - Take a break. 
@@ -301,7 +313,7 @@ the following code will generate a list of all of the links in the scene.
 - We're not paid extra for it to be true. 
 - I'll give him a cigarette while you have a cigarette and I'll tell him you'll be back. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="20" name="01.05" tags="" position="">## LAB 
+[[return-&gt;Table of Contents - 01]]</tw-passagedata><tw-passagedata pid="20" name="01.05" tags="" position="">## LAB 
 
 - So we hatch a batch of eggs in the lab 
 - and where do you get the 
@@ -329,7 +341,7 @@ the following code will generate a list of all of the links in the scene.
 - it doesn't hurt 
 - they don't show any 
 - ok so what's it for? it's going to show up something in their brains 
-- because what we've injected has a sugar in it that gets used by the nerve cells and the more sugar is taken up the more brain activity and the radioactivity acts as a tracer like in a scanner so you can measure that and see exactly where in the brain the sugar 
+- because what we've injected has a sugar in it that gets used by the never cells and the more sugar is taken up the more brain activity and the radioactivity acts as a tracer like in a scanner so you can measure that and see exactly where in the brain the sugar 
 - and the idea is it's different in the different 
 - what we hope to see you see is that it's different 
 - depending on what they've learned about the 
@@ -368,7 +380,7 @@ the following code will generate a list of all of the links in the scene.
 - yes you can see the actual changes 
 - see what the chick learnt about the bead. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="21" name="01.06" tags="" position="">## SLEEP 
+[[return-&gt;Table of Contents - 01]]</tw-passagedata><tw-passagedata pid="21" name="01.06" tags="" position="">## SLEEP 
 
 - I can't sleep. 
 - Hot milk. 
@@ -380,7 +392,7 @@ the following code will generate a list of all of the links in the scene.
 - No no, what, it's fine. You can't sleep? 
 - I think I'll get up and go on Facebook. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="22" name="01.07" tags="" position="">## REMOTE 
+[[return-&gt;Table of Contents - 01]]</tw-passagedata><tw-passagedata pid="22" name="01.07" tags="" position="">## REMOTE 
 
 - You don't seem to have a tv. 
 - There used to be one but it stopped working. The reception's no good anyhow. 
@@ -399,7 +411,7 @@ the following code will generate a list of all of the links in the scene.
 - I want you to be happy here. 
 - I am happy here. You'll find you can feel if it's raining. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="23" name="02.01" tags="" position="">## IRRATIONAL 
+[[return-&gt;Table of Contents - 01]]</tw-passagedata><tw-passagedata pid="23" name="02.01" tags="" position="">## IRRATIONAL 
 
 - Is an irrational number real? 
 - It's real to me. 
@@ -414,7 +426,7 @@ the following code will generate a list of all of the links in the scene.
 - Maybe he should have kept quiet about it if he knew they couldn't stand it. 
 - Is that what you do? 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="24" name="02.02" tags="" position="">## AFFAIR 
+[[return-&gt;Table of Contents - 02]]</tw-passagedata><tw-passagedata pid="24" name="02.02" tags="" position="">## AFFAIR 
 
 - I don't know if I should tell you. 
 - What? 
@@ -431,7 +443,7 @@ the following code will generate a list of all of the links in the scene.
 - And you're ok with it? 
 - Yes it's all ok. Thanks though. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="25" name="02.03" tags="" position="">## MOTHER 
+[[return-&gt;Table of Contents - 02]]</tw-passagedata><tw-passagedata pid="25" name="02.03" tags="" position="">## MOTHER 
 
 - While Mum's out 
 - what 
@@ -470,7 +482,7 @@ the following code will generate a list of all of the links in the scene.
 - I can tell her to leave you alone because I'm your mum. 
 - I don't think that works. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="26" name="02.04" tags="" position="">## FIRED 
+[[return-&gt;Table of Contents - 02]]</tw-passagedata><tw-passagedata pid="26" name="02.04" tags="" position="">## FIRED 
 
 - You shouldn't fire people by email. 
 - You can't come bursting in here and shouting. 
@@ -482,7 +494,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - why don't you speak to my p.a. and make an appointment 
 - just say it, you're fired, just say it 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="27" name="02.05" tags="" position="">## MESSAGE 
+[[return-&gt;Table of Contents - 02]]</tw-passagedata><tw-passagedata pid="27" name="02.05" tags="" position="">## MESSAGE 
 
 - It's a message 
 - killing people 
@@ -500,7 +512,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Because you're scared? 
 - I don't think that message is what I want to say. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="28" name="02.06" tags="" position="">## GRASS 
+[[return-&gt;Table of Contents - 02]]</tw-passagedata><tw-passagedata pid="28" name="02.06" tags="" position="">## GRASS 
 
 - What did you do that for? 
 - I thought 
@@ -542,7 +554,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - You're making things up again. 
 - No I'm not. That's what's going to happen. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="29" name="02.07" tags="" position="">## TERMINAL 
+[[return-&gt;Table of Contents - 02]]</tw-passagedata><tw-passagedata pid="29" name="02.07" tags="" position="">## TERMINAL 
 
 - Doctor, one thing before I go. Can you tell me how long I've got? 
 - There's not an exact answer to that. 
@@ -550,7 +562,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Well let me say ten percent of people with this condition are still alive after three years. 
 - That's helpful, thank you. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="30" name="03.01" tags="" position="">## SCHIZOPHRENIC 
+[[return-&gt;Table of Contents - 02]]</tw-passagedata><tw-passagedata pid="30" name="03.01" tags="" position="">## SCHIZOPHRENIC 
 
 - How do you know I'm evil? 
 - I've been told it. 
@@ -569,7 +581,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - You do know you're ill. 
 - I've been told that. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="31" name="03.02" tags="" position="">## SPIES 
+[[return-&gt;Table of Contents - 03]]</tw-passagedata><tw-passagedata pid="31" name="03.02" tags="" position="">## SPIES 
 
 - So we went to war on a completely 
 - yes but how were they to know 
@@ -590,7 +602,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - And it turns out I was right, didn't it. 
 - Do you think you've just won an argument? 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="32" name="03.03" tags="" position="">## DREAM 
+[[return-&gt;Table of Contents - 03]]</tw-passagedata><tw-passagedata pid="32" name="03.03" tags="" position="">## DREAM 
 
 - I had this dream last night, I was in a garden and there was blackberries, big bushes of brambles, I was picking them, and a butterfly flew across and I could see this orange-and-black buttterfly really clearly on a yellow rose, but then the whole thing was a dance because I was at the ballet. And I looked all those things up on a website about dreams, blackberry, butterfly, ballet, and every single one means infidelity. So now I know he's cheating. 
 - So you don't feel you have to be faithful to him any more? 
@@ -604,7 +616,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - So either way. 
 - Either way. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="33" name="03.04" tags="" position="">## RECLUSE 
+[[return-&gt;Table of Contents - 03]]</tw-passagedata><tw-passagedata pid="33" name="03.04" tags="" position="">## RECLUSE 
 
   //Two inside, one outside the door who can be heard.// 
 - Don't answer 
@@ -666,7 +678,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - so you don't feel as good as you 
 - no no I don't I feel
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="34" name="03.05" tags="" position="">## GOD'S VOICE 
+[[return-&gt;Table of Contents - 03]]</tw-passagedata><tw-passagedata pid="34" name="03.05" tags="" position="">## GOD'S VOICE 
 
 - God told you to do it? 
 - He did, yes. 
@@ -711,12 +723,12 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - In your toes? 
 - Yes in my toes, will you stop now?
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="35" name="03.06" tags="" position="">## THE CHILD WHO DIDN'T KNOW FEAR 
+[[return-&gt;Table of Contents - 03]]</tw-passagedata><tw-passagedata pid="35" name="03.06" tags="" position="">## THE CHILD WHO DIDN'T KNOW FEAR 
 
   //One person tells a story to another.// 
 - Once upon a time there was a child who didn't know what fear was and he wanted to find out. So his friends said, Cold shiver down your back, legs go funny, sometimes your hands no not your hands yes your hands tingle, it's more in your head, it's in your stomach, your belly you shit yourself, you can't breathe, your skin your skin creeps, it's a shiver a shudder do you really not know what it is? And the child said, I don't know what you mean. So they took him to a big dark empty house everyone said was haunted. They said, No one's ever been able to stay here till morning, you won't stay till midnight, you won't last an hour, and the child said, Why, what's going to happen? And they said, You'll know what we mean about being frightened. And the child said, Good, that's what I want to know. So in the morning his friends came back and there was the child sitting in the dusty room. And they said, You're still here? what happened? And the child said, There were things walking about, dead things, some of them didn't have heads and a monster with glowing - and his friends said, Didn't you run away? and the child said, There were weird noises like screams and like music but not music, and his friends said, What did you feel? and the child said, It came right up to me and put out its hand, and his friends said, Didn't your hair your stomach the back of your neck your legs weren't you frightened? And the child said, No, it's no good, I didn't feel anything, I still don't know what fear is. And on the way home he met a lion and the lion ate him. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="36" name="03.07" tags="" position="">## STAR 
+[[return-&gt;Table of Contents - 03]]</tw-passagedata><tw-passagedata pid="36" name="03.07" tags="" position="">## STAR 
 
 - It takes the light two point eight million years to get here. 
 - So we're looking at two point eight million years ago. 
@@ -725,7 +737,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - It might not even be people by then. The sun's only eight minutes. 
 - In the morning let's wait eight minutes and see if it's there now. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="37" name="04.01" tags="" position="">## WEDDING VIDEO 
+[[return-&gt;Table of Contents - 03]]</tw-passagedata><tw-passagedata pid="37" name="04.01" tags="" position="">## WEDDING VIDEO 
 
   //Several people.// 
 - This is the bit 
@@ -770,7 +782,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - and someone was sick 
 - oh look it's the speevches now listen to Dad's speech it's so 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="38" name="04.02" tags="" position="">## SAVANT 
+[[return-&gt;Table of Contents - 04]]</tw-passagedata><tw-passagedata pid="38" name="04.02" tags="" position="">## SAVANT 
 
 - What did you have for lunch on October the third 1998? 
 - Chicken soup and a salad. I was at home. I had the chicken soup in a blue bowl. The salad had tomatoes, lettuce and chicory but no onion because I didn't want my breath to smell of onion when I went to the movies with my brother in the afternoon. The movie began at 2.15. 
@@ -788,7 +800,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Rain in the morning but it cleared up. Rain in the evening. Rain the next morning. 
 - June the sixth 20::04. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="39" name="04.03" tags="" position="">## EX 
+[[return-&gt;Table of Contents - 04]]</tw-passagedata><tw-passagedata pid="39" name="04.03" tags="" position="">## EX 
 
 - I'm glad we've done it, just to see 
 - so am I 
@@ -837,7 +849,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Did we? 
 - Sometimes. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="40" name="04.04" tags="" position="">## MEMORY HOUSE 
+[[return-&gt;Table of Contents - 04]]</tw-passagedata><tw-passagedata pid="40" name="04.04" tags="" position="">## MEMORY HOUSE 
 
 - to improve my mind 
 - no but you've got a good 
@@ -990,7 +1002,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - wait a minute I'll find out 
 - find out what to do next. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="41" name="04.05" tags="" position="">## DINNER 
+[[return-&gt;Table of Contents - 04]]</tw-passagedata><tw-passagedata pid="41" name="04.05" tags="" position="">## DINNER 
 
 - I did tell you 
 - you didn't 
@@ -1001,7 +1013,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - yes you did 
 - I'm sorry. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="42" name="04.06" tags="" position="">## PIANO 
+[[return-&gt;Table of Contents - 04]]</tw-passagedata><tw-passagedata pid="42" name="04.06" tags="" position="">## PIANO 
 
   //Three people.// 
 - This is Jennifer 
@@ -1014,7 +1026,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - This is Jennifer. 
 - Hello, Jennifer. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="43" name="04.07" tags="" position="">## FLASHBACK 
+[[return-&gt;Table of Contents - 04]]</tw-passagedata><tw-passagedata pid="43" name="04.07" tags="" position="">## FLASHBACK 
 
 - Breathe 
 - ah ah ah 
@@ -1029,7 +1041,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - They say time, you might be able to forget, even if it's a long time. 
 - Once it's in there. Once you know that stuff. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="44" name="05.01" tags="" position="">## LINGUIST 
+[[return-&gt;Table of Contents - 04]]</tw-passagedata><tw-passagedata pid="44" name="05.01" tags="" position="">## LINGUIST 
 
 - How many languages do you know? 
 - To speak fluently 
@@ -1047,7 +1059,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Or in fact Swahili. 
 - I can't help feeling it actually is a table. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="45" name="05.02" tags="" position="">## MATHS 
+[[return-&gt;Table of Contents - 05]]</tw-passagedata><tw-passagedata pid="45" name="05.02" tags="" position="">## MATHS 
 
 - I don't want to spend an evening with them again. 
 - You like them. You like her. 
@@ -1066,14 +1078,14 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - All right, we'll go and see them. 
 - She fancies you. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="46" name="05.03" tags="" position="">## SEX 
+[[return-&gt;Table of Contents - 05]]</tw-passagedata><tw-passagedata pid="46" name="05.03" tags="" position="">## SEX 
 
 - What sex evolved to do is get information from two sets of genes so you get offspring that's not identifcal to you. Otherwise you just keep getting the same thing over and over again like hydra or starfish. So sex essentially is information. 
 - You don't think that while we're doing it do you? 
 - It doesn't hurt to know it. Information and also love. 
 - If you're lucky. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="47" name="05.04" tags="" position="">## GOD 
+[[return-&gt;Table of Contents - 05]]</tw-passagedata><tw-passagedata pid="47" name="05.04" tags="" position="">## GOD 
 
 - God gives your life meaning. You've said that. 
 - Yes, so? 
@@ -1088,7 +1100,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - But I don't mind not meaning anything, does that make me God? 
 - It makes you really annoying. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="48" name="05.05" tags="" position="">## RASH 
+[[return-&gt;Table of Contents - 05]]</tw-passagedata><tw-passagedata pid="48" name="05.05" tags="" position="">## RASH 
 
 - It's just a rash. 
 - But why, why a rash? 
@@ -1098,7 +1110,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Or he's trying not to tell us something. 
 - Did you get the new cream? 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="49" name="05.06" tags="" position="">## CHILDREN 
+[[return-&gt;Table of Contents - 05]]</tw-passagedata><tw-passagedata pid="49" name="05.06" tags="" position="">## CHILDREN 
 
 - You can't have children? 
 - No. 
@@ -1113,7 +1125,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - and she's got a baby now hasn't she, she and the Spaniard have got a bambino. 
 - So it makes a difference does it? 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="50" name="05.07" tags="" position="">## SHRINK 
+[[return-&gt;Table of Contents - 05]]</tw-passagedata><tw-passagedata pid="50" name="05.07" tags="" position="">## SHRINK 
 
 - It used to just be pain 
 - the memories of what happened to you when you were a child and 
@@ -1140,7 +1152,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - You spoil it. You completely spoil everything. You always do. 
 - That must be painful for you. You can take it to your analyst and have it turned into meaning.
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="51" name="06.01" tags="" position="">## THE CHILD WHO DIDN'T KNOW SORRY 
+[[return-&gt;Table of Contents - 05]]</tw-passagedata><tw-passagedata pid="51" name="06.01" tags="" position="">## THE CHILD WHO DIDN'T KNOW SORRY 
 
 - You have to say you're sorry. 
 - I'm not sorry. 
@@ -1148,7 +1160,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - I don't feel sorry. 
 - You have to say it. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="52" name="06.02" tags="" position="">## CLIMATE 
+[[return-&gt;Table of Contents - 06]]</tw-passagedata><tw-passagedata pid="52" name="06.02" tags="" position="">## CLIMATE 
 
 - I'm frightened. 
 - Just walk instead of driving and don't take so many hot baths. 
@@ -1162,7 +1174,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - I don't know how to. 
 - I don't know how to. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="53" name="06.03" tags="" position="">## CENSOR 
+[[return-&gt;Table of Contents - 06]]</tw-passagedata><tw-passagedata pid="53" name="06.03" tags="" position="">## CENSOR 
 
 - Page forty-two. 
 - Page forty-two. 
@@ -1177,7 +1189,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - About thirty. 
 - Let's hear the next one then. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="54" name="06.04" tags="" position="">## WIFE 
+[[return-&gt;Table of Contents - 06]]</tw-passagedata><tw-passagedata pid="54" name="06.04" tags="" position="">## WIFE 
 
 - But I am your wife. 
 - You look like my wife. 
@@ -1196,7 +1208,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - But I am... Let me touch you. If you'd see what it feels like to touch me. If we made love you'd know it was me because there are things we like to do and no one else would know that, if I was a stranger pretending to be her I wouldn't know those things, you'd feel you were back with me, you would I know; please. 
 - You disgust me. You frighten me. What are you? 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="55" name="06.05" tags="" position="">## DECISION 
+[[return-&gt;Table of Contents - 06]]</tw-passagedata><tw-passagedata pid="55" name="06.05" tags="" position="">## DECISION 
 
 - I've written down all the reasons to leave the country and all the reasons to stay. 
 - So how does that work out? 
@@ -1207,7 +1219,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Based on what? The facts don't add up. 
 - I'd rather you stayed here. Does that help?
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="56" name="06.06" tags="" position="">## THE CHILD WHO DIDN'T KNOW PAIN 
+[[return-&gt;Table of Contents - 06]]</tw-passagedata><tw-passagedata pid="56" name="06.06" tags="" position="">## THE CHILD WHO DIDN'T KNOW PAIN 
 
 - But what is it? 
 - Pain is pain, it's just 
@@ -1263,7 +1275,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - So there you are, that's what it's like. 
 - Can I pinch you again? 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="57" name="06.07" tags="" position="">## EARTHQUAKE 
+[[return-&gt;Table of Contents - 06]]</tw-passagedata><tw-passagedata pid="57" name="06.07" tags="" position="">## EARTHQUAKE 
 
 - Have you seen the earthquake? There's this building my god you think things are solid but they just break. 
 - Yes I've seen it. 
@@ -1278,7 +1290,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - You're not upset though. 
 - That black wave with the cars in it was awesome. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="58" name="07.01" tags="" position="">## CHINESE POETRY 
+[[return-&gt;Table of Contents - 06]]</tw-passagedata><tw-passagedata pid="58" name="07.01" tags="" position="">## CHINESE POETRY 
 
 'The girl waits at the door of her house on the mountain.' 
 - What it literally says is 'mountain girl door'. 
@@ -1289,7 +1301,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - The girl's as big as a mountain and can't get through the door. 
 - What's the next line? 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="59" name="07.02" tags="" position="">## MANIC 
+[[return-&gt;Table of Contents - 07]]</tw-passagedata><tw-passagedata pid="59" name="07.02" tags="" position="">## MANIC 
 
 - My god, look at that flower, thank you so much, have you ever seen such a red, red is blood and bullfights and seeing red is anger but red is joyful, red is celebration, 
 - yes, I like it 
@@ -1301,7 +1313,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - yes 
 - I think a green vase because of the primary colours and if they were blue I'd put them in an orange vase and if they were yellow I'd put them in a purple vase, yellow and purple is Easter of course so that's why crocuses, and red and green is Christmas which isn't right now of course it's the wrong time of year, I might have to sort that out when I've got a minute. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="60" name="07.03" tags="" position="">## GRIEF 
+[[return-&gt;Table of Contents - 07]]</tw-passagedata><tw-passagedata pid="60" name="07.03" tags="" position="">## GRIEF 
 
 - Are you sleeping? 
 - I wake up early but that's all right in the summer. 
@@ -1312,7 +1324,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - He must have meant everything to you. 
 - Maybe. We'll see. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="61" name="07.04" tags="" position="">## FATE 
+[[return-&gt;Table of Contents - 07]]</tw-passagedata><tw-passagedata pid="61" name="07.04" tags="" position="">## FATE 
 
 - I'm just saying you've got no choice 
 - I have 
@@ -1353,7 +1365,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - yes of course 
 - but I feel like I'm in the front seat of a roller-coaster 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="62" name="07.05" tags="" position="">## STONE 
+[[return-&gt;Table of Contents - 07]]</tw-passagedata><tw-passagedata pid="62" name="07.05" tags="" position="">## STONE 
 
 - He's got a special stone. 
 - Is that what he's holding? 
@@ -1381,7 +1393,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - have a stone 
   //Throwing them.// 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="63" name="07.06" tags="" position="">## VIRTUAL 
+[[return-&gt;Table of Contents - 07]]</tw-passagedata><tw-passagedata pid="63" name="07.06" tags="" position="">## VIRTUAL 
 
 - I don't care what you say 
 - no but listen 
@@ -1451,7 +1463,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - no but listen 
 - I've never felt like this about anyone. 
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="64" name="07.07" tags="" position="">## SMALL THING 
+[[return-&gt;Table of Contents - 07]]</tw-passagedata><tw-passagedata pid="64" name="07.07" tags="" position="">## SMALL THING 
 
 - What are you looking at? 
 - A snail. 
@@ -1460,7 +1472,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - And? 
 - I'm just looking at it.
 
-(link: "return")[(goto: (history: )'s last)]</tw-passagedata><tw-passagedata pid="65" name="08.01" tags="" position="">## FACTS (LAST SCENE) 
+[[return-&gt;Table of Contents - 07]]</tw-passagedata><tw-passagedata pid="65" name="08.01" tags="" position="">## FACTS (LAST SCENE) 
 
 - Who was the president of Coca-Cola from nineteen twenty-five to seven? 
 - HB Jones 
@@ -1552,71 +1564,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 
   //Someone sneezes.//</tw-passagedata><tw-passagedata pid="97" name="10.19" tags="" position="">## SILENCE 
 
-  //This can happen more than once, for different lengths of time.//</tw-passagedata><tw-passagedata pid="98" name="Sections" tags="startup" position="">{
-(set: $SectionOne to(a:"01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07"))
-(set: $SectionTwo to(a:"02.01", "02.02", "02.03", "02.04", "02.05", "02.06", "02.07"))
-(set: $SectionThree to(a:"03.01", "03.02", "03.03", "03.04", "03.05", "03.06", "03.07"))
-(set: $SectionFour to(a:"04.01", "04.02", "04.03", "04.04", "04.05", "04.06", "04.07"))
-(set: $SectionFive to(a:"05.01", "05.02", "05.03", "05.04", "05.05", "05.06", "05.07"))
-(set: $SectionSix to(a:"06.01", "06.02", "06.03", "06.04", "06.05", "06.06", "06.07"))
-(set: $SectionSeven to(a:"07.01", "07.02", "07.03", "07.04", "07.05", "07.06", "07.07"))
-(set: $SectionEight to(a:"08.01"))
-(set: $SectionTen to(a:"10.01", "10.02", "10.03", "10.04", "10.05", "10.06", "10.07", "10.08", "10.09", "10.10", "10.11", "10.12", "10.13", "10.14", "10.15", "10.16", "10.17", "10.18", "10.19"))
-(set: $SectionNine to(a:"09.01", "09.02", "09.03", "09.04", "09.05", "09.06", "09.07", "09.08", "09.09", "09.10", "09.11"))
-(set: $SceneTitles to(dm:
-"01.01", "SECRET",
-"01.02", "CENSUS",
-"01.03", "FAN",
-"01.04", "TORTURE",
-"01.05", "LAB",
-"01.06", "SLEEP",
-"01.07", "REMOTE",
-"02.01", "IRRATIONAL",
-"02.02", "AFFAIR",
-"02.03", "MOTHER",
-"02.04", "FIRED",
-"02.05", "MESSAGE",
-"02.06", "GRASS",
-"02.07", "TERMINAL",
-"03.01", "SCHIZOPHRENIC",
-"03.02", "SPIES",
-"03.03", "DREAM",
-"03.04", "RECLUSE",
-"03.05", "GOD'S VOICE",
-"03.06", "THE CHILD WHO DIDN'T KNOW FEAR",
-"03.07", "STAR",
-"04.01", "WEDDING VIDEO",
-"04.02", "SAVANT",
-"04.03", "EX",
-"04.04", "MEMORY HOUSE",
-"04.05", "DINNER",
-"04.06", "PIANO",
-"04.07", "FLASHBACK",
-"05.01", "LINGUIST",
-"05.02", "MATHS",
-"05.03", "SEX",
-"05.04", "GOD",
-"05.05", "RASH",
-"05.06", "CHILDREN",
-"05.07", "SHRINK",
-"06.01", "THE CHILD WHO DIDN'T KNOW SORRY",
-"06.02", "CLIMATE",
-"06.03", "CENSOR",
-"06.04", "WIFE",
-"06.05", "DECISION",
-"06.06", "THE CHILD DIDN'T KNOW PAIN",
-"06.07", "EARTHQUAKE",
-"07.01", "CHINESE POETRY",
-"07.02", "MANIC",
-"07.03", "GRIEF",
-"07.04", "FATE",
-"07.05", "STONE",
-"07.06", "VIRTUAL",
-"07.07", "SMALL THING",
-"08.01", "FACTS (LAST SCENE)",
-)
-)
-}</tw-passagedata></tw-storydata>
+  //This can happen more than once, for different lengths of time.//</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

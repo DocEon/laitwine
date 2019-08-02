@@ -1,15 +1,16 @@
 ::StoryTitle
 LOVE AND INFORMATION
+Caryl Churchill
 
 ::StoryCSS [stylesheet]
 body, tw-story {
 	background: black;
-	font-family: Consolas;
-	color: #D3D3D3;
-
+	font-family: Georgia;
+	color: silver;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
+	font-family: Consolas;
 	color: limegreen;
 }
 
@@ -19,6 +20,7 @@ tw-icon {
 }
 
 tw-link {
+	font-family: Consolas;
 	color: #FFFFFF;
 }
 
@@ -32,25 +34,22 @@ tw-passage {
 	opacity: 1;
 }
 
-::StoryIncludes [startup]
-sections.tw2
-
 ::TitlePage
 <h1>Love and Information</h1>
 <h4><i>by Caryl Churchill</i></h4>
 <h6><i>Twined by Ken Alba</i></h6>
 
-[[start->00.00]]
-
-::debug room
-[[Table of Contents - Sections]]
-(cycling-link: "Mew", "Miao", "Mrr", "Mlem")
-the following code will generate a list of all of the links in the scene.
-(for: each _scene, ...$SectionOne)[[[(print:(_scene of $SceneTitles))->_scene]]<br>]
-
-::notes
-
-So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ expressions on both sides.
+[[readme->00.00]] // [[start->Table of Contents - 01]]
+(set: $_1Scenes to(a:"01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07"))
+(set: $_2Scenes to(a:"02.01", "02.02", "02.03", "02.04", "02.05", "02.06", "02.07"))
+(set: $_3Scenes to(a:"03.01", "03.02", "03.03", "03.04", "03.05", "03.06", "03.07"))
+(set: $_4Scenes to(a:"04.01", "04.02", "04.03", "04.04", "04.05", "04.06", "04.07"))
+(set: $_5Scenes to(a:"05.01", "05.02", "05.03", "05.04", "05.05", "05.06", "05.07"))
+(set: $_6Scenes to(a:"06.01", "06.02", "06.03", "06.04", "06.05", "06.06", "06.07"))
+(set: $_7Scenes to(a:"07.01", "07.02", "07.03", "07.04", "07.05", "07.06", "07.07"))
+(set: $_8Scenes to(a:"08.01"))
+(set: $_randomScenes to(a:"10.01", "10.02", "10.03", "10.04", "10.05", "10.06", "10.07", "10.08", "10.09", "10.10", "10.11", "10.12", "10.13", "10.14", "10.15", "10.16", "10.17", "10.18", "10.19"))
+(set: $_depressionScenes to(a:"09.01", "09.02", "09.03", "09.04", "09.05", "09.06", "09.07", "09.08", "09.09", "09.10", "09.11"))
 
 ::Table of Contents - Sections
 <h2>Table of Contents: Sections</h2>
@@ -64,11 +63,22 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 [[Section 8->Table of Contents - 08]]
 [[Section 9->Table of Contents - 09]]
 
+::Section Arrays
 
+(set: $_1Scenes to(a:"01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07"))
+(set: $_2Scenes to(a:"02.01", "02.02", "02.03", "02.04", "02.05", "02.06", "02.07"))
+(set: $_3Scenes to(a:"03.01", "03.02", "03.03", "03.04", "03.05", "03.06", "03.07"))
+(set: $_4Scenes to(a:"04.01", "04.02", "04.03", "04.04", "04.05", "04.06", "04.07"))
+(set: $_5Scenes to(a:"05.01", "05.02", "05.03", "05.04", "05.05", "05.06", "05.07"))
+(set: $_6Scenes to(a:"06.01", "06.02", "06.03", "06.04", "06.05", "06.06", "06.07"))
+(set: $_7Scenes to(a:"07.01", "07.02", "07.03", "07.04", "07.05", "07.06", "07.07"))
+(set: $_8Scenes to(a:"08.01"))
+(set: $_randomScenes to(a:"10.01", "10.02", "10.03", "10.04", "10.05", "10.06", "10.07", "10.08", "10.09", "10.10", "10.11", "10.12", "10.13", "10.14", "10.15", "10.16", "10.17", "10.18", "10.19"))
+(set: $_depressionScenes to(a:"09.01", "09.02", "09.03", "09.04", "09.05", "09.06", "09.07", "09.08", "09.09", "09.10", "09.11"))
 
 ::Table of Contents - 01
 <h2>Section 1</h2>
-(if: (history:) contains all of $SectionOne)[[[next section->Table of Contents - 02]]]
+(if: (history:) contains "01.01" and contains "01.02" and contains "01.03" and contains "01.04" and contains "01.05" and contains "01.06" and contains "01.07")[[[next section->Table of Contents - 02]]]
 (unless: (history:) contains "01.01")[[[SECRET->01.01]]]
 (unless: (history:) contains "01.02")[[[CENSUS->01.02]]]
 (unless: (history:) contains "01.03")[[[FAN->01.03]]]
@@ -79,7 +89,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 
 ::Table of Contents - 02
 <h2>Section 2</h2>
-(if: (history:) contains all of $SectionTwo)[[[next section->Table of Contents - 03]]]
+(if: (history:) contains "02.01" and contains "02.02" and contains "02.03" and contains "02.04" and contains "02.05" and contains "02.06" and contains "02.07")[[[next section->Table of Contents - 03]]]
 (unless: (history:) contains "02.01")[[[IRRATIONAL->02.01]]]
 (unless: (history:) contains "02.02")[[[AFFAIR->02.02]]]
 (unless: (history:) contains "02.03")[[[MOTHER->02.03]]]
@@ -90,7 +100,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 
 ::Table of Contents - 03
 <h2>Section 3</h2>
-(if: (history:) contains all of $SectionThree)[[[next section->Table of Contents - 04]]]
+(if: (history:) contains "03.01" and contains "03.02" and contains "03.03" and contains "03.04" and contains "03.05" and contains "03.06")[[[next section->Table of Contents - 04]]]
 (unless: (history:) contains "03.01")[[[SCHIZOPHRENIC->03.01]]]
 (unless: (history:) contains "03.02")[[[SPIES->03.02]]]
 (unless: (history:) contains "03.03")[[[DREAM->03.03]]]
@@ -101,7 +111,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 
 ::Table of Contents - 04
 <h2>Section 4</h2>
-(if: (history:) contains all of $SectionFour)[[[next section->Table of Contents - 05]]]
+(if: (history:) contains "04.01" and contains "04.02" and contains "04.03" and contains "04.04" and contains "04.05" and contains "04.06" and contains "04.07")[[[next section->Table of Contents - 05]]]
 (unless: (history:) contains "04.01")[[[WEDDING VIDEO->04.01]]]
 (unless: (history:) contains "04.02")[[[SAVANT->04.02]]]
 (unless: (history:) contains "04.03")[[[EX->04.03]]]
@@ -112,7 +122,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 
 ::Table of Contents - 05
 <h2>Section 5</h2>
-(if: (history:) contains all of $SectionFive)[[[next section->Table of Contents - 06]]]
+(if: (history:) contains "05.01" and contains "05.02" and contains "05.03" and contains "05.04" and contains "05.05" and contains "05.06" and contains "05.07")[[[next section->Table of Contents - 06]]]
 (unless: (history:) contains "05.01")[[[LINGUIST->05.01]]]
 (unless: (history:) contains "05.02")[[[MATHS->05.02]]]
 (unless: (history:) contains "05.03")[[[SEX->05.03]]]
@@ -123,7 +133,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 
 ::Table of Contents - 06
 <h2>Section 6</h2>
-(if: (history:) contains all of $SectionSix)[[[next section->Table of Contents - 07]]]
+(if: (history:) contains "06.01" and contains "06.02" and contains "06.03" and contains "06.04" and contains "06.05" and contains "06.06" and contains "06.07")[[[next section->Table of Contents - 07]]]
 (unless: (history:) contains "06.01")[[[THE CHILD WHO DIDN'T KNOW SORRY->06.01]]]
 (unless: (history:) contains "06.02")[[[CLIMATE->06.02]]]
 (unless: (history:) contains "06.03")[[[CENSOR->06.03]]]
@@ -134,7 +144,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 
 ::Table of Contents - 07
 <h2>Section 7</h2>
-(if: (history:) contains all of $SectionSeven)[[[last section->Table of Contents - 08]]]
+(if: (history:) contains "07.01" and contains "07.02" and contains "07.03" and contains "07.04" and contains "07.05" and contains "07.06" and contains "07.07")[[[last section->Table of Contents - 08]]]
 (unless: (history:) contains "07.01")[[[CHINESE POETRY->07.01]]]
 (unless: (history:) contains "07.02")[[[MANIC->07.02]]]
 (unless: (history:) contains "07.03")[[[GRIEF->07.03]]]
@@ -192,7 +202,13 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - There are random scenes, see at the end, which can happen any time. (those aren't implemented yet)
 - The characters are different in every scene. The only possible exception to this are the random Depression scenes, which could be the same two people, or the same depressed person with different others. 
 
-[[next->Table of Contents - 01]]
+[[start->Table of Contents - 01]]
+::00.01
+## NOTE ON TXT 
+
+- Sections 1-7 are normal sections. 8 is the Final Scene. 9 is random. 
+
+[[return->Table of Contents - 00]]
 
 ::01.01
 ## SECRET 
@@ -250,8 +266,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - how could you 
 - I did. 
 
-(link: "TestReturn")[(goto: (history: )'s last)]
-[[return->((history: )'s last)]]
+[[return->Table of Contents - 01]]
 
 ::01.02
 ## CENSUS 
@@ -265,7 +280,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - They won't know. 
 - They know you exist. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 01]]
 
 ::01.03
 ## FAN 
@@ -330,7 +345,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - I won't be able to sleep 
 - what are we going to do? 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 01]]
 
 ::01.04
 ## TORTURE 
@@ -346,7 +361,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - We're not paid extra for it to be true. 
 - I'll give him a cigarette while you have a cigarette and I'll tell him you'll be back. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 01]]
 
 ::01.05
 ## LAB 
@@ -377,7 +392,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - it doesn't hurt 
 - they don't show any 
 - ok so what's it for? it's going to show up something in their brains 
-- because what we've injected has a sugar in it that gets used by the nerve cells and the more sugar is taken up the more brain activity and the radioactivity acts as a tracer like in a scanner so you can measure that and see exactly where in the brain the sugar 
+- because what we've injected has a sugar in it that gets used by the never cells and the more sugar is taken up the more brain activity and the radioactivity acts as a tracer like in a scanner so you can measure that and see exactly where in the brain the sugar 
 - and the idea is it's different in the different 
 - what we hope to see you see is that it's different 
 - depending on what they've learned about the 
@@ -416,7 +431,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - yes you can see the actual changes 
 - see what the chick learnt about the bead. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 01]]
 
 ::01.06
 ## SLEEP 
@@ -431,7 +446,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - No no, what, it's fine. You can't sleep? 
 - I think I'll get up and go on Facebook. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 01]]
 
 ::01.07
 ## REMOTE 
@@ -453,7 +468,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - I want you to be happy here. 
 - I am happy here. You'll find you can feel if it's raining. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 01]]
 
 ::02.01
 ## IRRATIONAL 
@@ -471,7 +486,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - Maybe he should have kept quiet about it if he knew they couldn't stand it. 
 - Is that what you do? 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 02]]
 
 ::02.02
 ## AFFAIR 
@@ -491,7 +506,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - And you're ok with it? 
 - Yes it's all ok. Thanks though. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 02]]
 
 ::02.03
 ## MOTHER 
@@ -533,7 +548,7 @@ So what I'm thinking I need to do is use a (link-goto: "Text", "SceneID") w/ exp
 - I can tell her to leave you alone because I'm your mum. 
 - I don't think that works. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 02]]
 
 ::02.04
 ## FIRED 
@@ -548,7 +563,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - why don't you speak to my p.a. and make an appointment 
 - just say it, you're fired, just say it 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 02]]
 
 ::02.05
 ## MESSAGE 
@@ -569,7 +584,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Because you're scared? 
 - I don't think that message is what I want to say. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 02]]
 
 ::02.06
 ## GRASS 
@@ -614,7 +629,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - You're making things up again. 
 - No I'm not. That's what's going to happen. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 02]]
 
 ::02.07
 ## TERMINAL 
@@ -625,7 +640,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Well let me say ten percent of people with this condition are still alive after three years. 
 - That's helpful, thank you. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 02]]
 
 ::03.01
 ## SCHIZOPHRENIC 
@@ -647,7 +662,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - You do know you're ill. 
 - I've been told that. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 03]]
 
 ::03.02
 ## SPIES 
@@ -671,7 +686,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - And it turns out I was right, didn't it. 
 - Do you think you've just won an argument? 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 03]]
 
 ::03.03
 ## DREAM 
@@ -688,7 +703,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - So either way. 
 - Either way. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 03]]
 
 ::03.04
 ## RECLUSE 
@@ -753,7 +768,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - so you don't feel as good as you 
 - no no I don't I feel
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 03]]
 
 ::03.05
 ## GOD'S VOICE 
@@ -801,7 +816,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - In your toes? 
 - Yes in my toes, will you stop now?
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 03]]
 
 ::03.06
 ## THE CHILD WHO DIDN'T KNOW FEAR 
@@ -809,7 +824,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
   //One person tells a story to another.// 
 - Once upon a time there was a child who didn't know what fear was and he wanted to find out. So his friends said, Cold shiver down your back, legs go funny, sometimes your hands no not your hands yes your hands tingle, it's more in your head, it's in your stomach, your belly you shit yourself, you can't breathe, your skin your skin creeps, it's a shiver a shudder do you really not know what it is? And the child said, I don't know what you mean. So they took him to a big dark empty house everyone said was haunted. They said, No one's ever been able to stay here till morning, you won't stay till midnight, you won't last an hour, and the child said, Why, what's going to happen? And they said, You'll know what we mean about being frightened. And the child said, Good, that's what I want to know. So in the morning his friends came back and there was the child sitting in the dusty room. And they said, You're still here? what happened? And the child said, There were things walking about, dead things, some of them didn't have heads and a monster with glowing - and his friends said, Didn't you run away? and the child said, There were weird noises like screams and like music but not music, and his friends said, What did you feel? and the child said, It came right up to me and put out its hand, and his friends said, Didn't your hair your stomach the back of your neck your legs weren't you frightened? And the child said, No, it's no good, I didn't feel anything, I still don't know what fear is. And on the way home he met a lion and the lion ate him. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 03]]
 
 ::03.07
 ## STAR 
@@ -821,7 +836,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - It might not even be people by then. The sun's only eight minutes. 
 - In the morning let's wait eight minutes and see if it's there now. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 03]]
 
 ::04.01
 ## WEDDING VIDEO 
@@ -869,7 +884,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - and someone was sick 
 - oh look it's the speevches now listen to Dad's speech it's so 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 04]]
 
 ::04.02
 ## SAVANT 
@@ -890,7 +905,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Rain in the morning but it cleared up. Rain in the evening. Rain the next morning. 
 - June the sixth 20::04. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 04]]
 
 ::04.03
 ## EX 
@@ -942,7 +957,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Did we? 
 - Sometimes. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 04]]
 
 ::04.04
 ## MEMORY HOUSE 
@@ -1098,7 +1113,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - wait a minute I'll find out 
 - find out what to do next. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 04]]
 
 ::04.05
 ## DINNER 
@@ -1112,7 +1127,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - yes you did 
 - I'm sorry. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 04]]
 
 ::04.06
 ## PIANO 
@@ -1128,7 +1143,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - This is Jennifer. 
 - Hello, Jennifer. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 04]]
 
 ::04.07
 ## FLASHBACK 
@@ -1146,7 +1161,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - They say time, you might be able to forget, even if it's a long time. 
 - Once it's in there. Once you know that stuff. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 04]]
 
 ::05.01
 ## LINGUIST 
@@ -1167,7 +1182,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Or in fact Swahili. 
 - I can't help feeling it actually is a table. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 05]]
 
 ::05.02
 ## MATHS 
@@ -1189,7 +1204,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - All right, we'll go and see them. 
 - She fancies you. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 05]]
 
 ::05.03
 ## SEX 
@@ -1199,7 +1214,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - It doesn't hurt to know it. Information and also love. 
 - If you're lucky. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 05]]
 
 ::05.04
 ## GOD 
@@ -1217,7 +1232,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - But I don't mind not meaning anything, does that make me God? 
 - It makes you really annoying. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 05]]
 
 ::05.05
 ## RASH 
@@ -1230,7 +1245,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Or he's trying not to tell us something. 
 - Did you get the new cream? 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 05]]
 
 ::05.06
 ## CHILDREN 
@@ -1248,7 +1263,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - and she's got a baby now hasn't she, she and the Spaniard have got a bambino. 
 - So it makes a difference does it? 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 05]]
 
 ::05.07
 ## SHRINK 
@@ -1278,7 +1293,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - You spoil it. You completely spoil everything. You always do. 
 - That must be painful for you. You can take it to your analyst and have it turned into meaning.
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 05]]
 
 ::06.01
 ## THE CHILD WHO DIDN'T KNOW SORRY 
@@ -1289,7 +1304,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - I don't feel sorry. 
 - You have to say it. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 06]]
 
 ::06.02
 ## CLIMATE 
@@ -1306,7 +1321,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - I don't know how to. 
 - I don't know how to. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 06]]
 
 ::06.03
 ## CENSOR 
@@ -1324,7 +1339,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - About thirty. 
 - Let's hear the next one then. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 06]]
 
 ::06.04
 ## WIFE 
@@ -1346,7 +1361,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - But I am... Let me touch you. If you'd see what it feels like to touch me. If we made love you'd know it was me because there are things we like to do and no one else would know that, if I was a stranger pretending to be her I wouldn't know those things, you'd feel you were back with me, you would I know; please. 
 - You disgust me. You frighten me. What are you? 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 06]]
 
 ::06.05
 ## DECISION 
@@ -1360,7 +1375,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - Based on what? The facts don't add up. 
 - I'd rather you stayed here. Does that help?
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 06]]
 
 ::06.06
 ## THE CHILD WHO DIDN'T KNOW PAIN 
@@ -1419,7 +1434,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - So there you are, that's what it's like. 
 - Can I pinch you again? 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 06]]
 
 ::06.07
 ## EARTHQUAKE 
@@ -1437,7 +1452,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - You're not upset though. 
 - That black wave with the cars in it was awesome. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 06]]
 
 ::07.01
 ## CHINESE POETRY 
@@ -1451,7 +1466,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - The girl's as big as a mountain and can't get through the door. 
 - What's the next line? 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 07]]
 
 ::07.02
 ## MANIC 
@@ -1466,7 +1481,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - yes 
 - I think a green vase because of the primary colours and if they were blue I'd put them in an orange vase and if they were yellow I'd put them in a purple vase, yellow and purple is Easter of course so that's why crocuses, and red and green is Christmas which isn't right now of course it's the wrong time of year, I might have to sort that out when I've got a minute. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 07]]
 
 ::07.03
 ## GRIEF 
@@ -1480,7 +1495,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - He must have meant everything to you. 
 - Maybe. We'll see. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 07]]
 
 ::07.04
 ## FATE 
@@ -1524,7 +1539,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - yes of course 
 - but I feel like I'm in the front seat of a roller-coaster 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 07]]
 
 ::07.05
 ## STONE 
@@ -1555,7 +1570,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - have a stone 
   //Throwing them.// 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 07]]
 
 ::07.06
 ## VIRTUAL 
@@ -1628,7 +1643,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - no but listen 
 - I've never felt like this about anyone. 
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 07]]
 
 ::07.07
 ## SMALL THING 
@@ -1640,7 +1655,7 @@ format- just say it to my face, you're fired, just say it, you're a coward you c
 - And? 
 - I'm just looking at it.
 
-(link: "return")[(goto: (history: )'s last)]
+[[return->Table of Contents - 07]]
 
 ::08.01
 ## FACTS (LAST SCENE) 
