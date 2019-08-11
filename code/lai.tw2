@@ -57,19 +57,8 @@ $(document.head).find('#style-ui-bar').remove();
 <<set $Depression to Array.from($SectionNine)>>
 <<set $ScenesOne to Array.from($SectionOne)>>
 ::debug room [nobr]
-
 [[Table of Contents - Sections]]<br>
-<<set _depression to $Depression>>
-<<if _depression.length gt 0>>
-[[_depression.pluck()]]<br>
-<</if>>
 [[fadein]]
-
-::fadein
-Test
-<<timedcontinue 2.5s>>
-And also this...
-<<timedcontinue 2.5s>>
 
 ::notes
 TODO: 
