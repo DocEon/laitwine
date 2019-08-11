@@ -338,7 +338,7 @@ And also this...
 &lt;&lt;if $ScenesOne.length is 0&gt;&gt;[[next section-&gt;Table of Contents - 02]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;for _i to 0 ; _i lt $ScenesOne.length; _i++&gt;&gt;
 	&lt;&lt;set _scene to _ScenesOne.pluck()&gt;&gt;
-	&lt;&lt;set _maybeDepression to random(2)&gt;&gt;
+	&lt;&lt;set _maybeDepression to random(6)&gt;&gt;
 	&lt;&lt;if _maybeDepression is 0 and $SectionNine.length gt 0&gt;&gt;
 		&lt;&lt;set _randomDepression to $SectionNine.pluck()&gt;&gt;
 		[[$SceneTitles[_scene]-&gt;_randomDepression]]&lt;br&gt;

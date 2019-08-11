@@ -98,7 +98,7 @@ TODO:
 <<if $ScenesOne.length is 0>>[[next section->Table of Contents - 02]]<br><</if>>
 <<for _i to 0 ; _i lt $ScenesOne.length; _i++>>
 	<<set _scene to _ScenesOne.pluck()>>
-	<<set _maybeDepression to random(2)>>
+	<<set _maybeDepression to random(6)>>
 	<<if _maybeDepression is 0 and $SectionNine.length gt 0>>
 		<<set _randomDepression to $SectionNine.pluck()>>
 		[[$SceneTitles[_scene]->_randomDepression]]<br>
