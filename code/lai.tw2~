@@ -55,18 +55,17 @@ $(document.head).find('#style-ui-bar').remove();
 
 [[start->00.00]]
 
-
 ::debug room [nobr]
 [[Table of Contents - Sections]]<br>
 [[fadein]]
 
 ::notes
 TODO: 
+- Implement a formula to determine how often random depression should happen.
+- Set all table of contents to loop-format rather than conditional format.
 - Figure out how to make random depression links first display the link they said they were leading to, then glitch, then display the depression instead.
 	- First phase there is going to figuring out timed media - fade in the real one, fade out immediately, and then fade in the depression link instead.
-- Print out full history of traversal at the end. Probably some for loop that goes from 0 to length(State.history)?
-- Figure out how to implement the other Random scenes / the media for them.
-- Find and include background music.
+- Figure out how to implement the other media.
 
 ::Table of Contents - Sections
 <h2>Table of Contents: Sections</h2>\
@@ -78,6 +77,7 @@ TODO:
 [[Section 6->Table of Contents - 06]]
 [[Section 7->Table of Contents - 07]]
 [[Section 8->Table of Contents - 08]]
+[[Section 9->Table of Contents - 09]]
 
 
 ::Table of Contents - 01 [nobr]
@@ -88,11 +88,10 @@ TODO:
 <<if _currentSection.length is 0>>[[next section->Table of Contents - 02]]<br><</if>>
 <<for _i to 0 ; _i lt _currentSection.length; _i++>>
 	<<set _scene to _currentScenes.pluck()>>
-	<<set _maybeDepression to random(1, ((7-_currentSectionNum)*7 + _currentSection.length))>>
+	<<set _maybeDepression to random(1, ((8-_currentSectionNum)*7 + _currentSection.length))>>
 	<<if _maybeDepression lt $ScenesNine.length>>
-		<<set _tempDepressionArray to Array.from($ScenesNine)>>
-		<<set _randomDepression to _tempDepressionArray.pluck()>>
-		[[$SceneTitles[_scene]->_randomDepression]]<br>
+		<<set _randomDepression to $ScenesNine.pluck()>>
+		DEBUG-DEPRESSION-[[$SceneTitles[_scene]->_randomDepression]]<br>
 	<<else>>
 		[[$SceneTitles[_scene]->_scene]]<br>
 	<</if>>
@@ -106,11 +105,10 @@ TODO:
 <<if _currentSection.length is 0>>[[next section->Table of Contents - 03]]<br><</if>>
 <<for _i to 0 ; _i lt _currentSection.length; _i++>>
 	<<set _scene to _currentScenes.pluck()>>
-	<<set _maybeDepression to random(1, ((7-_currentSectionNum)*7 + _currentSection.length))>>
+	<<set _maybeDepression to random(1, ((8-_currentSectionNum)*7 + _currentSection.length))>>
 	<<if _maybeDepression lt $ScenesNine.length>>
-		<<set _tempDepressionArray to Array.from($ScenesNine)>>
-		<<set _randomDepression to _tempDepressionArray.pluck()>>
-		[[$SceneTitles[_scene]->_randomDepression]]<br>
+		<<set _randomDepression to $ScenesNine.pluck()>>
+		DEBUG-DEPRESSION-[[$SceneTitles[_scene]->_randomDepression]]<br>
 	<<else>>
 		[[$SceneTitles[_scene]->_scene]]<br>
 	<</if>>
@@ -124,11 +122,10 @@ TODO:
 <<if _currentSection.length is 0>>[[next section->Table of Contents - 04]]<br><</if>>
 <<for _i to 0 ; _i lt _currentSection.length; _i++>>
 	<<set _scene to _currentScenes.pluck()>>
-	<<set _maybeDepression to random(1, ((7-_currentSectionNum)*7 + _currentSection.length))>>
+	<<set _maybeDepression to random(1, ((8-_currentSectionNum)*7 + _currentSection.length))>>
 	<<if _maybeDepression lt $ScenesNine.length>>
-		<<set _tempDepressionArray to Array.from($ScenesNine)>>
-		<<set _randomDepression to _tempDepressionArray.pluck()>>
-		[[$SceneTitles[_scene]->_randomDepression]]<br>
+		<<set _randomDepression to $ScenesNine.pluck()>>
+		DEBUG-DEPRESSION-[[$SceneTitles[_scene]->_randomDepression]]<br>
 	<<else>>
 		[[$SceneTitles[_scene]->_scene]]<br>
 	<</if>>
@@ -142,11 +139,10 @@ TODO:
 <<if _currentSection.length is 0>>[[next section->Table of Contents - 05]]<br><</if>>
 <<for _i to 0 ; _i lt _currentSection.length; _i++>>
 	<<set _scene to _currentScenes.pluck()>>
-	<<set _maybeDepression to random(1, ((7-_currentSectionNum)*7 + _currentSection.length))>>
+	<<set _maybeDepression to random(1, ((8-_currentSectionNum)*7 + _currentSection.length))>>
 	<<if _maybeDepression lt $ScenesNine.length>>
-		<<set _tempDepressionArray to Array.from($ScenesNine)>>
-		<<set _randomDepression to _tempDepressionArray.pluck()>>
-		[[$SceneTitles[_scene]->_randomDepression]]<br>
+		<<set _randomDepression to $ScenesNine.pluck()>>
+		DEBUG-DEPRESSION-[[$SceneTitles[_scene]->_randomDepression]]<br>
 	<<else>>
 		[[$SceneTitles[_scene]->_scene]]<br>
 	<</if>>
@@ -157,14 +153,13 @@ TODO:
 <<set _currentSectionNum to 5>>
 <<set _currentSection to $ScenesFive>>
 <<set _currentScenes to Array.from(_currentSection)>>
-<<if _currentSection.length is 0>>[[next section->Table of Contents - 06]]<br><</if>>
+<<if _currentSection.length is 0>>[[next section->Table of Contents - 6]]<br><</if>>
 <<for _i to 0 ; _i lt _currentSection.length; _i++>>
 	<<set _scene to _currentScenes.pluck()>>
-	<<set _maybeDepression to random(1, ((7-_currentSectionNum)*7 + _currentSection.length))>>
+	<<set _maybeDepression to random(1, ((8-_currentSectionNum)*7 + _currentSection.length))>>
 	<<if _maybeDepression lt $ScenesNine.length>>
-		<<set _tempDepressionArray to Array.from($ScenesNine)>>
-		<<set _randomDepression to _tempDepressionArray.pluck()>>
-		[[$SceneTitles[_scene]->_randomDepression]]<br>
+		<<set _randomDepression to $ScenesNine.pluck()>>
+		DEBUG-DEPRESSION-[[$SceneTitles[_scene]->_randomDepression]]<br>
 	<<else>>
 		[[$SceneTitles[_scene]->_scene]]<br>
 	<</if>>
@@ -178,11 +173,10 @@ TODO:
 <<if _currentSection.length is 0>>[[next section->Table of Contents - 07]]<br><</if>>
 <<for _i to 0 ; _i lt _currentSection.length; _i++>>
 	<<set _scene to _currentScenes.pluck()>>
-	<<set _maybeDepression to random(1, ((7-_currentSectionNum)*7 + _currentSection.length))>>
+	<<set _maybeDepression to random(1, ((8-_currentSectionNum)*7 + _currentSection.length))>>
 	<<if _maybeDepression lt $ScenesNine.length>>
-		<<set _tempDepressionArray to Array.from($ScenesNine)>>
-		<<set _randomDepression to _tempDepressionArray.pluck()>>
-		[[$SceneTitles[_scene]->_randomDepression]]<br>
+		<<set _randomDepression to $ScenesNine.pluck()>>
+		DEBUG-DEPRESSION-[[$SceneTitles[_scene]->_randomDepression]]<br>
 	<<else>>
 		[[$SceneTitles[_scene]->_scene]]<br>
 	<</if>>
@@ -196,11 +190,10 @@ TODO:
 <<if _currentSection.length is 0>>[[final section->Table of Contents - 08]]<br><</if>>
 <<for _i to 0 ; _i lt _currentSection.length; _i++>>
 	<<set _scene to _currentScenes.pluck()>>
-	<<set _maybeDepression to random(1, ((7-_currentSectionNum)*7 + _currentSection.length))>>
+	<<set _maybeDepression to random(1, ((8-_currentSectionNum)*7 + _currentSection.length))>>
 	<<if _maybeDepression lt $ScenesNine.length>>
-		<<set _tempDepressionArray to Array.from($ScenesNine)>>
-		<<set _randomDepression to _tempDepressionArray.pluck()>>
-		[[$SceneTitles[_scene]->_randomDepression]]<br>
+		<<set _randomDepression to $ScenesNine.pluck()>>
+		DEBUG-DEPRESSION-[[$SceneTitles[_scene]->_randomDepression]]<br>
 	<<else>>
 		[[$SceneTitles[_scene]->_scene]]<br>
 	<</if>>
@@ -208,7 +201,7 @@ TODO:
 
 ::Table of Contents - 08
 <h2>Section 8</h2>\
-[[FACTS (LAST SCENE)->08.01]]
+[[01 - FACTS (LAST SCENE)->08.01]]
 
 ::00.00
 <h2>NOTE ON TEXT </h2>\
@@ -1848,7 +1841,8 @@ minus one squared
 [[end->end]]
 
 ::end
-<h2>END</h2>\
+<h2>END OF THE LINE</h2>\
+(history:)
 
 ::09.00
 <h2>RANDOM </h2>\
@@ -1862,77 +1856,66 @@ doesn't respond. The characters can be the same each time, or the depressed pers
 same and the others different, or they can all be different.//
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.02
 <h2>DEPRESSION 2</h2>\
 - we could go for a walk it's a beautiful
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.03
 <h2>DEPRESSION 3</h2>\
 - there's an exhibition of expressionist
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.04
 <h2>DEPRESSION 4</h2>\
 - chicken tikka masala
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.05
 <h2>DEPRESSION 5</h2>\
 - programme starts at 6.40 or if you'd rather we could
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.06
 <h2>DEPRESSION 6</h2>\
 - glass of red or
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.07
 <h2>DEPRESSION 7</h2>\
 - thinking of taking one of the kittens there's a ginger one or a
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.08
 <h2>DEPRESSION 8</h2>\
 - maybe you could read them a story tonight or
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.09
 <h2>DEPRESSION 9</h2>\
 - the difficulty of getting the Israelis and Palestinians to
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.10
 <h2>DEPRESSION 10</h2>\
 - and he only has two months to live so I thought we could
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::09.11
 <h2>DEPRESSION 11</h2>\
-- a fountain of antimatter in the Milky Way that nobody knew 
+- a fountain of antimatter in the Milkyy Way that nobody knew 
 
 [[return|previous()]]
-<<run $ScenesNine.delete(passage())>>
 
 ::10.01
 <h2>SEMAPHORE </h2>\

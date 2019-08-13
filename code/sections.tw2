@@ -14,6 +14,16 @@
 <<set $SectionNine to ["09.01", "09.02", "09.03", "09.04", "09.05", "09.06", "09.07", 
 "09.08", "09.09", "09.10", "09.11"]>>
 
+<<set $ScenesOne to Array.from($SectionOne)>>
+<<set $ScenesTwo to Array.from($SectionTwo)>>
+<<set $ScenesThree to Array.from($SectionThree)>>
+<<set $ScenesFour to Array.from($SectionFour)>>
+<<set $ScenesFive to Array.from($SectionFive)>>
+<<set $ScenesSix to Array.from($SectionSix)>>
+<<set $ScenesSeven to Array.from($SectionSeven)>>
+<<set $ScenesEight to Array.from($SectionEight)>>
+<<set $ScenesNine to Array.from($SectionNine)>>
+
 <<set $SceneTitles to {
 "01.01": "SECRET",
 "01.02": "CENSUS",
