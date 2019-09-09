@@ -293,7 +293,7 @@ TODO:
 [[return->previous()]]
 <<run $ScenesOne.delete("01.01")>>
 
-::01.01 [nobr]
+::01.02 [nobr]
 <h2>CENSUS </h2>\
 <div class = "one"> Why do they need to know all this stuff? </div>
 <div class = "two"> They're doing research. It guides their policy. They use it to help people. </div>
@@ -307,7 +307,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesOne.delete("01.02")>>
 
-::01.01 [nobr]
+::01.03 [nobr]
 <h2>FAN </h2>\
 <div class = "one"> Love him so much </div>
 <div class = "two"> love him more than you </div>
@@ -372,7 +372,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesOne.delete("01.03")>>
 
-::01.01 [nobr]
+::01.04 [nobr]
 <h2>TORTURE </h2>\
 <div class = "one"> He's wearing me out. </div>
 <div class = "two"> Take a break. </div>
@@ -388,7 +388,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesOne.delete("01.04")>>
 
-::01.01 [nobr]
+::01.05 [nobr]
 <h2>LAB </h2>\
 <div class = "one"> So we hatch a batch of eggs in the lab </div>
 <div class = "two"> and where do you get the </div>
@@ -458,7 +458,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesOne.delete("01.05")>>
 
-::01.01 [nobr]
+::01.06 [nobr]
 <h2>SLEEP </h2>\
 <div class = "one"> I can't sleep. </div>
 <div class = "two"> Hot milk. </div>
@@ -473,7 +473,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesOne.delete("01.06")>>
 
-::01.01 [nobr]
+::01.07 [nobr]
 <h2>REMOTE </h2>\
 <div class = "one"> You don't seem to have a tv. </div>
 <div class = "two"> There used to be one but it stopped working. The reception's no good anyhow. </div>
@@ -495,7 +495,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesOne.delete("01.07")>>
 
-::02.02 [nobr]
+::02.01 [nobr]
 <h2>IRRATIONAL </h2>\
 <div class = "one"> Is an irrational number real? </div>
 <div class = "two"> It's real to me. </div>
@@ -533,7 +533,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.02")>>
 
-::02.02 [nobr]
+::02.03 [nobr]
 <h2>MOTHER </h2>\
 <div class = "one"> While Mum's out </div>
 <div class = "two"> what </div>
@@ -575,7 +575,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.03")>>
 
-::02.02 [nobr]
+::02.04 [nobr]
 <h2>FIRED </h2>\
 <div class = "one"> You shouldn't fire people by email. </div>
 <div class = "two"> You can't come bursting in here and shouting. </div>
@@ -590,7 +590,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.04")>>
 
-::02.02 [nobr]
+::02.05 [nobr]
 <h2>MESSAGE </h2>\
 <div class = "one"> It's a message </div>
 <div class = "two"> killing people </div>
@@ -611,7 +611,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.05")>>
 
-::02.02 [nobr]
+::02.06 [nobr]
 <h2>GRASS </h2>\
 <div class = "one"> What did you do that for? </div>
 <div class = "two"> I thought </div>
@@ -656,7 +656,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.06")>>
 
-::02.02 [nobr]
+::02.07 [nobr]
 <h2>TERMINAL </h2>\
 <div class = "one"> Doctor, one thing before I go. Can you tell me how long I've got? </div>
 <div class = "two"> There's not an exact answer to that. </div>
@@ -667,7 +667,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.07")>>
 
-::03.03 [nobr]
+::03.01 [nobr]
 <h2>SCHIZOPHRENIC </h2>\
 <div class = "one"> How do you know I'm evil? </div>
 <div class = "two"> I've been told it. </div>
@@ -689,7 +689,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesThree.delete("03.01")>>
 
-::03.03 [nobr]
+::03.02 [nobr]
 <h2>SPIES </h2>\
 <div class = "one"> So we went to war on a completely </div>
 <div class = "two"> yes but how were they to know </div>
@@ -730,7 +730,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesThree.delete("03.03")>>
 
-::03.03 [nobr]
+::03.04 [nobr]
 <h2>RECLUSE </h2>\
 <div class = "direction">Two inside, one outside the door who can be heard.</div> 
 <div class = "one"> Don't answer </div>
@@ -795,7 +795,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesThree.delete("03.04")>>
 
-::03.03 [nobr]
+::03.05 [nobr]
 <h2>GOD'S VOICE </h2>\
 <div class = "one"> God told you to do it? </div>
 <div class = "two"> He did, yes. </div>
@@ -843,7 +843,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesThree.delete("03.05")>>
 
-::03.03 [nobr]
+::03.06 [nobr]
 <h2>THE CHILD WHO DIDN'T KNOW FEAR </h2>\
 <div class = "direction">One person tells a story to another.</div> 
 <div class = "one"> Once upon a time there was a child who didn't know what fear was and he wanted to find out. So his friends said, Cold shiver down your back, legs go funny, sometimes your hands no not your hands yes your hands tingle, it's more in your head, it's in your stomach, your belly you shit yourself, you can't breathe, your skin your skin creeps, it's a shiver a shudder do you really not know what it is? And the child said, I don't know what you mean. So they took him to a big dark empty house everyone said was haunted. They said, No one's ever been able to stay here till morning, you won't stay till midnight, you won't last an hour, and the child said, Why, what's going to happen? And they said, You'll know what we mean about being frightened. And the child said, Good, that's what I want to know. So in the morning his friends came back and there was the child sitting in the dusty room. And they said, You're still here? what happened? And the child said, There were things walking about, dead things, some of them didn't have heads and a monster with glowing - and his friends said, Didn't you run away? and the child said, There were weird noises like screams and like music but not music, and his friends said, What did you feel? and the child said, It came right up to me and put out its hand, and his friends said, Didn't your hair your stomach the back of your neck your legs weren't you frightened? And the child said, No, it's no good, I didn't feel anything, I still don't know what fear is. And on the way home he met a lion and the lion ate him. </div>
@@ -851,7 +851,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesThree.delete("03.06")>>
 
-::03.03 [nobr]
+::03.07 [nobr]
 <h2>STAR </h2>\
 <div class = "one"> It takes the light two point eight million years to get here. </div>
 <div class = "two"> So we're looking at two point eight million years ago. </div>
@@ -863,7 +863,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesThree.delete("03.07")>>
 
-::04.04 [nobr]
+::04.01 [nobr]
 <h2>WEDDING VIDEO </h2>\
 <div class = "direction">Several people.</div> 
 <div class = "one"> This is the bit </div>
@@ -911,7 +911,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFour.delete("04.01")>>
 
-::04.04 [nobr]
+::04.02 [nobr]
 <h2>SAVANT </h2>\
 <div class = "one"> What did you have for lunch on October the third 1998? </div>
 <div class = "two"> Chicken soup and a salad. I was at home. I had the chicken soup in a blue bowl. The salad had tomatoes, lettuce and chicory but no onion because I didn't want my breath to smell of onion when I went to the movies with my brother in the afternoon. The movie began at 2.15. </div>
@@ -932,7 +932,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFour.delete("04.02")>>
 
-::04.04 [nobr]
+::04.03 [nobr]
 <h2>EX </h2>\
 <div class = "one"> I'm glad we've done it, just to see </div>
 <div class = "two"> so am I </div>
@@ -1140,7 +1140,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFour.delete("04.04")>>
 
-::04.04 [nobr]
+::04.05 [nobr]
 <h2>DINNER </h2>\
 <div class = "one"> I did tell you </div>
 <div class = "two"> you didn't </div>
@@ -1154,7 +1154,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFour.delete("04.05")>>
 
-::04.04 [nobr]
+::04.06 [nobr]
 <h2>PIANO </h2>\
 <div class = "direction">Three people.</div> 
 <div class = "one"> This is Jennifer </div>
@@ -1170,7 +1170,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFour.delete("04.06")>>
 
-::04.04 [nobr]
+::04.07 [nobr]
 <h2>FLASHBACK </h2>\
 <div class = "one"> Breathe </div>
 <div class = "two"> ah ah ah </div>
@@ -1189,7 +1189,7 @@ TODO:
 <<run $ScenesFour.delete("04.07")>>
 
 
-::05.05 [nobr]
+::05.01 [nobr]
 <h2>LINGUIST </h2>\
 <div class = "one"> How many languages do you know? </div>
 <div class = "two"> To speak fluently </div>
@@ -1211,7 +1211,7 @@ TODO:
 <<run $ScenesFive.delete("05.01")>>
 
 
-::05.05 [nobr]
+::05.02 [nobr]
 <h2>MATHS </h2>\
 <div class = "one"> I don't want to spend an evening with them again. </div>
 <div class = "two"> You like them. You like her. </div>
@@ -1233,7 +1233,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFive.delete("05.02")>>
 
-::05.05 [nobr]
+::05.03 [nobr]
 <h2>SEX </h2>\
 <div class = "one"> What sex evolved to do is get information from two sets of genes so you get offspring that's not identifcal to you. Otherwise you just keep getting the same thing over and over again like hydra or starfish. So sex essentially is information. </div>
 <div class = "two"> You don't think that while we're doing it do you? </div>
@@ -1243,7 +1243,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFive.delete("05.03")>>
 
-::05.05 [nobr]
+::05.04 [nobr]
 <h2>GOD </h2>\
 <div class = "one"> God gives your life meaning. You've said that. </div>
 <div class = "two"> Yes, so? </div>
@@ -1274,7 +1274,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFive.delete(passage())>>
 
-::05.05 [nobr]
+::05.06 [nobr]
 <h2>CHILDREN </h2>\
 <div class = "one"> You can't have children? </div>
 <div class = "two"> No. </div>
@@ -1292,7 +1292,7 @@ TODO:
 [[return|previous()]]
 <<run $ScenesFive.delete(passage())>>
 
-::05.05 [nobr]
+::05.07 [nobr]
 <h2>SHRINK </h2>\
 <div class = "one"> It used to just be pain </div>
 <div class = "two"> the memories of what happened to you when you were a child and </div>
@@ -1323,7 +1323,7 @@ meaning.
 [[return|previous()]]
 <<run $ScenesFive.delete(passage())>>
 
-::06.06 [nobr]
+::06.01 [nobr]
 <h2>THE CHILD WHO DIDN'T KNOW SORRY </h2>\
 <div class = "one"> You have to say you're sorry. </div>
 <div class = "two"> I'm not sorry. </div>
@@ -1334,7 +1334,7 @@ meaning.
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.06 [nobr]
+::06.02 [nobr]
 <h2>CLIMATE </h2>\
 <div class = "one"> I'm frightened. </div>
 <div class = "two"> Just walk instead of driving and don't take so many hot baths. </div>
@@ -1351,7 +1351,7 @@ meaning.
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.06 [nobr]
+::06.03 [nobr]
 <h2>CENSOR </h2>\
 <div class = "one"> Page forty-two. </div>
 <div class = "two"> Page forty-two. </div>
@@ -1369,7 +1369,7 @@ meaning.
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.06 [nobr]
+::06.04 [nobr]
 <h2>WIFE </h2>\
 <div class = "one"> But I am your wife. </div>
 <div class = "two"> You look like my wife. </div>
@@ -1391,7 +1391,7 @@ meaning.
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.06 [nobr]
+::06.05 [nobr]
 <h2>DECISION </h2>\
 <div class = "one"> I've written down all the reasons to leave the country and all the reasons to stay. </div>
 <div class = "two"> So how does that work out? </div>
@@ -1464,7 +1464,7 @@ meaning.
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.06 [nobr]
+::06.07 [nobr]
 <h2>EARTHQUAKE </h2>\
 <div class = "one"> Have you seen the earthquake? There's this building my god you think things are solid but </div>
 they just break. 
@@ -1483,7 +1483,7 @@ they just break.
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::07.07 [nobr]
+::07.01 [nobr]
 <h2>CHINESE POETRY </h2>\
 'The girl waits at the door of her house on the mountain.' 
 <div class = "one"> What it literally says is 'mountain girl door'. </div>
@@ -1497,7 +1497,7 @@ they just break.
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.07 [nobr]
+::07.02 [nobr]
 <h2>MANIC </h2>\
 <div class = "one"> My god, look at that flower, thank you so much, have you ever seen such a red, red is blood and bullfights and seeing red is anger but red is joyful, red is celebration, </div>
 <div class = "two"> yes, I like it </div>
@@ -1512,7 +1512,7 @@ they just break.
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.07 [nobr]
+::07.03 [nobr]
 <h2>GRIEF </h2>\
 <div class = "one"> Are you sleeping? </div>
 <div class = "two"> I wake up early but that's all right in the summer. </div>
@@ -1526,7 +1526,7 @@ they just break.
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.07 [nobr]
+::07.04 [nobr]
 <h2>FATE </h2>\
 <div class = "one"> I'm just saying you've got no choice </div>
 <div class = "two"> I have </div>
@@ -1570,7 +1570,7 @@ they just break.
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.07 [nobr]
+::07.05 [nobr]
 <h2>STONE </h2>\
 <div class = "one"> He's got a special stone. </div>
 <div class = "two"> Is that what he's holding? </div>
@@ -1601,7 +1601,7 @@ they just break.
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.07 [nobr]
+::07.06 [nobr]
 <h2>VIRTUAL </h2>\
 <div class = "one"> I don't care what you say </div>
 <div class = "two"> no but listen </div>
@@ -1686,7 +1686,7 @@ they just break.
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::08.08 [nobr]
+::08.01 [nobr]
 <h2>FACTS (LAST SCENE) </h2>\
 <div class = "one"> Who was the president of Coca-Cola from nineteen twenty-five to seven? </div>
 <div class = "two"> HB Jones </div>
@@ -1725,12 +1725,12 @@ minus one squared
 ::end
 <h2>END</h2>\
 
-::09.09 [nobr]
+::09.00 [nobr]
 <h2>RANDOM </h2>\
 <div class = "one"> These things can happen in any section. DEPRESSION is an essential part of the play. The </div>
-other random items[::09.09 [nobr]-19] are optional. 
+other random items[::09.01 [nobr]-19] are optional. 
 
-::09.09 [nobr]
+::09.01 [nobr]
 <h2>DEPRESSION 1</h2>\
   //Each of these is a separate random item. Each is said by one person to another who 
 doesn't respond. The characters can be the same each time, or the depressed person can be the 
@@ -1739,49 +1739,49 @@ same and the others different, or they can all be different.//
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.02 [nobr]
 <h2>DEPRESSION 2</h2>\
 <div class = "one"> we could go for a walk it's a beautiful</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.03 [nobr]
 <h2>DEPRESSION 3</h2>\
 <div class = "one"> there's an exhibition of expressionist</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.04 [nobr]
 <h2>DEPRESSION 4</h2>\
 <div class = "one"> chicken tikka masala</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.05 [nobr]
 <h2>DEPRESSION 5</h2>\
 <div class = "one"> programme starts at 6.40 or if you'd rather we could</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.06 [nobr]
 <h2>DEPRESSION 6</h2>\
 <div class = "one"> glass of red or</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.07 [nobr]
 <h2>DEPRESSION 7</h2>\
 <div class = "one"> thinking of taking one of the kittens there's a ginger one or a</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.08 [nobr]
 <h2>DEPRESSION 8</h2>\
 <div class = "one"> maybe you could read them a story tonight or</div>
 
@@ -1795,63 +1795,63 @@ same and the others different, or they can all be different.//
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.10 [nobr]
 <h2>DEPRESSION 10</h2>\
 <div class = "one"> and he only has two months to live so I thought we could</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09 [nobr]
+::09.11 [nobr]
 <h2>DEPRESSION 11</h2>\
 <div class = "one"> a fountain of antimatter in the Milky Way that nobody knew </div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::10.10 [nobr]
+::10.01 [nobr]
 <h2>SEMAPHORE </h2>\
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.02 [nobr]
 <h2>MORSE </h2>\
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.03 [nobr]
 <h2>SIGN LANGUAGE </h2>\
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.04 [nobr]
 <h2>BIRDSONG </h2>\
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.05 [nobr]
 <h2>DANCE </h2>\
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.06 [nobr]
 <h2>FLAGS </h2>\
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.07 [nobr]
 <h2>PAINTING </h2>\
 <div class = "direction">Someone has a large canvas and is flicking paint at it.</div> 
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.08 [nobr]
 <h2>PIG LATIN </h2>\
 <div class = "one"> Ancay ouyay eakspay igpay atinlay? </div>
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.09 [nobr]
 <h2>SANTA </h2>\
 <div class = "one"> Father Christmas lands his sleigh on the roof and comes down the chimney with his big sack of toys and he'll put presents in your stocking </div>
 
@@ -1863,7 +1863,7 @@ same and the others different, or they can all be different.//
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.11 [nobr]
 <h2>GENES </h2>\
 <div class = "one"> AGT TCG AGC CCT TGA CTT GAT TGT GCA TAC </div>
 <div class = "two"> CGT GCT TGA GTC ATG TTG CAC AAC TTG TCG </div>
@@ -1877,50 +1877,50 @@ same and the others different, or they can all be different.//
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.12 [nobr]
 <h2>DOG </h2>\
 <div class = "one"> Come. Sit. Stay. Come. Good dog. Fetch. Drop it. Fetch. Good dog. Roll over. Good dog. Come. Heel. No. Come. </div>
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.13 [nobr]
 <h2>KEYS </h2>\
 <div class = "one"> You don't know where I put the car keys, do you? </div>
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.14 [nobr]
 <h2>MAGAZINE </h2>\
 <div class = "one"> she's lost two stone... he was going to leave her... look, he's coming out of a club with </div>
 an unnamed blonde... 
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.15 [nobr]
 <h2>GOOGLE </h2>\
 <div class = "one"> There's a train at 4.22 gets in at half-past eight. </div>
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.16 [nobr]
 <h2>TWITTER </h2>\
 <div class = "one"> He's in the kitchen cooking spaghetti and he's upset about the news from Tripoli. </div>
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.17 [nobr]
 <h2>ZEN </h2>\
 <div class = "one"> What's the sound of one hand clapping? I've heard that one. </div>
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.18 [nobr]
 <h2>COLD </h2>\
 <div class = "direction">Someone sneezes.</div> 
 
 [[return|previous()]]
 
-::10.10 [nobr]
+::10.19 [nobr]
 <h2>SILENCE </h2>\
 <div class = "direction">This can happen more than once, for different lengths of time.</div>
 
