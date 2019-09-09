@@ -41,15 +41,31 @@ tw-passage {
 }
 
 div.one {
-	color: #ADD8E6;
+	color: white;
+	line-height: 1.5em;
+	padding-top: 1em;
 }
 
 div.two {
-	color: #FFFF00;
+	color: #aaf0d1;
+	padding-top: 1em;
+	line-height: 1.5em;
+}
+
+div.three {
+	color: #ff9188;
+	padding-top: 1em;
+	line-height: 1.5em;
+}
+
+div.backlink {
+	padding-top: 2em;
+	text-decoration: underline;
 }
 
 div.direction {
-	font-style: oblique;
+	padding-top: 1em;
+	font-style: italic;
 }
 #title, #menu, #ui-bar-tray #ui-bar {
 	font-size: 75%;
@@ -87,6 +103,8 @@ TODO:
 <div class = "one"> Print out full history of traversal at the end. Probably some for loop that goes from 0 to length(State.history)?</div>
 <div class = "two"> Figure out how to implement the other Random scenes / the media for them.</div>
 <div class = "one"> Find and include background music.</div>
+- make it so sizing works okay on mobile devices
+- messenger-style UI?
 
 ::Table of Contents - Sections
 <h2>Table of Contents: Sections</h2>
@@ -293,7 +311,7 @@ TODO:
 <div class = "one"> how could you </div>
 <div class = "two"> I did. </div>
 
-[[return->previous()]]
+<div class = "backlink">[[return->previous()]]</div>
 <<run $ScenesOne.delete("01.01")>>
 
 ::01.02 [nobr]
@@ -307,7 +325,7 @@ TODO:
 <div class = "one"> They won't know. </div>
 <div class = "two"> They know you exist. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesOne.delete("01.02")>>
 
 ::01.03 [nobr]
@@ -372,7 +390,7 @@ TODO:
 <div class = "two"> I won't be able to sleep </div>
 <div class = "one"> what are we going to do? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesOne.delete("01.03")>>
 
 ::01.04 [nobr]
@@ -388,7 +406,7 @@ TODO:
 <div class = "one"> We're not paid extra for it to be true. </div>
 <div class = "two"> I'll give him a cigarette while you have a cigarette and I'll tell him you'll be back. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesOne.delete("01.04")>>
 
 ::01.05 [nobr]
@@ -458,7 +476,7 @@ TODO:
 <div class = "one"> yes you can see the actual changes </div>
 <div class = "two"> see what the chick learnt about the bead. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesOne.delete("01.05")>>
 
 ::01.06 [nobr]
@@ -473,7 +491,7 @@ TODO:
 <div class = "two"> No no, what, it's fine. You can't sleep? </div>
 <div class = "one"> I think I'll get up and go on Facebook. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesOne.delete("01.06")>>
 
 ::01.07 [nobr]
@@ -495,7 +513,7 @@ TODO:
 <div class = "one"> I want you to be happy here. </div>
 <div class = "two"> I am happy here. You'll find you can feel if it's raining. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesOne.delete("01.07")>>
 
 ::02.01 [nobr]
@@ -513,7 +531,7 @@ TODO:
 <div class = "one"> Maybe he should have kept quiet about it if he knew they couldn't stand it. </div>
 <div class = "two"> Is that what you do? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesTwo.delete("02.01")>>
 
 ::02.02 [nobr]
@@ -533,7 +551,7 @@ TODO:
 <div class = "one"> And you're ok with it? </div>
 <div class = "two"> Yes it's all ok. Thanks though. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesTwo.delete("02.02")>>
 
 ::02.03 [nobr]
@@ -569,13 +587,13 @@ TODO:
 <div class = "one"> You mean not tell Mum? </div>
 <div class = "two"> Do we have to? </div>
 <div class = "one"> But then you'd have something you could never say. </div>
-<div class = "two"> I've got a stomach ahe. </div>
+<div class = "two"> I've got a stomach ache. </div>
 <div class = "one"> I don't care if she goes crazy. </div>
 <div class = "two"> So long as it's you she goes crazy with. </div>
 <div class = "one"> I can tell her to leave you alone because I'm your mum. </div>
 <div class = "two"> I don't think that works. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesTwo.delete("02.03")>>
 
 ::02.04 [nobr]
@@ -590,7 +608,7 @@ TODO:
 <div class = "two"> why don't you speak to my p.a. and make an appointment </div>
 <div class = "one"> just say it, you're fired, just say it </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesTwo.delete("02.04")>>
 
 ::02.05 [nobr]
@@ -611,7 +629,7 @@ TODO:
 <div class = "two"> Because you're scared? </div>
 <div class = "one"> I don't think that message is what I want to say. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesTwo.delete("02.05")>>
 
 ::02.06 [nobr]
@@ -656,7 +674,7 @@ TODO:
 <div class = "two"> You're making things up again. </div>
 <div class = "one"> No I'm not. That's what's going to happen. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesTwo.delete("02.06")>>
 
 ::02.07 [nobr]
@@ -667,7 +685,7 @@ TODO:
 <div class = "two"> Well let me say ten percent of people with this condition are still alive after three years. </div>
 <div class = "one"> That's helpful, thank you. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesTwo.delete("02.07")>>
 
 ::03.01 [nobr]
@@ -689,14 +707,14 @@ TODO:
 <div class = "one"> You do know you're ill. </div>
 <div class = "two"> I've been told that. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesThree.delete("03.01")>>
 
 ::03.02 [nobr]
 <h2>SPIES </h2>
 <div class = "one"> So we went to war on a completely </div>
 <div class = "two"> yes but how were they to know </div>
-<div class = "one"> they did know, they knew, hhe'd already admitted it wasn't true </div>
+<div class = "one"> they did know, they knew, he'd already admitted it wasn't true </div>
 <div class = "two"> he said it to the Germans </div>
 <div class = "one"> and the CIA knew </div>
 <div class = "two"> but Bush and Blair didn't know </div>
@@ -708,12 +726,12 @@ TODO:
 <div class = "two"> you can't have known </div>
 <div class = "one"> I knew it was all made-up stuff </div>
 <div class = "two"> and how did you know? </div>
-<div class = "one"> because of what American's like, what it wanted to do </div>
+<div class = "one"> because of what America's like, what it wanted to do </div>
 <div class = "two"> you didn't know it was made up, you wanted it to be made up, that's what you wanted to be true. </div>
 <div class = "one"> And it turns out I was right, didn't it. </div>
 <div class = "two"> Do you think you've just won an argument? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesThree.delete("03.02")>>
 
 ::03.03 [nobr]
@@ -730,7 +748,7 @@ TODO:
 <div class = "two"> So either way. </div>
 <div class = "one"> Either way. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesThree.delete("03.03")>>
 
 ::03.04 [nobr]
@@ -742,60 +760,60 @@ TODO:
 <div class = "two"> You're right, I thought it was the boy delivering the </div>
 <div class = "one"> don't answer don't </div>
 <div class = "two"> of course I won't answer, don't panic. </div>
-<div class = "one"> Hello. Hello Mr Rushmore, I believe this is where you live. We saw you going in, we know the car outside is </div>
-<div class = "two"> make him go away </div>
-<div class = "one"> shall I speak to him? </div>
-<div class = "two"> yes no no </div>
-<div class = "one"> and of course I respect your desire for privacy and it would be so much help your thousands of admirers to understand if you could say a few words to us about that privacy how it feels to live here in a forest miles afrom </div>
-<div class = "two"> I'm going to die </div>
-<div class = "one"> sh it's all right </div>
-<div class = "two"> five minutes of your time I could explain to the world why you've chosen to leave it all behind and withdraw to this remote </div>
+<div class = "three"> Hello. Hello Mr Rushmore, I believe this is where you live. We saw you going in, we know the car outside is </div>
+<div class = "one"> make him go away </div>
+<div class = "two"> shall I speak to him? </div>
+<div class = "one"> yes no no </div>
+<div class = "three"> and of course I respect your desire for privacy and it would be so much help your thousands of admirers to understand if you could say a few words to us about that privacy how it feels to live here in a forest miles afrom </div>
+<div class = "one"> I'm going to die </div>
+<div class = "two"> sh it's all right </div>
+<div class = "three"> five minutes of your time I could explain to the world why you've chosen to leave it all behind and withdraw to this remote </div>
 <div class = "one"> I should have a gun </div>
-<div class = "two"> because that would enable you to set the record straight about your ex-wife's allegations of </div>
+<div class = "three"> because that would enable you to set the record straight about your ex-wife's allegations of </div>
 <div class = "one"> I'm going to bed </div>
-<div class = "two"> to confirm or deny that you said of the Queen that she </div>
+<div class = "three"> to confirm or deny that you said of the Queen that she </div>
 <div class = "one"> I'll have to hide in the cupboard </div>
-<div class = "two"> to put an end to speculation once and for all about your </div>
+<div class = "three"> to put an end to speculation once and for all about your </div>
 <div class = "one"> I'd kill myself but they'd write an obituary </div>
 <div class = "two"> shall I tell him to </div>
 <div class = "one"> no no because then they'll write about you </div>
 <div class = "two"> it doesn't matter </div>
 <div class = "one"> it does they mustn't if they know about you if you talk to them I'll never see you again </div>
-<div class = "two"> because we have a photograph of you taken last week in the </div>
-<div class = "one"> why don't I just </div>
-<div class = "two"> ALL RIGHT. </div>
-<div class = "one"> What? </div>
-<div class = "two"> Hello, Mr Rushmore? </div>
-<div class = "one"> I have three things to say. i am now a citizen of China. I have six illegitimate children. I have recently been abducted by aliens and returned to earth unharmed. </div>
-<div class = "two"> Mr Rushmore, if you could just open the door for a moment </div>
+<div class = "three"> because we have a photograph of you taken last week in the </div>
+<div class = "two"> why don't I just </div>
+<div class = "one"> ALL RIGHT. </div>
+<div class = "two"> What? </div>
+<div class = "three"> Hello, Mr Rushmore? </div>
+<div class = "one"> I have three things to say. I am now a citizen of China. I have six illegitimate children. I have recently been abducted by aliens and returned to earth unharmed. </div>
+<div class = "three"> Mr Rushmore, if you could just open the door for a moment </div>
 <div class = "one"> that's all right you see that's fine if I tell him lies that's fine I haven't told them anything about myself at all that's fine I feel fine about that I think that's fine I think I feel fine about </div>
-<div class = "two"> and when exactly were you last in China? </div>
+<div class = "three"> and when exactly were you last in China? </div>
 <div class = "one"> that's fine that's fine </div>
 <div class = "two"> good good I'm glad you feel ok about </div>
 <div class = "one"> and will he go away now? </div>
 <div class = "two"> in a while he's sure to go away in a while if we keep </div>
-<div class = "one"> Mr Rushmore </div>
+<div class = "three"> Mr Rushmore </div>
 <div class = "direction">Time passes.</div> 
-<div class = "one"> He's gone. </div>
 <div class = "two"> He's gone. </div>
-<div class = "one"> Well that's all right then </div>
-<div class = "two"> yes </div>
-<div class = "one"> you handled that very </div>
-<div class = "two"> no I feel </div>
-<div class = "one"> what? </div>
-<div class = "two"> I feel terrible I feel </div>
-<div class = "one"> but you didn't tell him </div>
-<div class = "two"> but he knows </div>
-<div class = "one"> he doesn't know anything it was lies </div>
-<div class = "two"> he knows I'm the person that told those lies </div>
-<div class = "one"> no because he doesn't know it was lies </div>
-<div class = "two"> yes but he knows I said </div>
-<div class = "one"> you mean he'll work out it's lies and </div>
-<div class = "two"> whichever whichever he knows I said those words he knows I was in this room we'll have to move he knows it was me he knows I shouted out those </div>
-<div class = "one"> so you don't feel as good as you </div>
-<div class = "two"> no no I don't I feel</div>
+<div class = "one"> He's gone. </div>
+<div class = "two"> Well that's all right then </div>
+<div class = "one"> yes </div>
+<div class = "two"> you handled that very </div>
+<div class = "one"> no I feel </div>
+<div class = "two"> what? </div>
+<div class = "one"> I feel terrible I feel </div>
+<div class = "two"> but you didn't tell him </div>
+<div class = "one"> but he knows </div>
+<div class = "two"> he doesn't know anything it was lies </div>
+<div class = "one"> he knows I'm the person that told those lies </div>
+<div class = "two"> no because he doesn't know it was lies </div>
+<div class = "one"> yes but he knows I said </div>
+<div class = "two"> you mean he'll work out it's lies and </div>
+<div class = "one"> whichever whichever he knows I said those words he knows I was in this room we'll have to move he knows it was me he knows I shouted out those </div>
+<div class = "two"> so you don't feel as good as you </div>
+<div class = "one"> no no I don't I feel</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesThree.delete("03.04")>>
 
 ::03.05 [nobr]
@@ -843,7 +861,7 @@ TODO:
 <div class = "one"> In your toes? </div>
 <div class = "two"> Yes in my toes, will you stop now?</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesThree.delete("03.05")>>
 
 ::03.06 [nobr]
@@ -851,7 +869,7 @@ TODO:
 <div class = "direction">One person tells a story to another.</div> 
 <div class = "one"> Once upon a time there was a child who didn't know what fear was and he wanted to find out. So his friends said, Cold shiver down your back, legs go funny, sometimes your hands no not your hands yes your hands tingle, it's more in your head, it's in your stomach, your belly you shit yourself, you can't breathe, your skin your skin creeps, it's a shiver a shudder do you really not know what it is? And the child said, I don't know what you mean. So they took him to a big dark empty house everyone said was haunted. They said, No one's ever been able to stay here till morning, you won't stay till midnight, you won't last an hour, and the child said, Why, what's going to happen? And they said, You'll know what we mean about being frightened. And the child said, Good, that's what I want to know. So in the morning his friends came back and there was the child sitting in the dusty room. And they said, You're still here? what happened? And the child said, There were things walking about, dead things, some of them didn't have heads and a monster with glowing - and his friends said, Didn't you run away? and the child said, There were weird noises like screams and like music but not music, and his friends said, What did you feel? and the child said, It came right up to me and put out its hand, and his friends said, Didn't your hair your stomach the back of your neck your legs weren't you frightened? And the child said, No, it's no good, I didn't feel anything, I still don't know what fear is. And on the way home he met a lion and the lion ate him. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesThree.delete("03.06")>>
 
 ::03.07 [nobr]
@@ -863,7 +881,7 @@ TODO:
 <div class = "one"> It might not even be people by then. The sun's only eight minutes. </div>
 <div class = "two"> In the morning let's wait eight minutes and see if it's there now. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesThree.delete("03.07")>>
 
 ::04.01 [nobr]
@@ -871,47 +889,47 @@ TODO:
 <div class = "direction">Several people.</div> 
 <div class = "one"> This is the bit </div>
 <div class = "two"> this is the funny bit watch </div>
-<div class = "one"> where he spills </div>
-<div class = "two"> ah ah ha ha ha </div>
-<div class = "one"> gets me every time </div>
-<div class = "two"> and look look the sweet </div>
-<div class = "one"> and wasn't she little then </div>
-<div class = "two"> just a tiny girl in her pink </div>
-<div class = "one"> and now she's my god you should see </div>
-<div class = "two"> and her boyfriend </div>
+<div class = "three"> where he spills </div>
+<div class = "one"> ah ah ha ha ha </div>
+<div class = "two"> gets me every time </div>
+<div class = "three"> and look look the sweet </div>
+<div class = "two"> and wasn't she little then </div>
+<div class = "one"> just a tiny girl in her pink </div>
+<div class = "two"> and now she's my god you should see </div>
+<div class = "three"> and her boyfriend </div>
 <div class = "one"> have you met him he's the most </div>
 <div class = "two"> and there's that woman </div>
 <div class = "one"> we never knew who she was </div>
-<div class = "two"> yes she's there in the video but who invited </div>
+<div class = "three"> yes she's there in the video but who invited </div>
 <div class = "one"> someone who just goes to strangers' weddings </div>
 <div class = "two"> there she is talking to who is that that uncle of yours is it no </div>
-<div class = "one"> and look at the dresses I mean </div>
+<div class = "three"> and look at the dresses I mean </div>
 <div class = "two"> because now you wouldn't dream </div>
 <div class = "one"> it shows you it's history </div>
 <div class = "two"> yes the children like it because </div>
-<div class = "one"> and the grandchildren are going to </div>
+<div class = "three"> and the grandchildren are going to </div>
 <div class = "two"> and it can go down in the family and they can see </div>
 <div class = "one"> and all the ones of them as babies and little </div>
-<div class = "two"> and all the ones of their weddings and their </div>
+<div class = "three"> and all the ones of their weddings and their </div>
 <div class = "one"> but it's sad we haven't got our grandparents' wedding video </div>
 <div class = "two"> or great great </div>
 <div class = "one"> or everybody that ever lived videos of </div>
-<div class = "two"> Henry the Eighth </div>
+<div class = "three"> Henry the Eighth </div>
 <div class = "one"> Jesus walking on the </div>
 <div class = "two"> no further back if we had cave if we had Neanderthal </div>
-<div class = "one"> and dinosaurs </div>
-<div class = "two"> but who'd be working the camera? </div>
-<div class = "one"> and things coming out of the sea and tiny specks </div>
-<div class = "two"> then we'd know we'd know </div>
+<div class = "three"> and dinosaurs </div>
+<div class = "one"> but who'd be working the camera? </div>
+<div class = "two"> and things coming out of the sea and tiny specks </div>
+<div class = "three"> then we'd know we'd know </div>
 <div class = "one"> we could keep </div>
 <div class = "two"> we'd know what </div>
 <div class = "one"> because I wouldn't remember all this if without the video I wouldn't remember hardly anything at all about it because I can't remember anything about that day that's not on the video not clearly </div>
-<div class = "two"> I can remember putting the ring </div>
+<div class = "three"> I can remember putting the ring </div>
 <div class = "one"> no I can't see that in my mind's </div>
 <div class = "two"> and someone was sick </div>
-<div class = "one"> oh look it's the speevches now listen to Dad's speech it's so </div>
+<div class = "one"> oh look it's the speeches now listen to Dad's speech it's so </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFour.delete("04.01")>>
 
 ::04.02 [nobr]
@@ -930,9 +948,9 @@ TODO:
 <div class = "two"> We walked back to my brother's place and had poached eggs on toast. I had two cups of tea in his red mug, the one with a chip. </div>
 <div class = "one"> What was the weather like? </div>
 <div class = "two"> Rain in the morning but it cleared up. Rain in the evening. Rain the next morning. </div>
-<div class = "one"> June the sixth 20::04. </div>
+<div class = "one"> June the sixth 2004. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFour.delete("04.02")>>
 
 ::04.03 [nobr]
@@ -946,7 +964,7 @@ TODO:
 <div class = "one"> it would have been impossible </div>
 <div class = "two"> it would have been sad anyway. </div>
 <div class = "one"> You remember the Italian restaurant? </div>
-<div class = "two"> bno, yes, on the corner was it? </div>
+<div class = "two"> no, yes, on the corner was it? </div>
 <div class = "one"> with the bushes outside? </div>
 <div class = "two"> no, I'm mixing it up with </div>
 <div class = "one"> I can see the waiter now </div>
@@ -984,7 +1002,7 @@ TODO:
 <div class = "one"> Did we? </div>
 <div class = "two"> Sometimes. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFour.delete("04.03")>>
 
 ::04.04 [nobr]
@@ -1140,7 +1158,7 @@ TODO:
 <div class = "one"> wait a minute I'll find out </div>
 <div class = "two"> find out what to do next. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFour.delete("04.04")>>
 
 ::04.05 [nobr]
@@ -1154,7 +1172,7 @@ TODO:
 <div class = "one"> yes you did </div>
 <div class = "two"> I'm sorry. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFour.delete("04.05")>>
 
 ::04.06 [nobr]
@@ -1170,7 +1188,7 @@ TODO:
 <div class = "two"> This is Jennifer. </div>
 <div class = "one"> Hello, Jennifer. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFour.delete("04.06")>>
 
 ::04.07 [nobr]
@@ -1188,7 +1206,7 @@ TODO:
 <div class = "one"> They say time, you might be able to forget, even if it's a long time. </div>
 <div class = "two"> Once it's in there. Once you know that stuff. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFour.delete("04.07")>>
 
 
@@ -1210,7 +1228,7 @@ TODO:
 <div class = "two"> Or in fact Swahili. </div>
 <div class = "one"> I can't help feeling it actually is a table. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFive.delete("05.01")>>
 
 
@@ -1233,7 +1251,7 @@ TODO:
 <div class = "one"> All right, we'll go and see them. </div>
 <div class = "two"> She fancies you. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFive.delete("05.02")>>
 
 ::05.03 [nobr]
@@ -1243,7 +1261,7 @@ TODO:
 <div class = "one"> It doesn't hurt to know it. Information and also love. </div>
 <div class = "two"> If you're lucky. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFive.delete("05.03")>>
 
 ::05.04 [nobr]
@@ -1261,7 +1279,7 @@ TODO:
 <div class = "one"> But I don't mind not meaning anything, does that make me God? </div>
 <div class = "two"> It makes you really annoying. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFive.delete("05.04")>>
 
 ::05.05 [nobr]
@@ -1274,7 +1292,7 @@ TODO:
 <div class = "two"> Or he's trying not to tell us something. </div>
 <div class = "one"> Did you get the new cream? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFive.delete(passage())>>
 
 ::05.06 [nobr]
@@ -1292,7 +1310,7 @@ TODO:
 <div class = "one"> and she's got a baby now hasn't she, she and the Spaniard have got a bambino. </div>
 <div class = "two"> So it makes a difference does it? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFive.delete(passage())>>
 
 ::05.07 [nobr]
@@ -1323,7 +1341,7 @@ TODO:
 <div class = "two"> That must be painful for you. You can take it to your analyst and have it turned into </div>
 meaning.
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesFive.delete(passage())>>
 
 ::06.01 [nobr]
@@ -1334,7 +1352,7 @@ meaning.
 <div class = "two"> I don't feel sorry. </div>
 <div class = "one"> You have to say it. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSix.delete(passage())>>
 
 ::06.02 [nobr]
@@ -1351,7 +1369,7 @@ meaning.
 <div class = "two"> I don't know how to. </div>
 <div class = "one"> I don't know how to. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSix.delete(passage())>>
 
 ::06.03 [nobr]
@@ -1369,7 +1387,7 @@ meaning.
 <div class = "one"> About thirty. </div>
 <div class = "two"> Let's hear the next one then. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSix.delete(passage())>>
 
 ::06.04 [nobr]
@@ -1391,7 +1409,7 @@ meaning.
 <div class = "one"> But I am... Let me touch you. If you'd see what it feels like to touch me. If we made love you'd know it was me because there are things we like to do and no one else would know that, if I was a stranger pretending to be her I wouldn't know those things, you'd feel you were back with me, you would I know; please. </div>
 <div class = "two"> You disgust me. You frighten me. What are you? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSix.delete(passage())>>
 
 ::06.05 [nobr]
@@ -1405,7 +1423,7 @@ meaning.
 <div class = "one"> Based on what? The facts don't add up. </div>
 <div class = "two"> I'd rather you stayed here. Does that help?</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSix.delete(passage())>>
 
 ::06.06 [nobr]
@@ -1464,7 +1482,7 @@ meaning.
 <div class = "two"> So there you are, that's what it's like. </div>
 <div class = "one"> Can I pinch you again? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSix.delete(passage())>>
 
 ::06.07 [nobr]
@@ -1483,7 +1501,7 @@ they just break.
 <div class = "two"> You're not upset though. </div>
 <div class = "one"> That black wave with the cars in it was awesome. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSix.delete(passage())>>
 
 ::07.01 [nobr]
@@ -1497,7 +1515,7 @@ they just break.
 <div class = "two"> The girl's as big as a mountain and can't get through the door. </div>
 <div class = "one"> What's the next line? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSeven.delete(passage())>>
 
 ::07.02 [nobr]
@@ -1512,7 +1530,7 @@ they just break.
 <div class = "two"> yes </div>
 <div class = "one"> I think a green vase because of the primary colours and if they were blue I'd put them in an orange vase and if they were yellow I'd put them in a purple vase, yellow and purple is Easter of course so that's why crocuses, and red and green is Christmas which isn't right now of course it's the wrong time of year, I might have to sort that out when I've got a minute. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSeven.delete(passage())>>
 
 ::07.03 [nobr]
@@ -1526,7 +1544,7 @@ they just break.
 <div class = "one"> He must have meant everything to you. </div>
 <div class = "two"> Maybe. We'll see. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSeven.delete(passage())>>
 
 ::07.04 [nobr]
@@ -1570,7 +1588,7 @@ they just break.
 <div class = "one"> yes of course </div>
 <div class = "two"> but I feel like I'm in the front seat of a roller-coaster </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSeven.delete(passage())>>
 
 ::07.05 [nobr]
@@ -1601,7 +1619,7 @@ they just break.
 <div class = "one"> have a stone </div>
 <div class = "direction">Throwing them.</div> 
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSeven.delete(passage())>>
 
 ::07.06 [nobr]
@@ -1674,7 +1692,7 @@ they just break.
 <div class = "two"> no but listen </div>
 <div class = "one"> I've never felt like this about anyone. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSeven.delete(passage())>>
 
 ::07.07 [nobr]
@@ -1686,7 +1704,7 @@ they just break.
 <div class = "one"> And? </div>
 <div class = "two"> I'm just looking at it.</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesSeven.delete(passage())>>
 
 ::08.01 [nobr]
@@ -1739,132 +1757,132 @@ other random items[::09.01 [nobr]-19] are optional.
 doesn't respond. The characters can be the same each time, or the depressed person can be the 
 same and the others different, or they can all be different.//
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.02 [nobr]
 <h2>DEPRESSION 2</h2>
 <div class = "one"> we could go for a walk it's a beautiful</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.03 [nobr]
 <h2>DEPRESSION 3</h2>
 <div class = "one"> there's an exhibition of expressionist</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.04 [nobr]
 <h2>DEPRESSION 4</h2>
 <div class = "one"> chicken tikka masala</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.05 [nobr]
 <h2>DEPRESSION 5</h2>
 <div class = "one"> programme starts at 6.40 or if you'd rather we could</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.06 [nobr]
 <h2>DEPRESSION 6</h2>
 <div class = "one"> glass of red or</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.07 [nobr]
 <h2>DEPRESSION 7</h2>
 <div class = "one"> thinking of taking one of the kittens there's a ginger one or a</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.08 [nobr]
 <h2>DEPRESSION 8</h2>
 <div class = "one"> maybe you could read them a story tonight or</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.09 [nobr]
 <h2>DEPRESSION 9</h2>
 <div class = "one"> the difficulty of getting the Israelis and Palestinians to</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.10 [nobr]
 <h2>DEPRESSION 10</h2>
 <div class = "one"> and he only has two months to live so I thought we could</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::09.11 [nobr]
 <h2>DEPRESSION 11</h2>
 <div class = "one"> a fountain of antimatter in the Milky Way that nobody knew </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 <<run $ScenesNine.delete(passage())>>
 
 ::10.01 [nobr]
 <h2>SEMAPHORE </h2>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.02 [nobr]
 <h2>MORSE </h2>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.03 [nobr]
 <h2>SIGN LANGUAGE </h2>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.04 [nobr]
 <h2>BIRDSONG </h2>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.05 [nobr]
 <h2>DANCE </h2>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.06 [nobr]
 <h2>FLAGS </h2>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.07 [nobr]
 <h2>PAINTING </h2>
 <div class = "direction">Someone has a large canvas and is flicking paint at it.</div> 
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.08 [nobr]
 <h2>PIG LATIN </h2>
 <div class = "one"> Ancay ouyay eakspay igpay atinlay? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.09 [nobr]
 <h2>SANTA </h2>
 <div class = "one"> Father Christmas lands his sleigh on the roof and comes down the chimney with his big sack of toys and he'll put presents in your stocking </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.10 [nobr]
 <h2>TABLES </h2>
 <div class = "one"> Seven sevens are forty-nine, seven eights are fifty-six, seven nines are sixty-three, seven tens are seventy, seveven elevens are seventy-seven, seven twelves are eighty-four, seven thirteens are ninety-one </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.11 [nobr]
 <h2>GENES </h2>
@@ -1878,56 +1896,56 @@ same and the others different, or they can all be different.//
 <div class = "two"> GCC GAC TTT GAC CGG AGT GGT TGT ACC TTG </div>
 <div class = "one"> GTC AGG AAT TGA ACG </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.12 [nobr]
 <h2>DOG </h2>
 <div class = "one"> Come. Sit. Stay. Come. Good dog. Fetch. Drop it. Fetch. Good dog. Roll over. Good dog. Come. Heel. No. Come. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.13 [nobr]
 <h2>KEYS </h2>
 <div class = "one"> You don't know where I put the car keys, do you? </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.14 [nobr]
 <h2>MAGAZINE </h2>
 <div class = "one"> she's lost two stone... he was going to leave her... look, he's coming out of a club with </div>
 an unnamed blonde... 
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.15 [nobr]
 <h2>GOOGLE </h2>
 <div class = "one"> There's a train at 4.22 gets in at half-past eight. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.16 [nobr]
 <h2>TWITTER </h2>
 <div class = "one"> He's in the kitchen cooking spaghetti and he's upset about the news from Tripoli. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.17 [nobr]
 <h2>ZEN </h2>
 <div class = "one"> What's the sound of one hand clapping? I've heard that one. </div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.18 [nobr]
 <h2>COLD </h2>
 <div class = "direction">Someone sneezes.</div> 
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::10.19 [nobr]
 <h2>SILENCE </h2>
 <div class = "direction">This can happen more than once, for different lengths of time.</div>
 
-[[return|previous()]]
+<div class = "backlink">[[return|previous()]]</div>
 
 ::Twee2Settings [twee2]
 @story_start_name = 'TitlePage'
