@@ -40,6 +40,14 @@ tw-passage {
         line-height: 1.5;
 }
 
+div.one {
+	color: #ADD8E6;
+}
+
+div.two {
+	color: #FFFF00;
+}
+
 #title, #menu, #ui-bar-tray #ui-bar {
 	font-size: 75%;
 }
@@ -55,18 +63,27 @@ $(document.head).find('#style-ui-bar').remove();
 
 [[start->00.00]]
 
+::test room
+<<include "01.01">>
+<<timed 1s>><<goto "test room 2">><</timed>>
+
+::test room 2
+<<include "09.02">>
+
+::depression room
+<<include $swappedScene>>
+
 
 ::debug room [nobr]
 [[Table of Contents - Sections]]<br>
-[[fadein]]
 
 ::notes
 TODO: 
-- Figure out how to make random depression links first display the link they said they were leading to, then glitch, then display the depression instead.
+<div class = "one"> Figure out how to make random depression links first display the link they said they were leading to, then glitch, then display the depression instead.</div>
 	- First phase there is going to figuring out timed media - fade in the real one, fade out immediately, and then fade in the depression link instead.
-- Print out full history of traversal at the end. Probably some for loop that goes from 0 to length(State.history)?
-- Figure out how to implement the other Random scenes / the media for them.
-- Find and include background music.
+<div class = "one"> Print out full history of traversal at the end. Probably some for loop that goes from 0 to length(State.history)?</div>
+<div class = "two"> Figure out how to implement the other Random scenes / the media for them.</div>
+<div class = "one"> Find and include background music.</div>
 
 ::Table of Contents - Sections
 <h2>Table of Contents: Sections</h2>\
@@ -210,1652 +227,1510 @@ TODO:
 <h2>Section 8</h2>\
 [[FACTS (LAST SCENE)->08.01]]
 
-::00.00
+::00.00 [nobr]
 <h2>NOTE ON TEXT </h2>\
-- The sections should be played in the order given but the scenes can be played in any order 
-within each section. To access the next section, visit each available scene. 
-- There are random scenes, see at the end, which can happen any time. (those aren't 
-implemented yet)
-- The characters are different in every scene. The only possible exception to this are the 
-random Depression scenes, which could be the same two people, or the same depressed person 
-with different others. 
+<div class = "one"> The sections should be played in the order given but the scenes can be played in any order within each section. To access the next section, visit each available scene. </div>
+<div class = "two"> There are random scenes, see at the end, which can happen any time. (those aren't implemented yet)</div>
+<div class = "one"> The characters are different in every scene. The only possible exception to this are the random Depression scenes, which could be the same two people, or the same depressed person with different others. </div>
 
 [[next->Table of Contents - 01]]
 
-::01.01
+::01.01 [nobr]
 <h2>SECRET </h2>\
-- Please please tell me 
-- no 
-- please because I'll never 
-- don't ask don't ask 
-- I'll never tell 
-- no 
-- no matter what 
-- it's not 
-- I'd die before I told 
-- it's not you telling, even if you didn't 
-- I wouldn't 
-- it's you knowing it's too awful I can't 
-- but tell me 
-- no 
-- because if you don't there's this secret between us 
-- stop it 
-- if there's this secret we're not 
-- please 
-- we're not close any more we can't ever 
-- but nobody knows everything about 
-- yes but a big secret like this 
-- it's not such a big 
-- then tell me 
-- will you stop 
-- it's big because you won't tell me 
-- Is it something you've 
-- don't start guessing 
-- or something you want to 
-- please 
-- or you've seen or heard or know or 
-- please 
-- and if it's something you've done is it a crime or a sin or just embarrassing because 
-whichever
-- no I don't want you to know. 
-- All right. 
-- All right I'll tell you 
-- you don't have to 
-- I'll tell you 
-- yes tell me because I'll never 
-- it's not that 
-- tell me because I'll always 
-- all right I'm telling you. 
-  //Tells in a whisper.// 
-- No 
-- yes 
-- no 
-- I warned you 
-- but that's 
-- yes 
-- oh no that's 
-- yes 
-- how could you 
-- I did. 
+<div class = "one"> Please please tell me </div>
+<div class = "two"> no </div>
+<div class = "one"> please because I'll never </div>
+<div class = "two"> don't ask don't ask </div>
+<div class = "one"> I'll never tell </div>
+<div class = "two"> no </div>
+<div class = "one"> no matter what </div>
+<div class = "two"> it's not </div>
+<div class = "one"> I'd die before I told </div>
+<div class = "two"> it's not you telling, even if you didn't </div>
+<div class = "one"> I wouldn't </div>
+<div class = "two"> it's you knowing it's too awful I can't </div>
+<div class = "one"> but tell me </div>
+<div class = "two"> no </div>
+<div class = "one"> because if you don't there's this secret between us </div>
+<div class = "two"> stop it </div>
+<div class = "one"> if there's this secret we're not </div>
+<div class = "two"> please </div>
+<div class = "one"> we're not close any more we can't ever </div>
+<div class = "two"> but nobody knows everything about </div>
+<div class = "one"> yes but a big secret like this </div>
+<div class = "two"> it's not such a big </div>
+<div class = "one"> then tell me </div>
+<div class = "two"> will you stop </div>
+<div class = "one"> it's big because you won't tell me </div>
+<div class = "two"> Is it something you've </div>
+<div class = "one"> don't start guessing </div>
+<div class = "two"> or something you want to </div>
+<div class = "one"> please </div>
+<div class = "two"> or you've seen or heard or know or </div>
+<div class = "one"> please </div>
+<div class = "two"> and if it's something you've done is it a crime or a sin or just embarrassing because whichever</div>
+<div class = "one"> no I don't want you to know. </div>
+<div class = "two"> All right. </div>
+<div class = "one"> All right I'll tell you </div>
+<div class = "two"> you don't have to </div>
+<div class = "one"> I'll tell you </div>
+<div class = "two"> yes tell me because I'll never </div>
+<div class = "one"> it's not that </div>
+<div class = "two"> tell me because I'll always </div>
+<div class = "one"> all right I'm telling you. </div>
+<div class = "direction">Tells in a whisper.</div> 
+<div class = "one"> No </div>
+<div class = "two"> yes </div>
+<div class = "one"> no </div>
+<div class = "two"> I warned you </div>
+<div class = "one"> but that's </div>
+<div class = "two"> yes </div>
+<div class = "one"> oh no that's </div>
+<div class = "two"> yes </div>
+<div class = "one"> how could you </div>
+<div class = "two"> I did. </div>
 
 [[return->previous()]]
 <<run $ScenesOne.delete("01.01")>>
 
-::01.02
+::01.01 [nobr]
 <h2>CENSUS </h2>\
-- Why do they need to know all this stuff? 
-- They're doing research. It guides their policy. They use it to help people. 
-- They use it to sell us things we don't want. 
-- No that's the people who phone up. I don't answer any of their questions, I just say No 
-thank you, there's no need to swear at them. 
-- I've made a mess of it now anyway. 
-- You'll get into trouble if you don't do it. 
-- They won't know. 
-- They know you exist. 
+<div class = "one"> Why do they need to know all this stuff? </div>
+<div class = "two"> They're doing research. It guides their policy. They use it to help people. </div>
+<div class = "one"> They use it to sell us things we don't want. </div>
+<div class = "two"> No that's the people who phone up. I don't answer any of their questions, I just say No thank you, there's no need to swear at them. </div>
+<div class = "one"> I've made a mess of it now anyway. </div>
+<div class = "two"> You'll get into trouble if you don't do it. </div>
+<div class = "one"> They won't know. </div>
+<div class = "two"> They know you exist. </div>
 
 [[return|previous()]]
 <<run $ScenesOne.delete("01.02")>>
 
-::01.03
+::01.01 [nobr]
 <h2>FAN </h2>\
-- Love him so much 
-- love him more than you 
-- I'd jump out of the window 
-- eat fire 
-- cut off my hand 
-- eat dogshit 
-- kill my mother 
-- eat catfood 
-- yeuch 
-- just to touch him 
-- just to tell him 
-- just to see him 
-- just to have him see me 
-- He was born at ten past two in the morning and I was born at two past ten 
-- how do you know? 
-- Mum says 
-- two past ten 
-- she said just after ten so that's two 
-- that isn't two 
-- it is two 
-- anyway he was born on Tuesday and I was born on Wednesday and you were only born on Friday 
-- that's stupid 
-- His favorite colour's blue 
-- favourite food's chilli 
-- favourite animal's snakes 
-- favourite holiday was in Bermuda 
-- what's his favourite smell? 
-- Roses 
-- you're making that up 
-- well what? 
-- I'm asking you 
-- you don't know 
-- I'm asking you 
-- you don't know do you go on tell me 
-- you tell me 
-- I don't know you tell me 
-- all right I don't know so we've got to find out 
-- you mean neither of us know? 
-- It's all right we'll find out 
-- I can't believe neither of us 
-- it's in here somewhere 
-- I know I used to know 
-- wait 
-- is it chicken? 
-- wait 
-- you can't find it 
-- I can't 
-- you're not looking properly 
-- I can't find it 
-- here let me 
-- you can't find it 
-- wait 
-- it's not there 
-- wait 
-- see you can't. 
-- What are we going to do? 
-- we've got to know 
-- I won't be able to sleep 
-- what are we going to do? 
+<div class = "one"> Love him so much </div>
+<div class = "two"> love him more than you </div>
+<div class = "one"> I'd jump out of the window </div>
+<div class = "two"> eat fire </div>
+<div class = "one"> cut off my hand </div>
+<div class = "two"> eat dogshit </div>
+<div class = "one"> kill my mother </div>
+<div class = "two"> eat catfood </div>
+<div class = "one"> yeuch </div>
+<div class = "two"> just to touch him </div>
+<div class = "one"> just to tell him </div>
+<div class = "two"> just to see him </div>
+<div class = "one"> just to have him see me </div>
+<div class = "two"> He was born at ten past two in the morning and I was born at two past ten </div>
+<div class = "one"> how do you know? </div>
+<div class = "two"> Mum says </div>
+<div class = "one"> two past ten </div>
+<div class = "two"> she said just after ten so that's two </div>
+<div class = "one"> that isn't two </div>
+<div class = "two"> it is two </div>
+<div class = "one"> anyway he was born on Tuesday and I was born on Wednesday and you were only born on Friday </div>
+<div class = "two"> that's stupid </div>
+<div class = "one"> His favorite colour's blue </div>
+<div class = "two"> favourite food's chilli </div>
+<div class = "one"> favourite animal's snakes </div>
+<div class = "two"> favourite holiday was in Bermuda </div>
+<div class = "one"> what's his favourite smell? </div>
+<div class = "two"> Roses </div>
+<div class = "one"> you're making that up </div>
+<div class = "two"> well what? </div>
+<div class = "one"> I'm asking you </div>
+<div class = "two"> you don't know </div>
+<div class = "one"> I'm asking you </div>
+<div class = "two"> you don't know do you go on tell me </div>
+<div class = "one"> you tell me </div>
+<div class = "two"> I don't know you tell me </div>
+<div class = "one"> all right I don't know so we've got to find out </div>
+<div class = "two"> you mean neither of us know? </div>
+<div class = "one"> It's all right we'll find out </div>
+<div class = "two"> I can't believe neither of us </div>
+<div class = "one"> it's in here somewhere </div>
+<div class = "two"> I know I used to know </div>
+<div class = "one"> wait </div>
+<div class = "two"> is it chicken? </div>
+<div class = "one"> wait </div>
+<div class = "two"> you can't find it </div>
+<div class = "one"> I can't </div>
+<div class = "two"> you're not looking properly </div>
+<div class = "one"> I can't find it </div>
+<div class = "two"> here let me </div>
+<div class = "one"> you can't find it </div>
+<div class = "two"> wait </div>
+<div class = "one"> it's not there </div>
+<div class = "two"> wait </div>
+<div class = "one"> see you can't. </div>
+<div class = "two"> What are we going to do? </div>
+<div class = "one"> we've got to know </div>
+<div class = "two"> I won't be able to sleep </div>
+<div class = "one"> what are we going to do? </div>
 
 [[return|previous()]]
 <<run $ScenesOne.delete("01.03")>>
 
-::01.04
+::01.01 [nobr]
 <h2>TORTURE </h2>\
-- He's wearing me out. 
-- Take a break. 
-- Do you want to go in? 
-- I'll give him a cigarette. 
-- He's not ready to talk. 
-- I thought we'd got there yesterday. 
-- I thought we'd got there yesterday but he's past that. 
-- He'll get to where he'll say anything. 
-- We're not paid extra for it to be true. 
-- I'll give him a cigarette while you have a cigarette and I'll tell him you'll be back. 
+<div class = "one"> He's wearing me out. </div>
+<div class = "two"> Take a break. </div>
+<div class = "one"> Do you want to go in? </div>
+<div class = "two"> I'll give him a cigarette. </div>
+<div class = "one"> He's not ready to talk. </div>
+<div class = "two"> I thought we'd got there yesterday. </div>
+<div class = "one"> I thought we'd got there yesterday but he's past that. </div>
+<div class = "two"> He'll get to where he'll say anything. </div>
+<div class = "one"> We're not paid extra for it to be true. </div>
+<div class = "two"> I'll give him a cigarette while you have a cigarette and I'll tell him you'll be back. </div>
 
 [[return|previous()]]
 <<run $ScenesOne.delete("01.04")>>
 
-::01.05
+::01.01 [nobr]
 <h2>LAB </h2>\
-- So we hatch a batch of eggs in the lab 
-- and where do you get the 
-- from the poultry breeders who supply them to the battery 
-- oh the intensive 
-- yes or some of them might go to farms but either way 
-- so either way they're going to be 
-- yes by twelve weeks they'll be plucked and lying on their backs 
-- in a supermarket 
-- on your table 
-- so you're not taking the life 
-- I am taking the life. 
-- but even if you didn't they'd be 
-- they wouldn't live to be old chickens, no. 
-- So you've got the chickens and 
-- about a day old, fluffy yellow like little Easter 
-- and you do some experiment on them? 
-- what we do is we get them to peck 
-- beause chicks do peck a lot 
-- they peck at everything and what we do is we get them to peck beads that have been dipped 
-in either water or some stuff that tastes bitter 
-- not poison 
-- no it makes them wipe their beaks on the floor then they're fine again and of course we're 
-writing all this down which chick which bead and how many pecks and then my colleague injects 
-this tiny amount of very slightly radioactive liquid into each side of the chick's brain so 
-- oh no stop 
-- I know but they don't seem at all 
-- it doesn't hurt 
-- they don't show any 
-- ok so what's it for? it's going to show up something in their brains 
-- because what we've injected has a sugar in it that gets used by the nerve cells and the 
-more sugar is taken up the more brain activity and the radioactivity acts as a tracer like in 
-a scanner so you can measure that and see exactly where in the brain the sugar 
-- and the idea is it's different in the different 
-- what we hope to see you see is that it's different 
-- depending on what they've learned about the 
-- yes because we give them the beads again and they have learned because the ones who had the 
-beads with water come back and peck it again and the ones 
-- they won't peck it 
-- the ones that had the bitter bead have learned not to peck it 
-- that's terrific 
-- But that's not what we're finding out, what we're finding out 
-- changes in the brain 
-- exactly, what changes in the brain correspond to that memory 
-- so to do that you have to 
-- yes I hold the bird in my left hand and quickly cut off its head with a big pair of 
-scissors 
-- aah 
-- and I drop the body in a bucket and take the head and peel back the skin and cut round the 
-skull and there's the brain 
-- there's the brain 
-- so I put it in a dish of ice and my colleague cuts it into slabs with a razor blade and 
-then he dissects out tiny samples that he puts into test tubes and they're immediately frozen 
-while meanwhile I'm taking the brain out of the next chick 
-- yes 
-- and that's what I do. 
-- And then you analyse 
-- yes and there is a substantial increase 
-- so you can measure 
-- and not just the increase but exactly where because if you slice 
-- slice the brain 
-- slice the frozen brain into thin sections and put them on slides you get pictures 
-- you can see 
-- you can see exactly depending on how dark and you can convert and it into false colour 
-which of course looks 
-- prettier 
-- prettier yes and easier to read though the information is the same 
-- which is 
-- that the learning takes place on the left side of the brain 
-- and you can see 
-- and there's another version where you stain the sample with silver salts and then you can 
-count the new spines on the dendrites which are 
-- yes the little tiny 
-- because at that degree of magnification a thumbnail would be two hundred and fifty metres 
-wide 
-- so you can see the memory 
-- yes you can see the actual changes 
-- see what the chick learnt about the bead. 
+<div class = "one"> So we hatch a batch of eggs in the lab </div>
+<div class = "two"> and where do you get the </div>
+<div class = "one"> from the poultry breeders who supply them to the battery </div>
+<div class = "two"> oh the intensive </div>
+<div class = "one"> yes or some of them might go to farms but either way </div>
+<div class = "two"> so either way they're going to be </div>
+<div class = "one"> yes by twelve weeks they'll be plucked and lying on their backs </div>
+<div class = "two"> in a supermarket </div>
+<div class = "one"> on your table </div>
+<div class = "two"> so you're not taking the life </div>
+<div class = "one"> I am taking the life. </div>
+<div class = "two"> but even if you didn't they'd be </div>
+<div class = "one"> they wouldn't live to be old chickens, no. </div>
+<div class = "two"> So you've got the chickens and </div>
+<div class = "one"> about a day old, fluffy yellow like little Easter </div>
+<div class = "two"> and you do some experiment on them? </div>
+<div class = "one"> what we do is we get them to peck </div>
+<div class = "two"> beause chicks do peck a lot </div>
+<div class = "one"> they peck at everything and what we do is we get them to peck beads that have been dipped in either water or some stuff that tastes bitter </div>
+<div class = "two"> not poison </div>
+<div class = "one"> no it makes them wipe their beaks on the floor then they're fine again and of course we're writing all this down which chick which bead and how many pecks and then my colleague injects this tiny amount of very slightly radioactive liquid into each side of the chick's brain so </div>
+<div class = "two"> oh no stop </div>
+<div class = "one"> I know but they don't seem at all </div>
+<div class = "two"> it doesn't hurt </div>
+<div class = "one"> they don't show any </div>
+<div class = "two"> ok so what's it for? it's going to show up something in their brains </div>
+<div class = "one"> because what we've injected has a sugar in it that gets used by the nerve cells and the more sugar is taken up the more brain activity and the radioactivity acts as a tracer like in a scanner so you can measure that and see exactly where in the brain the sugar </div>
+<div class = "two"> and the idea is it's different in the different </div>
+<div class = "one"> what we hope to see you see is that it's different </div>
+<div class = "two"> depending on what they've learned about the </div>
+<div class = "one"> yes because we give them the beads again and they have learned because the ones who had the beads with water come back and peck it again and the ones </div>
+<div class = "two"> they won't peck it </div>
+<div class = "one"> the ones that had the bitter bead have learned not to peck it </div>
+<div class = "two"> that's terrific </div>
+<div class = "one"> But that's not what we're finding out, what we're finding out </div>
+<div class = "two"> changes in the brain </div>
+<div class = "one"> exactly, what changes in the brain correspond to that memory </div>
+<div class = "two"> so to do that you have to </div>
+<div class = "one"> yes I hold the bird in my left hand and quickly cut off its head with a big pair of scissors </div>
+<div class = "two"> aah </div>
+<div class = "one"> and I drop the body in a bucket and take the head and peel back the skin and cut round the skull and there's the brain </div>
+<div class = "two"> there's the brain </div>
+<div class = "one"> so I put it in a dish of ice and my colleague cuts it into slabs with a razor blade and then he dissects out tiny samples that he puts into test tubes and they're immediately frozen while meanwhile I'm taking the brain out of the next chick </div>
+<div class = "two"> yes </div>
+<div class = "one"> and that's what I do. </div>
+<div class = "two"> And then you analyse </div>
+<div class = "one"> yes and there is a substantial increase </div>
+<div class = "two"> so you can measure </div>
+<div class = "one"> and not just the increase but exactly where because if you slice </div>
+<div class = "two"> slice the brain </div>
+<div class = "one"> slice the frozen brain into thin sections and put them on slides you get pictures </div>
+<div class = "two"> you can see </div>
+<div class = "one"> you can see exactly depending on how dark and you can convert and it into false colour which of course looks </div>
+<div class = "two"> prettier </div>
+<div class = "one"> prettier yes and easier to read though the information is the same </div>
+<div class = "two"> which is </div>
+<div class = "one"> that the learning takes place on the left side of the brain </div>
+<div class = "two"> and you can see </div>
+<div class = "one"> and there's another version where you stain the sample with silver salts and then you can count the new spines on the dendrites which are </div>
+<div class = "two"> yes the little tiny </div>
+<div class = "one"> because at that degree of magnification a thumbnail would be two hundred and fifty metres wide </div>
+<div class = "two"> so you can see the memory </div>
+<div class = "one"> yes you can see the actual changes </div>
+<div class = "two"> see what the chick learnt about the bead. </div>
 
 [[return|previous()]]
 <<run $ScenesOne.delete("01.05")>>
 
-::01.06
+::01.01 [nobr]
 <h2>SLEEP </h2>\
-- I can't sleep. 
-- Hot milk. 
-- I hate it now. 
-- Book? 
-- I haven't got one I like. 
-- Just lie there and breathe. 
-- My head's too full of stuff. Are you asleep? 
-- No no, what, it's fine. You can't sleep? 
-- I think I'll get up and go on Facebook. 
+<div class = "one"> I can't sleep. </div>
+<div class = "two"> Hot milk. </div>
+<div class = "one"> I hate it now. </div>
+<div class = "two"> Book? </div>
+<div class = "one"> I haven't got one I like. </div>
+<div class = "two"> Just lie there and breathe. </div>
+<div class = "one"> My head's too full of stuff. Are you asleep? </div>
+<div class = "two"> No no, what, it's fine. You can't sleep? </div>
+<div class = "one"> I think I'll get up and go on Facebook. </div>
 
 [[return|previous()]]
 <<run $ScenesOne.delete("01.06")>>
 
-::01.07
+::01.01 [nobr]
 <h2>REMOTE </h2>\
-- You don't seem to have a tv. 
-- There used to be one but it stopped working. The reception's no good anyhow. 
-- I brought my laptop. 
-- You might have a reception problem there. 
-- It's not that I need it. There's no phone signal is there? 
-- You'd have to go to town. Or I think someone said there's a spot about two miles up the 
-road if you go down towards the cliff and stand on a rock, you'd have to know it. 
-- We can listen to the radio. Does it work? 
-- I did warn you. 
-- It's quiet here. 
-- I like it quiet. 
-- You can always cycle down and get a newspaper. 
-- It's all right. 
-- I don't have time you see. 
-- Don't you sometimes want a weather forecast? 
-- I want you to be happy here. 
-- I am happy here. You'll find you can feel if it's raining. 
+<div class = "one"> You don't seem to have a tv. </div>
+<div class = "two"> There used to be one but it stopped working. The reception's no good anyhow. </div>
+<div class = "one"> I brought my laptop. </div>
+<div class = "two"> You might have a reception problem there. </div>
+<div class = "one"> It's not that I need it. There's no phone signal is there? </div>
+<div class = "two"> You'd have to go to town. Or I think someone said there's a spot about two miles up the road if you go down towards the cliff and stand on a rock, you'd have to know it. </div>
+<div class = "one"> We can listen to the radio. Does it work? </div>
+<div class = "two"> I did warn you. </div>
+<div class = "one"> It's quiet here. </div>
+<div class = "two"> I like it quiet. </div>
+<div class = "one"> You can always cycle down and get a newspaper. </div>
+<div class = "two"> It's all right. </div>
+<div class = "one"> I don't have time you see. </div>
+<div class = "two"> Don't you sometimes want a weather forecast? </div>
+<div class = "one"> I want you to be happy here. </div>
+<div class = "two"> I am happy here. You'll find you can feel if it's raining. </div>
 
 [[return|previous()]]
 <<run $ScenesOne.delete("01.07")>>
 
-::02.01
+::02.02 [nobr]
 <h2>IRRATIONAL </h2>\
-- Is an irrational number real? 
-- It's real to me. 
-- But can you have an irrational number of oranges? 
-- Not as things stand, no. 
-- I'm not comfortable with the whole idea. 
-- There was someone called Hippasus in Greek times who found out about the diagonal of a 
-square and they drowned him because no one wanted to know about things like that. 
-- Like what? 
-- Numbers that make you uncomfortable and don't relate to oranges. 
-- I can see how they might want to do that. 
-- Drown him? 
-- Maybe he should have kept quiet about it if he knew they couldn't stand it. 
-- Is that what you do? 
+<div class = "one"> Is an irrational number real? </div>
+<div class = "two"> It's real to me. </div>
+<div class = "one"> But can you have an irrational number of oranges? </div>
+<div class = "two"> Not as things stand, no. </div>
+<div class = "one"> I'm not comfortable with the whole idea. </div>
+<div class = "two"> There was someone called Hippasus in Greek times who found out about the diagonal of a square and they drowned him because no one wanted to know about things like that. </div>
+<div class = "one"> Like what? </div>
+<div class = "two"> Numbers that make you uncomfortable and don't relate to oranges. </div>
+<div class = "one"> I can see how they might want to do that. </div>
+<div class = "two"> Drown him? </div>
+<div class = "one"> Maybe he should have kept quiet about it if he knew they couldn't stand it. </div>
+<div class = "two"> Is that what you do? </div>
 
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.01")>>
 
-::02.02
+::02.02 [nobr]
 <h2>AFFAIR </h2>\
-- I don't know if I should tell you. 
-- What? 
-- But you're my friend more than she is. 
-- What is it? 
-- What do you think yourself? is it better to know things or not to know things? Is it better 
-just to let things be the way you think they are, the way they are really because if someone 
-tells you something that might change everything and do you want that? Do you think it's 
-interfering or is it what a friend ought to do? 
-- You're going to have to tell me now, you know that. 
-- But some people might say you shouldn't say anything because you might not want to hear 
-anything against your best friend but I do keep seeing them together and last night I was 
-having a drink with her after work and he just sort of turned up and after a bit they left 
-together, they hardly bothered to come up with a story, I just wondered. I'm probably 
-imagining things and I shouldn't put ideas into your head because it may all be perfectly all 
-right, I'm sorry maybe I should have kept quiet, oh dear, I've told you know. 
-- They're having an affair. 
-- They are? you know that? you knew that? 
-- I've known that quite a while. 
-- How long? 
-- Three years. 
-- And you're ok with it? 
-- Yes it's all ok. Thanks though. 
+<div class = "one"> I don't know if I should tell you. </div>
+<div class = "two"> What? </div>
+<div class = "one"> But you're my friend more than she is. </div>
+<div class = "two"> What is it? </div>
+<div class = "one"> What do you think yourself? is it better to know things or not to know things? Is it better just to let things be the way you think they are, the way they are really because if someone tells you something that might change everything and do you want that? Do you think it's interfering or is it what a friend ought to do? </div>
+<div class = "two"> You're going to have to tell me now, you know that. </div>
+<div class = "one"> But some people might say you shouldn't say anything because you might not want to hear anything against your best friend but I do keep seeing them together and last night I was having a drink with her after work and he just sort of turned up and after a bit they left together, they hardly botheredto come up with a story, I just wondered. I'm probably imagining things and I shouldn't put ideas into your head because it may all be perfectly all right, I'm sorry maybe I should have kept quiet, oh dear, I've told you know. </div>
+<div class = "two"> They're having an affair. </div>
+<div class = "one"> They are? you know that? you knew that? </div>
+<div class = "two"> I've known that quite a while. </div>
+<div class = "one"> How long? </div>
+<div class = "two"> Three years. </div>
+<div class = "one"> And you're ok with it? </div>
+<div class = "two"> Yes it's all ok. Thanks though. </div>
 
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.02")>>
 
-::02.03
+::02.02 [nobr]
 <h2>MOTHER </h2>\
-- While Mum's out 
-- what 
-- I've something to tell you 
-- ok 
-- so you need to look at me 
-- I'm listening 
-- I need to feel you're really paying attention 
-- I can pay attention and do other things at ther same time, I'm not brain-dead, I can see 
-and hear and everything. 
-- will you listen? 
-- I'm listening, fuck off. Is this going to take long? 
-- Don't pay attention then, I'm just telling you, you might like to know Mum's not your 
-mother, I'm your mother, Mum's your nan, ok? Did you listen to that? 
-- Does Mum know you're telling me? 
-- I just decide. 
-- Are we going to tell her you told me? 
-- I don't know. Do you think? 
-- Why didn't she say before, she doesn't want me to know, she's going to go crazy 
-- it'll be ok 
-- it's not my fault, she can't blame me for knowing 
-- it'll be ok, I'll tell her I told you, it's my fault. 
-- How old were you, wait, thirteen. You were thirteen? Thirteen. 
-- Yes, that's why. 
-- It's probably better than not being born. 
-- Thats what I thought. I thought you'd like to be born. 
-- Who's my dad then? 
-- I didn't see him any more, he went to a different school. He was twelve. 
-- I don't think I feel like you're my mom though. I don't have a sister, I don't like that. 
-Do you want me to feel different about you? 
-- I just didn't want it to be something I could never say. 
-- I'd like it if everything could go on like it was. 
-- You mean not tell Mum? 
-- Do we have to? 
-- But then you'd have something you could never say. 
-- I've got a stomach ahe. 
-- I don't care if she goes crazy. 
-- So long as it's you she goes crazy with. 
-- I can tell her to leave you alone because I'm your mum. 
-- I don't think that works. 
+<div class = "one"> While Mum's out </div>
+<div class = "two"> what </div>
+<div class = "one"> I've something to tell you </div>
+<div class = "two"> ok </div>
+<div class = "one"> so you need to look at me </div>
+<div class = "two"> I'm listening </div>
+<div class = "one"> I need to feel you're really paying attention </div>
+<div class = "two"> I can pay attention and do other things at ther same time, I'm not brain-dead, I can see and hear and everything. </div>
+<div class = "one"> will you listen? </div>
+<div class = "two"> I'm listening, fuck off. Is this going to take long? </div>
+<div class = "one"> Don't pay attention then, I'm just telling you, you might like to know Mum's not your mother, I'm your mother, Mum's your nan, ok? Did you listen to that? </div>
+<div class = "two"> Does Mum know you're telling me? </div>
+<div class = "one"> I just decide. </div>
+<div class = "two"> Are we going to tell her you told me? </div>
+<div class = "one"> I don't know. Do you think? </div>
+<div class = "two"> Why didn't she say before, she doesn't want me to know, she's going to go crazy </div>
+<div class = "one"> it'll be ok </div>
+<div class = "two"> it's not my fault, she can't blame me for knowing </div>
+<div class = "one"> it'll be ok, I'll tell her I told you, it's my fault. </div>
+<div class = "two"> How old were you, wait, thirteen. You were thirteen? Thirteen. </div>
+<div class = "one"> Yes, that's why. </div>
+<div class = "two"> It's probably better than not being born. </div>
+<div class = "one"> Thats what I thought. I thought you'd like to be born. </div>
+<div class = "two"> Who's my dad then? </div>
+<div class = "one"> I didn't see him any more, he went to a different school. He was twelve. </div>
+<div class = "two"> I don't think I feel like you're my mom though. I don't have a sister, I don't like that. Do you want me to feel different about you? </div>
+<div class = "one"> I just didn't want it to be something I could never say. </div>
+<div class = "two"> I'd like it if everything could go on like it was. </div>
+<div class = "one"> You mean not tell Mum? </div>
+<div class = "two"> Do we have to? </div>
+<div class = "one"> But then you'd have something you could never say. </div>
+<div class = "two"> I've got a stomach ahe. </div>
+<div class = "one"> I don't care if she goes crazy. </div>
+<div class = "two"> So long as it's you she goes crazy with. </div>
+<div class = "one"> I can tell her to leave you alone because I'm your mum. </div>
+<div class = "two"> I don't think that works. </div>
 
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.03")>>
 
-::02.04
+::02.02 [nobr]
 <h2>FIRED </h2>\
-- You shouldn't fire people by email. 
-- You can't come bursting in here and shouting. 
-- I'm just saying it needs to be face to face. 
-- I'm sorry, I do appreciate, but I'm busy at the moment, if you could 
-- I need to be looked in the eye and you say you're firing me 
-- redundancy isn't 
-format- just say it to my face, you're fired, just say it, you're a coward you can't say it 
-- why don't you speak to my p.a. and make an appointment 
-- just say it, you're fired, just say it 
+<div class = "one"> You shouldn't fire people by email. </div>
+<div class = "two"> You can't come bursting in here and shouting. </div>
+<div class = "one"> I'm just saying it needs to be face to face. </div>
+<div class = "two"> I'm sorry, I do appreciate, but I'm busy at the moment, if you could </div>
+<div class = "one"> I need to be looked in the eye and you say you're firing me </div>
+<div class = "two"> redundancy isn't </div>
+<div class = "one"> just say it to my face, you're fired, just say it, you're a coward you can't say it </div>
+<div class = "two"> why don't you speak to my p.a. and make an appointment </div>
+<div class = "one"> just say it, you're fired, just say it </div>
 
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.04")>>
 
-::02.05
+::02.02 [nobr]
 <h2>MESSAGE </h2>\
-- It's a message 
-- killing people 
-- yes because then they understand 
-- killing yourself 
-- they understand what you're telling them 
-- but they don't do they, they just 
-- because the deaths show how important it is 
-- no they just say you're a terrorist or 
-- and the terror is a message 
-- but they don't get it do they, they just pass laws and lock people up and 
-- if enough people did it because they don't really feel terror do they, they don't live in 
-terror, if they lived in terror they'd be getting the message 
-- Would you do it yourself? 
-- I don't think I would, no. 
-- Because you're scared? 
-- I don't think that message is what I want to say. 
+<div class = "one"> It's a message </div>
+<div class = "two"> killing people </div>
+<div class = "one"> yes because then they understand </div>
+<div class = "two"> killing yourself </div>
+<div class = "one"> they understand what you're telling them </div>
+<div class = "two"> but they don't do they, they just </div>
+<div class = "one"> because the deaths show how important it is </div>
+<div class = "two"> no they just say you're a terrorist or </div>
+<div class = "one"> and the terror is a message </div>
+<div class = "two"> but they don't get it do they, they just pass laws and lock people up and </div>
+<div class = "one"> if enough people did it because they don't really feel terror do they, they don't live in terror, if they lived in terror they'd be getting the message </div>
+<div class = "two"> Would you do it yourself? </div>
+<div class = "one"> I don't think I would, no. </div>
+<div class = "two"> Because you're scared? </div>
+<div class = "one"> I don't think that message is what I want to say. </div>
 
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.05")>>
 
-::02.06
+::02.02 [nobr]
 <h2>GRASS </h2>\
-- What did you do that for? 
-- I thought 
-- What do you think's going to happen to you? 
-- I know but 
-- and to me and the children did you think about that? 
-- It seemed like the right thing to do. 
-- So will we have to change who were are and go and live somewhere else? 
-- I didn't say 
-- and you'll be a protected witness and all our life we'll be living in fear in a mobile home 
-in a desert in America? 
-- I didn't say who I was, I just made the phone call 
-- from your own phone? 
-- no of course not from my own phone, I'm not stupid 
-- well you are but ok, from a public 
-- yes of course 
-- but near here like in a high street 
-- no I took a train 
-- you took a train? when? 
-- today, to make the call, I went to Brighton 
-- why Brighton? 
-- I don't know, it's somewhere you can go quickly on a train 
-- so you didn't go to work? you weren't at work you could've got the kids from school 
-- I was in Brighton 
-- I'd have liked a day out in Brighton 
-- it wasn't a day out in Brighton, I made the call on a public phone in Brighton, I had a 
-coffee and I got the train back. 
-- And what did you say? 
-- I just gave them the name, I said this is the person you want in connection with, no I 
-won't give my name thank you, goodbye. That's all. 
-- but if they know the call name came from Brighton and they could find out who knew him who 
-went to Brighton 
-- they won't do that, they don't need to know who I am, they just need to know who to look at 
-- but if he finds out you went to Brighton 
-- but he's not going to know what I did in Brighton 
-- you can't be sure of that, what if he's got a mate in the police who says we got a tip it 
-was you, it came from Brighton, and someone else tells him they saw you get on a train to go 
-to Brighton 
-- how likely is that? why would he have a mate in the police? of course he doesn't have a 
-mate in the police, do I have a mate in the police, you're making a whole thing up that's not 
-going to happen. 
-- I don't see why you had to do it. 
-- It wasn't very nice what he did, was it. 
-- He's a friend of yours. 
-- He's not a friend of mine. 
-- He's not now. He doesn't know he's not now, what if you see him? what if I see him? what if 
-he comes round here and says the police are on to me what am I going to do can you help me? 
-- You're making things up again. 
-- No I'm not. That's what's going to happen. 
+<div class = "one"> What did you do that for? </div>
+<div class = "two"> I thought </div>
+<div class = "one"> What do you think's going to happen to you? </div>
+<div class = "two"> I know but </div>
+<div class = "one"> and to me and the children did you think about that? </div>
+<div class = "two"> It seemed like the right thing to do. </div>
+<div class = "one"> So will we have to change who were are and go and live somewhere else? </div>
+<div class = "two"> I didn't say </div>
+<div class = "one"> and you'll be a protected witness and all our life we'll be living in fear in a mobile home in a desert in America? </div>
+<div class = "two"> I didn't say who I was, I just made the phone call </div>
+<div class = "one"> from your own phone? </div>
+<div class = "two"> no of course not from my own phone, I'm not stupid </div>
+<div class = "one"> well you are but ok, from a public </div>
+<div class = "two"> yes of course </div>
+<div class = "one"> but near here like in a high street </div>
+<div class = "two"> no I took a train </div>
+<div class = "one"> you took a train? when? </div>
+<div class = "two"> today, to make the call, I went to Brighton </div>
+<div class = "one"> why Brighton? </div>
+<div class = "two"> I don't know, it's somewhere you can go quickly on a train </div>
+<div class = "one"> so you didn't go to work? you weren't at work you could've got the kids from school </div>
+<div class = "two"> I was in Brighton </div>
+<div class = "one"> I'd have liked a day out in Brighton </div>
+<div class = "two"> it wasn't a day out in Brighton, I made the call on a public phone in Brighton, I had a coffee and I got the train back. </div>
+<div class = "one"> And what did you say? </div>
+<div class = "two"> I just gave them the name, I said this is the person you want in connection with, no I won't give my name thank you, goodbye. That's all. </div>
+<div class = "one"> but if they know the call name came from Brighton and they could find out who knew him who went to Brighton </div>
+<div class = "two"> they won't do that, they don't need to know who I am, they just need to know who to look at </div>
+<div class = "one"> but if he finds out you went to Brighton </div>
+<div class = "two"> but he's not going to know what I did in Brighton </div>
+<div class = "one"> you can't be sure of that, what if he's got a mate in the police who says we got a tip it was you, it came from Brighton, and someone else tells him they saw you get on a train to go to Brighton </div>
+<div class = "two"> how likely is that? why would he have a mate in the police? of course he doesn't have a mate in the police, do I have a mate in the police, you're making a whole thing up that's not going to happen. </div>
+<div class = "one"> I don't see why you had to do it. </div>
+<div class = "two"> It wasn't very nice what he did, was it. </div>
+<div class = "one"> He's a friend of yours. </div>
+<div class = "two"> He's not a friend of mine. </div>
+<div class = "one"> He's not now. He doesn't know he's not now, what if you see him? what if I see him? what if he comes round here and says the police are on to me what am I going to do can you help me? </div>
+<div class = "two"> You're making things up again. </div>
+<div class = "one"> No I'm not. That's what's going to happen. </div>
 
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.06")>>
 
-::02.07
+::02.02 [nobr]
 <h2>TERMINAL </h2>\
-- Doctor, one thing before I go. Can you tell me how long I've got? 
-- There's not an exact answer to that. 
-- I'd be grateful for anything you can give me an idea. 
-- Well let me say ten percent of people with this condition are still alive after three 
-years. 
-- That's helpful, thank you. 
+<div class = "one"> Doctor, one thing before I go. Can you tell me how long I've got? </div>
+<div class = "two"> There's not an exact answer to that. </div>
+<div class = "one"> I'd be grateful for anything you can give me an idea. </div>
+<div class = "two"> Well let me say ten percent of people with this condition are still alive after three years. </div>
+<div class = "one"> That's helpful, thank you. </div>
 
 [[return|previous()]]
 <<run $ScenesTwo.delete("02.07")>>
 
-::03.01
+::03.03 [nobr]
 <h2>SCHIZOPHRENIC </h2>\
-- How do you know I'm evil? 
-- I've been told it. 
-- Who by? Who by? 
-- You know the traffic lights at the corner? 
-- yes 
-- i'm getting signals. The ones on the left as you go up from here. 
-- Ok and what do they say? 
-- I won't tell you. 
-- Why not? 
-- Because it's about you, it's what you're like, and you know that yourself I'm not going to 
-say it. 
-- Do they tell you to hurt people? 
-- Not people. You. 
-- But you know when you take your medication that doesn't happen. 
-- That's why I stopped because it was making it hard to get the information. 
-- You do know you're ill. 
-- I've been told that. 
+<div class = "one"> How do you know I'm evil? </div>
+<div class = "two"> I've been told it. </div>
+<div class = "one"> Who by? Who by? </div>
+<div class = "two"> You know the traffic lights at the corner? </div>
+<div class = "one"> yes </div>
+<div class = "two"> i'm getting signals. The ones on the left as you go up from here. </div>
+<div class = "one"> Ok and what do they say? </div>
+<div class = "two"> I won't tell you. </div>
+<div class = "one"> Why not? </div>
+<div class = "two"> Because it's about you, it's what you're like, and you know that yourself I'm not going to say it. </div>
+<div class = "one"> Do they tell you to hurt people? </div>
+<div class = "two"> Not people. You. </div>
+<div class = "one"> But you know when you take your medication that doesn't happen. </div>
+<div class = "two"> That's why I stopped because it was making it hard to get the information. </div>
+<div class = "one"> You do know you're ill. </div>
+<div class = "two"> I've been told that. </div>
 
 [[return|previous()]]
 <<run $ScenesThree.delete("03.01")>>
 
-::03.02
+::03.03 [nobr]
 <h2>SPIES </h2>\
-- So we went to war on a completely 
-- yes but how were they to know 
-- they did know, they knew, hhe'd already admitted it wasn't true 
-- he said it to the Germans 
-- and the CIA knew 
-- but Bush and Blair didn't know 
-- didn't want to know 
-- they had to rely 
-- they wanted it to be true 
-- they thought it was true, everyone thought 
-- not everyone no, plenty of people, I didn't, I always knew it wasn't true 
-- you can't have known 
-- I knew it was all made-up stuff 
-- and how did you know? 
-- because of what American's like, what it wanted to do 
-- you didn't know it was made up, you wanted it to be made up, that's what you wanted to be 
-true. 
-- And it turns out I was right, didn't it. 
-- Do you think you've just won an argument? 
+<div class = "one"> So we went to war on a completely </div>
+<div class = "two"> yes but how were they to know </div>
+<div class = "one"> they did know, they knew, hhe'd already admitted it wasn't true </div>
+<div class = "two"> he said it to the Germans </div>
+<div class = "one"> and the CIA knew </div>
+<div class = "two"> but Bush and Blair didn't know </div>
+<div class = "one"> didn't want to know </div>
+<div class = "two"> they had to rely </div>
+<div class = "one"> they wanted it to be true </div>
+<div class = "two"> they thought it was true, everyone thought </div>
+<div class = "one"> not everyone no, plenty of people, I didn't, I always knew it wasn't true </div>
+<div class = "two"> you can't have known </div>
+<div class = "one"> I knew it was all made-up stuff </div>
+<div class = "two"> and how did you know? </div>
+<div class = "one"> because of what American's like, what it wanted to do </div>
+<div class = "two"> you didn't know it was made up, you wanted it to be made up, that's what you wanted to be true. </div>
+<div class = "one"> And it turns out I was right, didn't it. </div>
+<div class = "two"> Do you think you've just won an argument? </div>
 
 [[return|previous()]]
 <<run $ScenesThree.delete("03.02")>>
 
-::03.03
+::03.03 [nobr]
 <h2>DREAM </h2>\
-- I had this dream last night, I was in a garden and there was blackberries, big bushes of 
-brambles, I was picking them, and a butterfly flew across and I could see this 
-orange-and-black buttterfly really clearly on a yellow rose, but then the whole thing was a 
-dance because I was at the ballet. And I looked all those things up on a website about 
-dreams, blackberry, butterfly, ballet, and every single one means infidelity. So now I know 
-he's cheating. 
-- So you don't feel you have to be faithful to him any more? 
-- No, why should I? 
-- So that leaves the way clear for us? 
-- Don't you think? 
-- Unless it's not about him. 
-- Who then? 
-- You. You and me. 
-- That would mean we're definitely going to do it. 
-- So either way. 
-- Either way. 
+<div class = "one"> I had this dream last night, I was in a garden and there was blackberries, big bushes of brambles, I was picking them, and a butterfly flew across and I could see this orange-and-black buttterfly really clearly on a yellow rose, but then the whole thing was a dance because I was at the ballet. And I looked all those things up on a website about dreams, blackberry, butterfly, ballet, and every single one means infidelity. So now I know he's cheating. </div>
+<div class = "two"> So you don't feel you have to be faithful to him any more? </div>
+<div class = "one"> No, why should I? </div>
+<div class = "two"> So that leaves the way clear for us? </div>
+<div class = "one"> Don't you think? </div>
+<div class = "two"> Unless it's not about him. </div>
+<div class = "one"> Who then? </div>
+<div class = "two"> You. You and me. </div>
+<div class = "one"> That would mean we're definitely going to do it. </div>
+<div class = "two"> So either way. </div>
+<div class = "one"> Either way. </div>
 
 [[return|previous()]]
 <<run $ScenesThree.delete("03.03")>>
 
-::03.04
+::03.03 [nobr]
 <h2>RECLUSE </h2>\
-  //Two inside, one outside the door who can be heard.// 
-- Don't answer 
-- it's only 
-- look through the spyhole. 
-- You're right, I thought it was the boy delivering the 
-- don't answer don't 
-- of course I won't answer, don't panic. 
-- Hello. Hello Mr Rushmore, I believe this is where you live. We saw you going in, we know 
-the car outside is 
-- make him go away 
-- shall I speak to him? 
-- yes no no 
-- and of course I respect your desire for privacy and it would be so much help your thousands 
-of admirers to understand if you could say a few words to us about that privacy how it feels 
-to live here in a forest miles afrom 
-- I'm going to die 
-- sh it's all right 
-- five minutes of your time I could explain to the world why you've chosen to leave it all 
-behind and withdraw to this remote 
-- I should have a gun 
-- because that would enable you to set the record straight about your ex-wife's allegations 
-of 
-- I'm going to bed 
-- to confirm or deny that you said of the Queen that she 
-- I'll have to hide in the cupboard 
-- to put an end to speculation once and for all about your 
-- I'd kill myself but they'd write an obituary 
-- shall I tell him to 
-- no no because then they'll write about you 
-- it doesn't matter 
-- it does they mustn't if they know about you if you talk to them I'll never see you again 
-- because we have a photograph of you taken last week in the 
-- why don't I just 
-- ALL RIGHT. 
-- What? 
-- Hello, Mr Rushmore? 
-- I have three things to say. i am now a citizen of China. I have six illegitimate children. 
-I have recently been abducted by aliens and returned to earth unharmed. 
-- Mr Rushmore, if you could just open the door for a moment 
-- that's all right you see that's fine if I tell him lies that's fine I haven't told them 
-anything about myself at all that's fine I feel fine about that I think that's fine I think I 
-feel fine about 
-- and when exactly were you last in China? 
-- that's fine that's fine 
-- good good I'm glad you feel ok about 
-- and will he go away now? 
-- in a while he's sure to go away in a while if we keep 
-- Mr Rushmore 
-  //Time passes.// 
-- He's gone. 
-- He's gone. 
-- Well that's all right then 
-- yes 
-- you handled that very 
-- no I feel 
-- what? 
-- I feel terrible I feel 
-- but you didn't tell him 
-- but he knows 
-- he doesn't know anything it was lies 
-- he knows I'm the person that told those lies 
-- no because he doesn't know it was lies 
-- yes but he knows I said 
-- you mean he'll work out it's lies and 
-- whichever whichever he knows I said those words he knows I was in this room we'll have to 
-move he knows it was me he knows I shouted out those 
-- so you don't feel as good as you 
-- no no I don't I feel
+<div class = "direction">Two inside, one outside the door who can be heard.</div> 
+<div class = "one"> Don't answer </div>
+<div class = "two"> it's only </div>
+<div class = "one"> look through the spyhole. </div>
+<div class = "two"> You're right, I thought it was the boy delivering the </div>
+<div class = "one"> don't answer don't </div>
+<div class = "two"> of course I won't answer, don't panic. </div>
+<div class = "one"> Hello. Hello Mr Rushmore, I believe this is where you live. We saw you going in, we know the car outside is </div>
+<div class = "two"> make him go away </div>
+<div class = "one"> shall I speak to him? </div>
+<div class = "two"> yes no no </div>
+<div class = "one"> and of course I respect your desire for privacy and it would be so much help your thousands of admirers to understand if you could say a few words to us about that privacy how it feels to live here in a forest miles afrom </div>
+<div class = "two"> I'm going to die </div>
+<div class = "one"> sh it's all right </div>
+<div class = "two"> five minutes of your time I could explain to the world why you've chosen to leave it all behind and withdraw to this remote </div>
+<div class = "one"> I should have a gun </div>
+<div class = "two"> because that would enable you to set the record straight about your ex-wife's allegations of </div>
+<div class = "one"> I'm going to bed </div>
+<div class = "two"> to confirm or deny that you said of the Queen that she </div>
+<div class = "one"> I'll have to hide in the cupboard </div>
+<div class = "two"> to put an end to speculation once and for all about your </div>
+<div class = "one"> I'd kill myself but they'd write an obituary </div>
+<div class = "two"> shall I tell him to </div>
+<div class = "one"> no no because then they'll write about you </div>
+<div class = "two"> it doesn't matter </div>
+<div class = "one"> it does they mustn't if they know about you if you talk to them I'll never see you again </div>
+<div class = "two"> because we have a photograph of you taken last week in the </div>
+<div class = "one"> why don't I just </div>
+<div class = "two"> ALL RIGHT. </div>
+<div class = "one"> What? </div>
+<div class = "two"> Hello, Mr Rushmore? </div>
+<div class = "one"> I have three things to say. i am now a citizen of China. I have six illegitimate children. I have recently been abducted by aliens and returned to earth unharmed. </div>
+<div class = "two"> Mr Rushmore, if you could just open the door for a moment </div>
+<div class = "one"> that's all right you see that's fine if I tell him lies that's fine I haven't told them anything about myself at all that's fine I feel fine about that I think that's fine I think I feel fine about </div>
+<div class = "two"> and when exactly were you last in China? </div>
+<div class = "one"> that's fine that's fine </div>
+<div class = "two"> good good I'm glad you feel ok about </div>
+<div class = "one"> and will he go away now? </div>
+<div class = "two"> in a while he's sure to go away in a while if we keep </div>
+<div class = "one"> Mr Rushmore </div>
+<div class = "direction">Time passes.</div> 
+<div class = "one"> He's gone. </div>
+<div class = "two"> He's gone. </div>
+<div class = "one"> Well that's all right then </div>
+<div class = "two"> yes </div>
+<div class = "one"> you handled that very </div>
+<div class = "two"> no I feel </div>
+<div class = "one"> what? </div>
+<div class = "two"> I feel terrible I feel </div>
+<div class = "one"> but you didn't tell him </div>
+<div class = "two"> but he knows </div>
+<div class = "one"> he doesn't know anything it was lies </div>
+<div class = "two"> he knows I'm the person that told those lies </div>
+<div class = "one"> no because he doesn't know it was lies </div>
+<div class = "two"> yes but he knows I said </div>
+<div class = "one"> you mean he'll work out it's lies and </div>
+<div class = "two"> whichever whichever he knows I said those words he knows I was in this room we'll have to move he knows it was me he knows I shouted out those </div>
+<div class = "one"> so you don't feel as good as you </div>
+<div class = "two"> no no I don't I feel</div>
 
 [[return|previous()]]
 <<run $ScenesThree.delete("03.04")>>
 
-::03.05
+::03.03 [nobr]
 <h2>GOD'S VOICE </h2>\
-- God told you to do it? 
-- He did, yes. 
-- How? 
-- How do you mean, how? 
-- Did you hear words? 
-- It was the word of God. 
-- But like something you could hear with your ears, actual words from outside you? 
-- They came into me. 
-- The words. 
-- What God said. 
-- So you didn't exactly hear...? 
-- In my heart. 
-- So how does that work then? 
-- I was praying about it 
-- in words? 
-- sometimes in words, sometimes just 
-- silently 
-- the words were silent, I was praying in 
-- in your head 
-- if you like, my head my heart 
-- so sometimes in words and sometimes 
-- sometimes just being in a state where I was praying 
-- I don't know what state that is 
-- well you'll have to take it from me there is such a state 
-- ok, so there you are praying 
-- praying and not knowing, seeking guidance, open to guidance from God 
-- ok 
-- and he told me what to do. 
-- What's his voice like? 
-- Firm. Kind. 
-- He speaks English? 
-- What sort of question is that? 
-- I know but does he speak rp or have a regional accent? I'm trying to understand what you 
-heard. 
-- It wasn't hearing like I hear you but it was hearing. 
-- And he definitely said do it. 
-- He said do it. 
-- In words. 
-- In words and inside me in knowing it was the right thing to do. 
-- In your heart? 
-- Right through my whole being. 
-- In your toes? 
-- Yes in my toes, will you stop now?
+<div class = "one"> God told you to do it? </div>
+<div class = "two"> He did, yes. </div>
+<div class = "one"> How? </div>
+<div class = "two"> How do you mean, how? </div>
+<div class = "one"> Did you hear words? </div>
+<div class = "two"> It was the word of God. </div>
+<div class = "one"> But like something you could hear with your ears, actual words from outside you? </div>
+<div class = "two"> They came into me. </div>
+<div class = "one"> The words. </div>
+<div class = "two"> What God said. </div>
+<div class = "one"> So you didn't exactly hear...? </div>
+<div class = "two"> In my heart. </div>
+<div class = "one"> So how does that work then? </div>
+<div class = "two"> I was praying about it </div>
+<div class = "one"> in words? </div>
+<div class = "two"> sometimes in words, sometimes just </div>
+<div class = "one"> silently </div>
+<div class = "two"> the words were silent, I was praying in </div>
+<div class = "one"> in your head </div>
+<div class = "two"> if you like, my head my heart </div>
+<div class = "one"> so sometimes in words and sometimes </div>
+<div class = "two"> sometimes just being in a state where I was praying </div>
+<div class = "one"> I don't know what state that is </div>
+<div class = "two"> well you'll have to take it from me there is such a state </div>
+<div class = "one"> ok, so there you are praying </div>
+<div class = "two"> praying and not knowing, seeking guidance, open to guidance from God </div>
+<div class = "one"> ok </div>
+<div class = "two"> and he told me what to do. </div>
+<div class = "one"> What's his voice like? </div>
+<div class = "two"> Firm. Kind. </div>
+<div class = "one"> He speaks English? </div>
+<div class = "two"> What sort of question is that? </div>
+<div class = "one"> I know but does he speak rp or have a regional accent? I'm trying to understand what you heard. </div>
+<div class = "two"> It wasn't hearing like I hear you but it was hearing. </div>
+<div class = "one"> And he definitely said do it. </div>
+<div class = "two"> He said do it. </div>
+<div class = "one"> In words. </div>
+<div class = "two"> In words and inside me in knowing it was the right thing to do. </div>
+<div class = "one"> In your heart? </div>
+<div class = "two"> Right through my whole being. </div>
+<div class = "one"> In your toes? </div>
+<div class = "two"> Yes in my toes, will you stop now?</div>
 
 [[return|previous()]]
 <<run $ScenesThree.delete("03.05")>>
 
-::03.06
+::03.03 [nobr]
 <h2>THE CHILD WHO DIDN'T KNOW FEAR </h2>\
-  //One person tells a story to another.// 
-- Once upon a time there was a child who didn't know what fear was and he wanted to find out. 
-So his friends said, Cold shiver down your back, legs go funny, sometimes your hands no not 
-your hands yes your hands tingle, it's more in your head, it's in your stomach, your belly 
-you shit yourself, you can't breathe, your skin your skin creeps, it's a shiver a shudder do 
-you really not know what it is? And the child said, I don't know what you mean. So they took 
-him to a big dark empty house everyone said was haunted. They said, No one's ever been able 
-to stay here till morning, you won't stay till midnight, you won't last an hour, and the 
-child said, Why, what's going to happen? And they said, You'll know what we mean about being 
-frightened. And the child said, Good, that's what I want to know. So in the morning his 
-friends came back and there was the child sitting in the dusty room. And they said, You're 
-still here? what happened? And the child said, There were things walking about, dead things, 
-some of them didn't have heads and a monster with glowing - and his friends said, Didn't you 
-run away? and the child said, There were weird noises like screams and like music but not 
-music, and his friends said, What did you feel? and the child said, It came right up to me 
-and put out its hand, and his friends said, Didn't your hair your stomach the back of your 
-neck your legs weren't you frightened? And the child said, No, it's no good, I didn't feel 
-anything, I still don't know what fear is. And on the way home he met a lion and the lion ate 
-him. 
+<div class = "direction">One person tells a story to another.</div> 
+<div class = "one"> Once upon a time there was a child who didn't know what fear was and he wanted to find out. So his friends said, Cold shiver down your back, legs go funny, sometimes your hands no not your hands yes your hands tingle, it's more in your head, it's in your stomach, your belly you shit yourself, you can't breathe, your skin your skin creeps, it's a shiver a shudder do you really not know what it is? And the child said, I don't know what you mean. So they took him to a big dark empty house everyone said was haunted. They said, No one's ever been able to stay here till morning, you won't stay till midnight, you won't last an hour, and the child said, Why, what's going to happen? And they said, You'll know what we mean about being frightened. And the child said, Good, that's what I want to know. So in the morning his friends came back and there was the child sitting in the dusty room. And they said, You're still here? what happened? And the child said, There were things walking about, dead things, some of them didn't have heads and a monster with glowing - and his friends said, Didn't you run away? and the child said, There were weird noises like screams and like music but not music, and his friends said, What did you feel? and the child said, It came right up to me and put out its hand, and his friends said, Didn't your hair your stomach the back of your neck your legs weren't you frightened? And the child said, No, it's no good, I didn't feel anything, I still don't know what fear is. And on the way home he met a lion and the lion ate him. </div>
 
 [[return|previous()]]
 <<run $ScenesThree.delete("03.06")>>
 
-::03.07
+::03.03 [nobr]
 <h2>STAR </h2>\
-- It takes the light two point eight million years to get here. 
-- So we're looking at two point eight million years ago. 
-- It might not be there. It could have died by now. 
-- So who's going to see that? 
-- It might not even be people by then. The sun's only eight minutes. 
-- In the morning let's wait eight minutes and see if it's there now. 
+<div class = "one"> It takes the light two point eight million years to get here. </div>
+<div class = "two"> So we're looking at two point eight million years ago. </div>
+<div class = "one"> It might not be there. It could have died by now. </div>
+<div class = "two"> So who's going to see that? </div>
+<div class = "one"> It might not even be people by then. The sun's only eight minutes. </div>
+<div class = "two"> In the morning let's wait eight minutes and see if it's there now. </div>
 
 [[return|previous()]]
 <<run $ScenesThree.delete("03.07")>>
 
-::04.01
+::04.04 [nobr]
 <h2>WEDDING VIDEO </h2>\
-  //Several people.// 
-- This is the bit 
-- this is the funny bit watch 
-- where he spills 
-- ah ah ha ha ha 
-- gets me every time 
-- and look look the sweet 
-- and wasn't she little then 
-- just a tiny girl in her pink 
-- and now she's my god you should see 
-- and her boyfriend 
-- have you met him he's the most 
-- and there's that woman 
-- we never knew who she was 
-- yes she's there in the video but who invited 
-- someone who just goes to strangers' weddings 
-- there she is talking to who is that that uncle of yours is it no 
-- and look at the dresses I mean 
-- because now you wouldn't dream 
-- it shows you it's history 
-- yes the children like it because 
-- and the grandchildren are going to 
-- and it can go down in the family and they can see 
-- and all the ones of them as babies and little 
-- and all the ones of their weddings and their 
-- but it's sad we haven't got our grandparents' wedding video 
-- or great great 
-- or everybody that ever lived videos of 
-- Henry the Eighth 
-- Jesus walking on the 
-- no further back if we had cave if we had Neanderthal 
-- and dinosaurs 
-- but who'd be working the camera? 
-- and things coming out of the sea and tiny specks 
-- then we'd know we'd know 
-- we could keep 
-- we'd know what 
-- because I wouldn't remember all this if without the video I wouldn't remember hardly 
-anything at all about it because I can't remember anything about that day that's not on the 
-video not clearly 
-- I can remember putting the ring 
-- no I can't see that in my mind's 
-- and someone was sick 
-- oh look it's the speevches now listen to Dad's speech it's so 
+<div class = "direction">Several people.</div> 
+<div class = "one"> This is the bit </div>
+<div class = "two"> this is the funny bit watch </div>
+<div class = "one"> where he spills </div>
+<div class = "two"> ah ah ha ha ha </div>
+<div class = "one"> gets me every time </div>
+<div class = "two"> and look look the sweet </div>
+<div class = "one"> and wasn't she little then </div>
+<div class = "two"> just a tiny girl in her pink </div>
+<div class = "one"> and now she's my god you should see </div>
+<div class = "two"> and her boyfriend </div>
+<div class = "one"> have you met him he's the most </div>
+<div class = "two"> and there's that woman </div>
+<div class = "one"> we never knew who she was </div>
+<div class = "two"> yes she's there in the video but who invited </div>
+<div class = "one"> someone who just goes to strangers' weddings </div>
+<div class = "two"> there she is talking to who is that that uncle of yours is it no </div>
+<div class = "one"> and look at the dresses I mean </div>
+<div class = "two"> because now you wouldn't dream </div>
+<div class = "one"> it shows you it's history </div>
+<div class = "two"> yes the children like it because </div>
+<div class = "one"> and the grandchildren are going to </div>
+<div class = "two"> and it can go down in the family and they can see </div>
+<div class = "one"> and all the ones of them as babies and little </div>
+<div class = "two"> and all the ones of their weddings and their </div>
+<div class = "one"> but it's sad we haven't got our grandparents' wedding video </div>
+<div class = "two"> or great great </div>
+<div class = "one"> or everybody that ever lived videos of </div>
+<div class = "two"> Henry the Eighth </div>
+<div class = "one"> Jesus walking on the </div>
+<div class = "two"> no further back if we had cave if we had Neanderthal </div>
+<div class = "one"> and dinosaurs </div>
+<div class = "two"> but who'd be working the camera? </div>
+<div class = "one"> and things coming out of the sea and tiny specks </div>
+<div class = "two"> then we'd know we'd know </div>
+<div class = "one"> we could keep </div>
+<div class = "two"> we'd know what </div>
+<div class = "one"> because I wouldn't remember all this if without the video I wouldn't remember hardly anything at all about it because I can't remember anything about that day that's not on the video not clearly </div>
+<div class = "two"> I can remember putting the ring </div>
+<div class = "one"> no I can't see that in my mind's </div>
+<div class = "two"> and someone was sick </div>
+<div class = "one"> oh look it's the speevches now listen to Dad's speech it's so </div>
 
 [[return|previous()]]
 <<run $ScenesFour.delete("04.01")>>
 
-::04.02
+::04.04 [nobr]
 <h2>SAVANT </h2>\
-- What did you have for lunch on October the third 1998? 
-- Chicken soup and a salad. I was at home. I had the chicken soup in a blue bowl. The salad 
-had tomatoes, lettuce and chicory but no onion because I didn't want my breath to smell of 
-onion when I went to the movies with my brother in the afternoon. The movie began at 2.15. 
-- What was the movie? 
-- Godzilla. 
-- What happened in it? 
-- You want the whole thing? Shot by shot? 
-- Can you do that? 
-- Let's not do that. 
-- Ok. I remember Godzilla. There's a lizard that's been irradiated by a nuclear explosion so 
-it's a monster and it goes to New York and the American military drops bombs on it. 
-- That's the one. 
-- What did you do afterwards? 
-- We walked back to my brother's place and had poached eggs on toast. I had two cups of tea 
-in his red mug, the one with a chip. 
-- What was the weather like? 
-- Rain in the morning but it cleared up. Rain in the evening. Rain the next morning. 
-- June the sixth 20::04. 
+<div class = "one"> What did you have for lunch on October the third 1998? </div>
+<div class = "two"> Chicken soup and a salad. I was at home. I had the chicken soup in a blue bowl. The salad had tomatoes, lettuce and chicory but no onion because I didn't want my breath to smell of onion when I went to the movies with my brother in the afternoon. The movie began at 2.15. </div>
+<div class = "one"> What was the movie? </div>
+<div class = "two"> Godzilla. </div>
+<div class = "one"> What happened in it? </div>
+<div class = "two"> You want the whole thing? Shot by shot? </div>
+<div class = "one"> Can you do that? </div>
+<div class = "two"> Let's not do that. </div>
+<div class = "one"> Ok. I remember Godzilla. There's a lizard that's been irradiated by a nuclear explosion so it's a monster and it goes to New York and the American military drops bombs on it. </div>
+<div class = "two"> That's the one. </div>
+<div class = "one"> What did you do afterwards? </div>
+<div class = "two"> We walked back to my brother's place and had poached eggs on toast. I had two cups of tea in his red mug, the one with a chip. </div>
+<div class = "one"> What was the weather like? </div>
+<div class = "two"> Rain in the morning but it cleared up. Rain in the evening. Rain the next morning. </div>
+<div class = "one"> June the sixth 20::04. </div>
 
 [[return|previous()]]
 <<run $ScenesFour.delete("04.02")>>
 
-::04.03
+::04.04 [nobr]
 <h2>EX </h2>\
-- I'm glad we've done it, just to see 
-- so am I 
-- after all these years 
-- because it was very important at the time, it's been very important 
-- it has for me, all my life, very important 
-- so never to have seen each other again would have been 
-- it would have been impossible 
-- it would have been sad anyway. 
-- You remember the Italian restaurant? 
-- bno, yes, on the corner was it? 
-- with the bushes outside? 
-- no, I'm mixing it up with 
-- I can see the waiter now 
-- no, I can't get the waiter 
-- the waiter with the moustache who always smiled so much when we came in. 
-- I used to have spaghetti carbonara and you had vongole. 
-- I can't remember eating, no, I was too busy looking at you probably. 
-- I really loved you then. 
-- I loved you. 
-- I always remember you standing in the field 
-- I wonder where that was, was it 
-- all the buttercups. 
-- I've got a really clear picture of you running ahead of me down a street. We were running 
-for a bus I think. 
-- Do you remember that hotel, we took a room for a couple of hours in a hotel, there was 
-green wallpaper and we stood there kissing. 
-- I remember the first time 
-- no, that's got overlaid by so many other times, I can't, I remember once by a river, we 
-were practically on a public footpath 
-- the kitchen, the kitchen at your friend's house 
-- which friend? 
-- I never knew your friends' names 
-- was it Chris? Terry? 
-- I don't know, you remember the kitchen? 
-- I might if I knew which house. Did we do it in a kitchen? 
-- Behind the door. There was soup on the cooker. 
-- I remember us just looking at each other. 
-- The time in the street, we just stopped. 
-- I was thinking more a time when you were sitting on the side of the bed. 
-- Was that early on or near the end? 
-- Near the end, I think. Do you know the time I mean? 
-- I sometimes go past the coffee shop. 
-- Which one? 
-- The one where we kept trying to say goodbye. 
-- I think I've blotted that whole day out. 
-- We were really happy. 
-- Or sad, we used to cry. 
-- Did we? 
-- Sometimes. 
+<div class = "one"> I'm glad we've done it, just to see </div>
+<div class = "two"> so am I </div>
+<div class = "one"> after all these years </div>
+<div class = "two"> because it was very important at the time, it's been very important </div>
+<div class = "one"> it has for me, all my life, very important </div>
+<div class = "two"> so never to have seen each other again would have been </div>
+<div class = "one"> it would have been impossible </div>
+<div class = "two"> it would have been sad anyway. </div>
+<div class = "one"> You remember the Italian restaurant? </div>
+<div class = "two"> bno, yes, on the corner was it? </div>
+<div class = "one"> with the bushes outside? </div>
+<div class = "two"> no, I'm mixing it up with </div>
+<div class = "one"> I can see the waiter now </div>
+<div class = "two"> no, I can't get the waiter </div>
+<div class = "one"> the waiter with the moustache who always smiled so much when we came in. </div>
+<div class = "two"> I used to have spaghetti carbonara and you had vongole. </div>
+<div class = "one"> I can't remember eating, no, I was too busy looking at you probably. </div>
+<div class = "two"> I really loved you then. </div>
+<div class = "one"> I loved you. </div>
+<div class = "two"> I always remember you standing in the field </div>
+<div class = "one"> I wonder where that was, was it </div>
+<div class = "two"> all the buttercups. </div>
+<div class = "one"> I've got a really clear picture of you running ahead of me down a street. We were running for a bus I think. </div>
+<div class = "two"> Do you remember that hotel, we took a room for a couple of hours in a hotel, there was green wallpaper and we stood there kissing. </div>
+<div class = "one"> I remember the first time </div>
+<div class = "two"> no, that's got overlaid by so many other times, I can't, I remember once by a river, we were practically on a public footpath </div>
+<div class = "one"> the kitchen, the kitchen at your friend's house </div>
+<div class = "two"> which friend? </div>
+<div class = "one"> I never knew your friends' names </div>
+<div class = "two"> was it Chris? Terry? </div>
+<div class = "one"> I don't know, you remember the kitchen? </div>
+<div class = "two"> I might if I knew which house. Did we do it in a kitchen? </div>
+<div class = "one"> Behind the door. There was soup on the cooker. </div>
+<div class = "two"> I remember us just looking at each other. </div>
+<div class = "one"> The time in the street, we just stopped. </div>
+<div class = "two"> I was thinking more a time when you were sitting on the side of the bed. </div>
+<div class = "one"> Was that early on or near the end? </div>
+<div class = "two"> Near the end, I think. Do you know the time I mean? </div>
+<div class = "one"> I sometimes go past the coffee shop. </div>
+<div class = "two"> Which one? </div>
+<div class = "one"> The one where we kept trying to say goodbye. </div>
+<div class = "two"> I think I've blotted that whole day out. </div>
+<div class = "one"> We were really happy. </div>
+<div class = "two"> Or sad, we used to cry. </div>
+<div class = "one"> Did we? </div>
+<div class = "two"> Sometimes. </div>
 
 [[return|previous()]]
 <<run $ScenesFour.delete("04.03")>>
 
-::04.04
+::04.04 [nobr]
 <h2>MEMORY HOUSE </h2>\
-- to improve my mind 
-- no but you've got a good 
-- my memory to improve 
-- forget a lot? 
-- not not 
-- like names 
-- like names like faces 
-- we all 
-- yes but 
-- not worth worrying 
-- but I want to learn 
-- ah 
-- huge amount of memorising 
-- of course 
-- vocabulary 
-- yes 
-- statistics 
-- statistics 
-- every imaginable 
-- I see your point 
-- stacks of information which I have to 
-- somehow 
-- somehow acquire and retain. 
-- So how do you intend 
-- this course improves your memory 
-- to improve your 
-- lists lists as exercises 
-- like getting the muscles 
-- muscles of the brain 
-- which of course I know it doesn't have muscles 
-- and more than that a technique 
-- for remembering 
-- ancient ancient technique Romans 
-- didn't know they 
-- and all sorts Renaissance 
-- they had a lot of brains then in the 
-- Leonardo da Vinci 
-- so did he? 
-- I don't know that he actually did 
-- not this technique 
-- not necessarily this actual technique 
-- though he might have done 
-- it's beside the point, the point 
-- the actual technique 
-- the actual technique is you take a place like you could take a house 
-- take a house? 
-- in your ind this is mental take a house you know in your mind 
-- like my aunt's got a house 
-- there you are take this house in your mind and you've got a list of things you want to 
-remember 
-- like what? 
-- like anything like this list I've got here this exercise 
-- crocodile pincushion 
-- and you go round the house in your mind you go round and you put something in each room 
-- can't quite remember all the rooms because 
-- can't remember the rooms? 
-- in my aunt's house I've never 
-- take where you live 
-- only be able to remember three things 
-- no you could go round the room and put one on the table and one on the chair 
-- oh I see 
-- but you'll have to remember what order 
-- what order I'm going round the room 
-- is that all right? 
-- So I've got my house when I was a child in my mind and I'm going to go round it now and put 
-a crocodile on the doorstep 
-- a crocodile on the table 
-- a pincushion just inside on the mat 
-- pincushion on the chair 
-- pair of scissors in the sittingroom on the sofa 
-- pair of scissors on the other chair 
-- axe in the diningroom on the table 
-- axe on the other chair 
-- wristwatch 
-- wristwatch 
-- could you just in your head do you mind i can't 
-- I'm not bothered by hearig yours 
-- keep seeing your room in my 
-- because i don't know where you lived as a child so it doesn't 
-- so I can still say 
-- yes if it helps and I'll just 
-- thank you ok so wristwatch in the kitchen on the cooker elephant on the stairs poundcoin in 
-the bathroom biro on their bed hedgehog on my bed tree in the attic 
-- tree 
-- makes ten. 
-- So now we go round 
-- pick the up 
-- on the doorstep crocodile 
-- crocodile pincushion 
-- pincushion yes scissors in the sittingroom 
-- scissors wristwatch 
-- no not yet 
-- oh it's on the other 
-- sh 
-- so it's 
-- axe 
-- axe axe wristwatch 
-- wristwatch 
-- elephant 
-- poundcoin 
-- now where did I put? 
-- oh 
-- what? 
-- bedroom 
-- on top of the cd player 
-- no in the bedroom I suddenly 
-- biro 
-- yes of course biro but I suddenly 
-- what 
-- saw my father 
-- in his bedroom 
-- my father getting dressed 
-- he's not he wasn't 
-- no it's nothing 
-- nothing awful happened you're not remembering 
-- no nothing like that at all I just suddenly saw him and 
-- so when did you last 
-- no it's just that he's dead and I don't 
-- of course years ago I'd forgotten I'm 
-- no it's nothing it's just he was there in the bedroom 
-- and that's a memory is it 
-- yes I suppose it is of course it's a memory from 
-- from when you were little 
-- yes because he's very I'm only half his size so 
-- so is this like a new 
-- yes a new memory and I'm seeing 
-- you can see with your eyes when you were 
-- say maybe four and the sunlight 
-- sunlight 
-- yes because it's sunny in the room shining in behind him and on the floor on my feet 
-- you can see your feet 
-- I can see my feet when I was four 
-- which isn't a memory you've always 
-- no I've never 
-- and you're sure it's not some horrible 
-- some repressed no it's not it's just a memory isn't it 
-- so the room faced east 
-- yes it's morning in the room and I just saw it 
-- some sort of crossed wire. 
-- Because of course it's biro 
-- biro 
-- hedgehog 
-- I've lost the hedgehog wait oh it's in the microwave I don't know where I went next oh I 
-know on the pile of old newspapers it's a tree 
-- tree in the attic. 
-- So could we say the list straight off 
-- I'm sure we could 
-- and then do another list 
-- lots of lists 
-- and how do we keep the lists separate 
-- I'm not sure yet I've got to 
-- because I'll keep getting the hedgehog in the microwave 
-- wait a minute I'll find out 
-- find out what to do next. 
+<div class = "one"> to improve my mind </div>
+<div class = "two"> no but you've got a good </div>
+<div class = "one"> my memory to improve </div>
+<div class = "two"> forget a lot? </div>
+<div class = "one"> not not </div>
+<div class = "two"> like names </div>
+<div class = "one"> like names like faces </div>
+<div class = "two"> we all </div>
+<div class = "one"> yes but </div>
+<div class = "two"> not worth worrying </div>
+<div class = "one"> but I want to learn </div>
+<div class = "two"> ah </div>
+<div class = "one"> huge amount of memorising </div>
+<div class = "two"> of course </div>
+<div class = "one"> vocabulary </div>
+<div class = "two"> yes </div>
+<div class = "one"> statistics </div>
+<div class = "two"> statistics </div>
+<div class = "one"> every imaginable </div>
+<div class = "two"> I see your point </div>
+<div class = "one"> stacks of information which I have to </div>
+<div class = "two"> somehow </div>
+<div class = "one"> somehow acquire and retain. </div>
+<div class = "two"> So how do you intend </div>
+<div class = "one"> this course improves your memory </div>
+<div class = "two"> to improve your </div>
+<div class = "one"> lists lists as exercises </div>
+<div class = "two"> like getting the muscles </div>
+<div class = "one"> muscles of the brain </div>
+<div class = "two"> which of course I know it doesn't have muscles </div>
+<div class = "one"> and more than that a technique </div>
+<div class = "two"> for remembering </div>
+<div class = "one"> ancient ancient technique Romans </div>
+<div class = "two"> didn't know they </div>
+<div class = "one"> and all sorts Renaissance </div>
+<div class = "two"> they had a lot of brains then in the </div>
+<div class = "one"> Leonardo da Vinci </div>
+<div class = "two"> so did he? </div>
+<div class = "one"> I don't know that he actually did </div>
+<div class = "two"> not this technique </div>
+<div class = "one"> not necessarily this actual technique </div>
+<div class = "two"> though he might have done </div>
+<div class = "one"> it's beside the point, the point </div>
+<div class = "two"> the actual technique </div>
+<div class = "one"> the actual technique is you take a place like you could take a house </div>
+<div class = "two"> take a house? </div>
+<div class = "one"> in your ind this is mental take a house you know in your mind </div>
+<div class = "two"> like my aunt's got a house </div>
+<div class = "one"> there you are take this house in your mind and you've got a list of things you want to remember </div>
+<div class = "two"> like what? </div>
+<div class = "one"> like anything like this list I've got here this exercise </div>
+<div class = "two"> crocodile pincushion </div>
+<div class = "one"> and you go round the house in your mind you go round and you put something in each room </div>
+<div class = "two"> can't quite remember all the rooms because </div>
+<div class = "one"> can't remember the rooms? </div>
+<div class = "two"> in my aunt's house I've never </div>
+<div class = "one"> take where you live </div>
+<div class = "two"> only be able to remember three things </div>
+<div class = "one"> no you could go round the room and put one on the table and one on the chair </div>
+<div class = "two"> oh I see </div>
+<div class = "one"> but you'll have to remember what order </div>
+<div class = "two"> what order I'm going round the room </div>
+<div class = "one"> is that all right? </div>
+<div class = "two"> So I've got my house when I was a child in my mind and I'm going to go round it now and put a crocodile on the doorstep </div>
+<div class = "one"> a crocodile on the table </div>
+<div class = "two"> a pincushion just inside on the mat </div>
+<div class = "one"> pincushion on the chair </div>
+<div class = "two"> pair of scissors in the sittingroom on the sofa </div>
+<div class = "one"> pair of scissors on the other chair </div>
+<div class = "two"> axe in the diningroom on the table </div>
+<div class = "one"> axe on the other chair </div>
+<div class = "two"> wristwatch </div>
+<div class = "one"> wristwatch </div>
+<div class = "two"> could you just in your head do you mind i can't </div>
+<div class = "one"> I'm not bothered by hearig yours </div>
+<div class = "two"> keep seeing your room in my </div>
+<div class = "one"> because i don't know where you lived as a child so it doesn't </div>
+<div class = "two"> so I can still say </div>
+<div class = "one"> yes if it helps and I'll just </div>
+<div class = "two"> thank you ok so wristwatch in the kitchen on the cooker elephant on the stairs poundcoin in the bathroom biro on their bed hedgehog on my bed tree in the attic </div>
+<div class = "one"> tree </div>
+<div class = "two"> makes ten. </div>
+<div class = "one"> So now we go round </div>
+<div class = "two"> pick the up </div>
+<div class = "one"> on the doorstep crocodile </div>
+<div class = "two"> crocodile pincushion </div>
+<div class = "one"> pincushion yes scissors in the sittingroom </div>
+<div class = "two"> scissors wristwatch </div>
+<div class = "one"> no not yet </div>
+<div class = "two"> oh it's on the other </div>
+<div class = "one"> sh </div>
+<div class = "two"> so it's </div>
+<div class = "one"> axe </div>
+<div class = "two"> axe axe wristwatch </div>
+<div class = "one"> wristwatch </div>
+<div class = "two"> elephant </div>
+<div class = "one"> poundcoin </div>
+<div class = "two"> now where did I put? </div>
+<div class = "one"> oh </div>
+<div class = "two"> what? </div>
+<div class = "one"> bedroom </div>
+<div class = "two"> on top of the cd player </div>
+<div class = "one"> no in the bedroom I suddenly </div>
+<div class = "two"> biro </div>
+<div class = "one"> yes of course biro but I suddenly </div>
+<div class = "two"> what </div>
+<div class = "one"> saw my father </div>
+<div class = "two"> in his bedroom </div>
+<div class = "one"> my father getting dressed </div>
+<div class = "two"> he's not he wasn't </div>
+<div class = "one"> no it's nothing </div>
+<div class = "two"> nothing awful happened you're not remembering </div>
+<div class = "one"> no nothing like that at all I just suddenly saw him and </div>
+<div class = "two"> so when did you last </div>
+<div class = "one"> no it's just that he's dead and I don't </div>
+<div class = "two"> of course years ago I'd forgotten I'm </div>
+<div class = "one"> no it's nothing it's just he was there in the bedroom </div>
+<div class = "two"> and that's a memory is it </div>
+<div class = "one"> yes I suppose it is of course it's a memory from </div>
+<div class = "two"> from when you were little </div>
+<div class = "one"> yes because he's very I'm only half his size so </div>
+<div class = "two"> so is this like a new </div>
+<div class = "one"> yes a new memory and I'm seeing </div>
+<div class = "two"> you can see with your eyes when you were </div>
+<div class = "one"> say maybe four and the sunlight </div>
+<div class = "two"> sunlight </div>
+<div class = "one"> yes because it's sunny in the room shining in behind him and on the floor on my feet </div>
+<div class = "two"> you can see your feet </div>
+<div class = "one"> I can see my feet when I was four </div>
+<div class = "two"> which isn't a memory you've always </div>
+<div class = "one"> no I've never </div>
+<div class = "two"> and you're sure it's not some horrible </div>
+<div class = "one"> some repressed no it's not it's just a memory isn't it </div>
+<div class = "two"> so the room faced east </div>
+<div class = "one"> yes it's morning in the room and I just saw it </div>
+<div class = "two"> some sort of crossed wire. </div>
+<div class = "one"> Because of course it's biro </div>
+<div class = "two"> biro </div>
+<div class = "one"> hedgehog </div>
+<div class = "two"> I've lost the hedgehog wait oh it's in the microwave I don't know where I went next oh I know on the pile of old newspapers it's a tree </div>
+<div class = "one"> tree in the attic. </div>
+<div class = "two"> So could we say the list straight off </div>
+<div class = "one"> I'm sure we could </div>
+<div class = "two"> and then do another list </div>
+<div class = "one"> lots of lists </div>
+<div class = "two"> and how do we keep the lists separate </div>
+<div class = "one"> I'm not sure yet I've got to </div>
+<div class = "two"> because I'll keep getting the hedgehog in the microwave </div>
+<div class = "one"> wait a minute I'll find out </div>
+<div class = "two"> find out what to do next. </div>
 
 [[return|previous()]]
 <<run $ScenesFour.delete("04.04")>>
 
-::04.05
+::04.04 [nobr]
 <h2>DINNER </h2>\
-- I did tell you 
-- you didn't 
-- I did I said Wednesday we're going to dinner with 
-- but you didn't 
-- yes because I remember because you said 
-- all right I must have forgotten I'm sorry 
-- yes you did 
-- I'm sorry. 
+<div class = "one"> I did tell you </div>
+<div class = "two"> you didn't </div>
+<div class = "one"> I did I said Wednesday we're going to dinner with </div>
+<div class = "two"> but you didn't </div>
+<div class = "one"> yes because I remember because you said </div>
+<div class = "two"> all right I must have forgotten I'm sorry </div>
+<div class = "one"> yes you did </div>
+<div class = "two"> I'm sorry. </div>
 
 [[return|previous()]]
 <<run $ScenesFour.delete("04.05")>>
 
-::04.06
+::04.04 [nobr]
 <h2>PIANO </h2>\
-  //Three people.// 
-- This is Jennifer 
-- Hello, Jennifer. 
-- Here's the piano. You can play the piano. 
-- I've never played the piano. 
-- You sit here. 
-  //He sits. He plays well and JENNIFER sings. He gets up.// 
-- Hello. 
-- This is Jennifer. 
-- Hello, Jennifer. 
+<div class = "direction">Three people.</div> 
+<div class = "one"> This is Jennifer </div>
+<div class = "two"> Hello, Jennifer. </div>
+<div class = "one"> Here's the piano. You can play the piano. </div>
+<div class = "two"> I've never played the piano. </div>
+<div class = "one"> You sit here. </div>
+<div class = "direction">He sits. He plays well and JENNIFER sings. He gets up.</div> 
+<div class = "one"> Hello. </div>
+<div class = "two"> This is Jennifer. </div>
+<div class = "one"> Hello, Jennifer. </div>
 
 [[return|previous()]]
 <<run $ScenesFour.delete("04.06")>>
 
-::04.07
+::04.04 [nobr]
 <h2>FLASHBACK </h2>\
-- Breathe 
-- ah ah ah 
-- just breathe 
-- ah ah 
-- I've got you, it's all right. 
-- ah 
-- all right. 
-- Thank you. Sorry. I keep seeing... I can see... I can't stop seeing... 
-- I wish I could stop it for you. 
-- Short of smashing in my skull. 
-- They say time, you might be able to forget, even if it's a long time. 
-- Once it's in there. Once you know that stuff. 
+<div class = "one"> Breathe </div>
+<div class = "two"> ah ah ah </div>
+<div class = "one"> just breathe </div>
+<div class = "two"> ah ah </div>
+<div class = "one"> I've got you, it's all right. </div>
+<div class = "two"> ah </div>
+<div class = "one"> all right. </div>
+<div class = "two"> Thank you. Sorry. I keep seeing... I can see... I can't stop seeing... </div>
+<div class = "one"> I wish I could stop it for you. </div>
+<div class = "two"> Short of smashing in my skull. </div>
+<div class = "one"> They say time, you might be able to forget, even if it's a long time. </div>
+<div class = "two"> Once it's in there. Once you know that stuff. </div>
 
 [[return|previous()]]
 <<run $ScenesFour.delete("04.07")>>
 
 
-::05.01
+::05.05 [nobr]
 <h2>LINGUIST </h2>\
-- How many languages do you know? 
-- To speak fluently 
-- or a bit 
-- well of course some languages I only know a few words, while others 
-- take something like a table, like a table, how many languages can you 
-- table table trapezi stol mesa meza tarang tabulka 
-- That's so fantastic. Tabulka. Meza. They all mean table. 
-- They all mean the same thing as each other. 
-- Table. 
-- Table means the same thing. 
-- Yes, they all mean table. 
-- Or they all mean meza. 
-- Oh if you mean Chinese. 
-- Or in fact Swahili. 
-- I can't help feeling it actually is a table. 
+<div class = "one"> How many languages do you know? </div>
+<div class = "two"> To speak fluently </div>
+<div class = "one"> or a bit </div>
+<div class = "two"> well of course some languages I only know a few words, while others </div>
+<div class = "one"> take something like a table, like a table, how many languages can you </div>
+<div class = "two"> table table trapezi stol mesa meza tarang tabulka </div>
+<div class = "one"> That's so fantastic. Tabulka. Meza. They all mean table. </div>
+<div class = "two"> They all mean the same thing as each other. </div>
+<div class = "one"> Table. </div>
+<div class = "two"> Table means the same thing. </div>
+<div class = "one"> Yes, they all mean table. </div>
+<div class = "two"> Or they all mean meza. </div>
+<div class = "one"> Oh if you mean Chinese. </div>
+<div class = "two"> Or in fact Swahili. </div>
+<div class = "one"> I can't help feeling it actually is a table. </div>
 
 [[return|previous()]]
 <<run $ScenesFive.delete("05.01")>>
 
 
-::05.02
+::05.05 [nobr]
 <h2>MATHS </h2>\
-- I don't want to spend an evening with them again. 
-- You like them. You like her. 
-- He will keep making his point about mathematics not corresponding to reality because it's 
-just a system our brains developed as we evolved in the world and we've had that argument. 
-- Whereas maths is really true. 
-- Yes. 
-- Which is why if an equation wouldn't work without there being an infinite number of 
-universes there really must be an infinite number of universes. 
-- That sort of thing. 
-- But we do only have our senses, don't we, to perceive with and maybe there's all sorts of 
-other things we haven't evolved to perceive. Like an earthworm can't know about flying or a 
-bird can't know about computers. 
-- Don't let's have this conversation. 
-- why not go and see them and keep off the topic. We can argue about politics. 
-- Because he won't keep off the topic, he likes trying to make me angry because he fancies 
-you. And nobody understands what we're talking about and the evening's ruined and we all get 
-drunk and I feel like shit in the morning and can't work. 
-- Are you saying you never want to see them again? 
-- He says maths is just consistent with itself. He keeps saying it doesn't mean anything. 
-- What does it mean then? 
-- All right, we'll go and see them. 
-- She fancies you. 
+<div class = "one"> I don't want to spend an evening with them again. </div>
+<div class = "two"> You like them. You like her. </div>
+<div class = "one"> He will keep making his point about mathematics not corresponding to reality because it's just a system our brains developed as we evolved in the world and we've had that argument. </div>
+<div class = "two"> Whereas maths is really true. </div>
+<div class = "one"> Yes. </div>
+<div class = "two"> Which is why if an equation wouldn't work without there being an infinite number of universes there really must be an infinite number of universes. </div>
+<div class = "one"> That sort of thing. </div>
+<div class = "two"> But we do only have our senses, don't we, to perceive with and maybe there's all sorts of other things we haven't evolved to perceive. Like an earthworm can't know about flying or a bird can't know about computers. </div>
+<div class = "one"> Don't let's have this conversation. </div>
+<div class = "two"> why not go and see them and keep off the topic. We can argue about politics. </div>
+<div class = "one"> Because he won't keep off the topic, he likes trying to make me angry because he fancies you. And nobody understands what we're talking about and the evening's ruined and we all get drunk and I feel like shit in the morning and can't work. </div>
+<div class = "two"> Are you saying you never want to see them again? </div>
+<div class = "one"> He says maths is just consistent with itself. He keeps saying it doesn't mean anything. </div>
+<div class = "two"> What does it mean then? </div>
+<div class = "one"> All right, we'll go and see them. </div>
+<div class = "two"> She fancies you. </div>
 
 [[return|previous()]]
 <<run $ScenesFive.delete("05.02")>>
 
-::05.03
+::05.05 [nobr]
 <h2>SEX </h2>\
-- What sex evolved to do is get information from two sets of genes so you get offspring 
-that's not identifcal to you. Otherwise you just keep getting the same thing over and over 
-again like hydra or starfish. So sex essentially is information. 
-- You don't think that while we're doing it do you? 
-- It doesn't hurt to know it. Information and also love. 
-- If you're lucky. 
+<div class = "one"> What sex evolved to do is get information from two sets of genes so you get offspring that's not identifcal to you. Otherwise you just keep getting the same thing over and over again like hydra or starfish. So sex essentially is information. </div>
+<div class = "two"> You don't think that while we're doing it do you? </div>
+<div class = "one"> It doesn't hurt to know it. Information and also love. </div>
+<div class = "two"> If you're lucky. </div>
 
 [[return|previous()]]
 <<run $ScenesFive.delete("05.03")>>
 
-::05.04
+::05.05 [nobr]
 <h2>GOD </h2>\
-- God gives your life meaning. You've said that. 
-- Yes, so? 
-- If there wasn't God there'd be no meaning to your existence? 
-- And? 
-- So does God have a higher god to give his existence meaning? and that god a higher god and 
-that god 
-- no of course not 
-- of course not, so all this stuff he's done, he might find it all a bit meaningless. I'm 
-surprised he's not depressed. 
-- I don't think he minds whether he means anything or not. I don't think he thinks about it. 
-- So why do you think about it? 
-- I'm not God am I? 
-- But I don't mind not meaning anything, does that make me God? 
-- It makes you really annoying. 
+<div class = "one"> God gives your life meaning. You've said that. </div>
+<div class = "two"> Yes, so? </div>
+<div class = "one"> If there wasn't God there'd be no meaning to your existence? </div>
+<div class = "two"> And? </div>
+<div class = "one"> So does God have a higher god to give his existence meaning? and that god a higher god and that god </div>
+<div class = "two"> no of course not </div>
+<div class = "one"> of course not, so all this stuff he's done, he might find it all a bit meaningless. I'm surprised he's not depressed. </div>
+<div class = "two"> I don't think he minds whether he means anything or not. I don't think he thinks about it. </div>
+<div class = "one"> So why do you think about it? </div>
+<div class = "two"> I'm not God am I? </div>
+<div class = "one"> But I don't mind not meaning anything, does that make me God? </div>
+<div class = "two"> It makes you really annoying. </div>
 
 [[return|previous()]]
 <<run $ScenesFive.delete("05.04")>>
 
-::05.05
+::05.05 [nobr]
 <h2>RASH </h2>\
-- It's just a rash. 
-- But why, why a rash? 
-- There's all kinds of like detergences and animals and stuff in the air. Shall we have him 
-tested? 
-- He's trying to tell us something. 
-- Oh come on. 
-- Or he's trying not to tell us something. 
-- Did you get the new cream? 
+<div class = "one"> It's just a rash. </div>
+<div class = "two"> But why, why a rash? </div>
+<div class = "one"> There's all kinds of like detergences and animals and stuff in the air. Shall we have him tested? </div>
+<div class = "two"> He's trying to tell us something. </div>
+<div class = "one"> Oh come on. </div>
+<div class = "two"> Or he's trying not to tell us something. </div>
+<div class = "one"> Did you get the new cream? </div>
 
 [[return|previous()]]
 <<run $ScenesFive.delete(passage())>>
 
-::05.06
+::05.05 [nobr]
 <h2>CHILDREN </h2>\
-- You can't have children? 
-- No. 
-- You can't have children? 
-- No. 
-- How did you find that out? 
-- When was I married, it came up, we had tests and it was me. 
-- So was that why? 
-- No of course not. 
-- I thought it was because she went off with the Spaniard. 
-- She did 
-- and she's got a baby now hasn't she, she and the Spaniard have got a bambino. 
-- So it makes a difference does it? 
+<div class = "one"> You can't have children? </div>
+<div class = "two"> No. </div>
+<div class = "one"> You can't have children? </div>
+<div class = "two"> No. </div>
+<div class = "one"> How did you find that out? </div>
+<div class = "two"> When was I married, it came up, we had tests and it was me. </div>
+<div class = "one"> So was that why? </div>
+<div class = "two"> No of course not. </div>
+<div class = "one"> I thought it was because she went off with the Spaniard. </div>
+<div class = "two"> She did </div>
+<div class = "one"> and she's got a baby now hasn't she, she and the Spaniard have got a bambino. </div>
+<div class = "two"> So it makes a difference does it? </div>
 
 [[return|previous()]]
 <<run $ScenesFive.delete(passage())>>
 
-::05.07
+::05.05 [nobr]
 <h2>SHRINK </h2>\
-- It used to just be pain 
-- the memories of what happened to you when you were a child and 
-- and the things I wasn't letting myself remember of course 
-- the things you'd 
-- yes and now 
-- so the analysis has stopped it hurting 
-- not so much stopped 
-- as what? 
-- changed it into 
-- changed it into? 
-- transformed it 
-- into what though? 
-- It has meaning. 
-- Because you see where it comes from? 
-- partly that 
-- and how it's affected the way you are? 
-- partly that 
-- and partly what? 
-- It just has meaning now. 
-- What does it mean? 
-- It doesn't mean something. There isn't exactly another thing that it means. 
-- Then what do you mean when you say it has meaning now? 
-- You spoil it. You completely spoil everything. You always do. 
-- That must be painful for you. You can take it to your analyst and have it turned into 
+<div class = "one"> It used to just be pain </div>
+<div class = "two"> the memories of what happened to you when you were a child and </div>
+<div class = "one"> and the things I wasn't letting myself remember of course </div>
+<div class = "two"> the things you'd </div>
+<div class = "one"> yes and now </div>
+<div class = "two"> so the analysis has stopped it hurting </div>
+<div class = "one"> not so much stopped </div>
+<div class = "two"> as what? </div>
+<div class = "one"> changed it into </div>
+<div class = "two"> changed it into? </div>
+<div class = "one"> transformed it </div>
+<div class = "two"> into what though? </div>
+<div class = "one"> It has meaning. </div>
+<div class = "two"> Because you see where it comes from? </div>
+<div class = "one"> partly that </div>
+<div class = "two"> and how it's affected the way you are? </div>
+<div class = "one"> partly that </div>
+<div class = "two"> and partly what? </div>
+<div class = "one"> It just has meaning now. </div>
+<div class = "two"> What does it mean? </div>
+<div class = "one"> It doesn't mean something. There isn't exactly another thing that it means. </div>
+<div class = "two"> Then what do you mean when you say it has meaning now? </div>
+<div class = "one"> You spoil it. You completely spoil everything. You always do. </div>
+<div class = "two"> That must be painful for you. You can take it to your analyst and have it turned into </div>
 meaning.
 
 [[return|previous()]]
 <<run $ScenesFive.delete(passage())>>
 
-::06.01
+::06.06 [nobr]
 <h2>THE CHILD WHO DIDN'T KNOW SORRY </h2>\
-- You have to say you're sorry. 
-- I'm not sorry. 
-- But you know you hurt him. You have to say you're sorry. 
-- I don't feel sorry. 
-- You have to say it. 
+<div class = "one"> You have to say you're sorry. </div>
+<div class = "two"> I'm not sorry. </div>
+<div class = "one"> But you know you hurt him. You have to say you're sorry. </div>
+<div class = "two"> I don't feel sorry. </div>
+<div class = "one"> You have to say it. </div>
 
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.02
+::06.06 [nobr]
 <h2>CLIMATE </h2>\
-- I'm frightened. 
-- Just walk instead of driving and don't take so many hot baths. 
-- I'm frightened for the children. 
-- There were those emails those scientists, I can't remember the detail 
-- no it didn't make any difference in the end 
-- no I think you're right, most scientists all agree it's a catastrophe. The question is how 
-bad a catastrophe. 
-- It's whether they drown or starve or get killed in the fights for water. 
-- I'd choose drowning. 
-- Are you really not going to take it seriously? 
-- I don't know how to. 
-- I don't know how to. 
+<div class = "one"> I'm frightened. </div>
+<div class = "two"> Just walk instead of driving and don't take so many hot baths. </div>
+<div class = "one"> I'm frightened for the children. </div>
+<div class = "two"> There were those emails those scientists, I can't remember the detail </div>
+<div class = "one"> no it didn't make any difference in the end </div>
+<div class = "two"> no I think you're right, most scientists all agree it's a catastrophe. The question is how bad a catastrophe. </div>
+<div class = "one"> It's whether they drown or starve or get killed in the fights for water. </div>
+<div class = "two"> I'd choose drowning. </div>
+<div class = "one"> Are you really not going to take it seriously? </div>
+<div class = "two"> I don't know how to. </div>
+<div class = "one"> I don't know how to. </div>
 
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.03
+::06.06 [nobr]
 <h2>CENSOR </h2>\
-- Page forty-two. 
-- Page forty-two. 
-- The sentence bginning 'On the 21st of May...' 
-- Yes, I've got it. 
-- I'm afraid that's going to have to go. 
-- Why is that? 
-- The Ministry of Defence considers it a breach of security. 
-- It's not classified information. 
-- That is nevertheless their view. 
-- Have you got a lot of these? 
-- About thirty. 
-- Let's hear the next one then. 
+<div class = "one"> Page forty-two. </div>
+<div class = "two"> Page forty-two. </div>
+<div class = "one"> The sentence bginning 'On the 21st of May...' </div>
+<div class = "two"> Yes, I've got it. </div>
+<div class = "one"> I'm afraid that's going to have to go. </div>
+<div class = "two"> Why is that? </div>
+<div class = "one"> The Ministry of Defence considers it a breach of security. </div>
+<div class = "two"> It's not classified information. </div>
+<div class = "one"> That is nevertheless their view. </div>
+<div class = "two"> Have you got a lot of these? </div>
+<div class = "one"> About thirty. </div>
+<div class = "two"> Let's hear the next one then. </div>
 
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.04
+::06.06 [nobr]
 <h2>WIFE </h2>\
-- But I am your wife. 
-- You look like my wife. 
-- That's because I am. Look, even that little birthmark behind my ear. Look. 
-- Yes, I see it. 
-- It's me. Darling sweet, it's me, I'm here. 
-- No, she's gone. They've all gone. 
-- Who's gone. 
-- Everyone I know. Everyone who loved me. 
-- No, I love you. 
-- I don't want you to love me, I don't know you. 
-- There's things only we know, aren't there. That day on the beach with the shells. You 
-remember that? 
-- Yes, of course. 
-- And cabbages. Why is cabbages a funny word, we're the only ones who have cabbages as a joke 
-because of what happened with the cabbages. Cabbages is a joke, yes? 
-- Cabbages was a joke I shared with my wife. I miss my wife. 
-- But I am... Let me touch you. If you'd see what it feels like to touch me. If we made love 
-you'd know it was me because there are things we like to do and no one else would know that, 
-if I was a stranger pretending to be her I wouldn't know those things, you'd feel you were 
-back with me, you would I know; please. 
-- You disgust me. You frighten me. What are you? 
+<div class = "one"> But I am your wife. </div>
+<div class = "two"> You look like my wife. </div>
+<div class = "one"> That's because I am. Look, even that little birthmark behind my ear. Look. </div>
+<div class = "two"> Yes, I see it. </div>
+<div class = "one"> It's me. Darling sweet, it's me, I'm here. </div>
+<div class = "two"> No, she's gone. They've all gone. </div>
+<div class = "one"> Who's gone. </div>
+<div class = "two"> Everyone I know. Everyone who loved me. </div>
+<div class = "one"> No, I love you. </div>
+<div class = "two"> I don't want you to love me, I don't know you. </div>
+<div class = "one"> There's things only we know, aren't there. That day on the beach with the shells. You remember that? </div>
+<div class = "two"> Yes, of course. </div>
+<div class = "one"> And cabbages. Why is cabbages a funny word, we're the only ones who have cabbages as a joke because of what happened with the cabbages. Cabbages is a joke, yes? </div>
+<div class = "two"> Cabbages was a joke I shared with my wife. I miss my wife. </div>
+<div class = "one"> But I am... Let me touch you. If you'd see what it feels like to touch me. If we made love you'd know it was me because there are things we like to do and no one else would know that, if I was a stranger pretending to be her I wouldn't know those things, you'd feel you were back with me, you would I know; please. </div>
+<div class = "two"> You disgust me. You frighten me. What are you? </div>
 
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.05
+::06.06 [nobr]
 <h2>DECISION </h2>\
-- I've written down all the reasons to leave the country and all the reasons to stay. 
-- So how does that work out? 
-- There's things on both sides. 
-- How do you feel about it? 
-- No, I'm trying to make a rational decision based on the facts. 
-- Do you want me to decide for you? 
-- Based on what? The facts don't add up. 
-- I'd rather you stayed here. Does that help?
+<div class = "one"> I've written down all the reasons to leave the country and all the reasons to stay. </div>
+<div class = "two"> So how does that work out? </div>
+<div class = "one"> There's things on both sides. </div>
+<div class = "two"> How do you feel about it? </div>
+<div class = "one"> No, I'm trying to make a rational decision based on the facts. </div>
+<div class = "two"> Do you want me to decide for you? </div>
+<div class = "one"> Based on what? The facts don't add up. </div>
+<div class = "two"> I'd rather you stayed here. Does that help?</div>
 
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.06
+::06.06 [nobr]
 <h2>THE CHILD WHO DIDN'T KNOW PAIN </h2>\
-- But what is it? 
-- Pain is pain, it's just 
-- if I pinch 
-- aah, get off. But if I pinch you 
-- nothing 
-- nothing at all 
-- but stop because I get bruises. 
-- How come you don't 
-- I never did when I was a baby 
-- you were born like 
-- yes and I used to chew my fingers 
-- you mean chew? 
-- and they got bandages put over or I'd chew them to the bone because you know how babies 
-- put everything in their mouth 
-- I'd put myself in my mouth because it wasn't any different. 
-- And if you fell down 
-- I threw myself down 
-- because it didn't hurt 
-- jumped down a whole flight of stairs because that was a quick way 
-- and you were all right 
-- broke both my legs and once when I went swimming there were rocks under the water and when 
-I came out my legs were pouring blood because I hadn't felt 
-- so you can't feel anything 
-- emotions I feel feelings 
-- but physical 
-- not pain, no. 
-- And why not? 
-- because there's no signal going up to my brain 
-- from your legs 
-- from anywhere to my brain to say there's damage, it's hurting 
-- so you never know what hurting is 
-- so tell me what it's like 
-- Hurting is well it's pain, it's like uncomfortable but more, it's something you'd want to 
-move away from but you can't, it's an intense sensation, it's hard to ignore it, it's very 
-- but why would you mind that? 
-- because it hurts. But no, sometimes pain's all right if it's not bad like if your gum's 
-sore and you keep poking it with your tongue or you might cut your finger and you hardly 
-notice, yes if you're doing something exciting, soldiers can lose a leg and not even know it 
-- that's like me 
-- yes but they know it afterwards. And bad pain 
-- yes but why, what is it? 
-- if someone's tortured if they give them electric shocks it's unbearable or if they've got 
-cancer sometimes they want to die because my uncle 
-- yes but I still don't know what is it about pain 
-- it's just pain 
-- but what is it? 
-- You've been unhappy? 
-- yes 
-- if someone you love doesn't love you, you thought they loved you and they don't 
-- yes 
-- or you've done something you wish you hadn't done it's too late now and you've hurt someone 
-and there's nothing you can do to put it right 
-- yes 
-- does that help? 
-- So it's like being unhappy but in your leg? 
-- But it's also just what it is, like red is red and blue is blue. 
-- But red isn't red, it's waves and it's red to us. 
-- So there you are, that's what it's like. 
-- Can I pinch you again? 
+<div class = "one"> But what is it? </div>
+<div class = "two"> Pain is pain, it's just </div>
+<div class = "one"> if I pinch </div>
+<div class = "two"> aah, get off. But if I pinch you </div>
+<div class = "one"> nothing </div>
+<div class = "two"> nothing at all </div>
+<div class = "one"> but stop because I get bruises. </div>
+<div class = "two"> How come you don't </div>
+<div class = "one"> I never did when I was a baby </div>
+<div class = "two"> you were born like </div>
+<div class = "one"> yes and I used to chew my fingers </div>
+<div class = "two"> you mean chew? </div>
+<div class = "one"> and they got bandages put over or I'd chew them to the bone because you know how babies </div>
+<div class = "two"> put everything in their mouth </div>
+<div class = "one"> I'd put myself in my mouth because it wasn't any different. </div>
+<div class = "two"> And if you fell down </div>
+<div class = "one"> I threw myself down </div>
+<div class = "two"> because it didn't hurt </div>
+<div class = "one"> jumped down a whole flight of stairs because that was a quick way </div>
+<div class = "two"> and you were all right </div>
+<div class = "one"> broke both my legs and once when I went swimming there were rocks under the water and when I came out my legs were pouring blood because I hadn't felt </div>
+<div class = "two"> so you can't feel anything </div>
+<div class = "one"> emotions I feel feelings </div>
+<div class = "two"> but physical </div>
+<div class = "one"> not pain, no. </div>
+<div class = "two"> And why not? </div>
+<div class = "one"> because there's no signal going up to my brain </div>
+<div class = "two"> from your legs </div>
+<div class = "one"> from anywhere to my brain to say there's damage, it's hurting </div>
+<div class = "two"> so you never know what hurting is </div>
+<div class = "one"> so tell me what it's like </div>
+<div class = "two"> Hurting is well it's pain, it's like uncomfortable but more, it's something you'd want to move away from but you can't, it's an intense sensation, it's hard to ignore it, it's very </div>
+<div class = "one"> but why would you mind that? </div>
+<div class = "two"> because it hurts. But no, sometimes pain's all right if it's not bad like if your gum's sore and you keep poking it with your tongue or you might cut your finger and you hardly notice, yes if you're doing something exciting, soldiers can lose a leg and not even know it </div>
+<div class = "one"> that's like me </div>
+<div class = "two"> yes but they know it afterwards. And bad pain </div>
+<div class = "one"> yes but why, what is it? </div>
+<div class = "two"> if someone's tortured if they give them electric shocks it's unbearable or if they've got cancer sometimes they want to die because my uncle </div>
+<div class = "one"> yes but I still don't know what is it about pain </div>
+<div class = "two"> it's just pain </div>
+<div class = "one"> but what is it? </div>
+<div class = "two"> You've been unhappy? </div>
+<div class = "one"> yes </div>
+<div class = "two"> if someone you love doesn't love you, you thought they loved you and they don't </div>
+<div class = "one"> yes </div>
+<div class = "two"> or you've done something you wish you hadn't done it's too late now and you've hurt someone and there's nothing you can do to put it right </div>
+<div class = "one"> yes </div>
+<div class = "two"> does that help? </div>
+<div class = "one"> So it's like being unhappy but in your leg? </div>
+<div class = "two"> But it's also just what it is, like red is red and blue is blue. </div>
+<div class = "one"> But red isn't red, it's waves and it's red to us. </div>
+<div class = "two"> So there you are, that's what it's like. </div>
+<div class = "one"> Can I pinch you again? </div>
 
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::06.07
+::06.06 [nobr]
 <h2>EARTHQUAKE </h2>\
-- Have you seen the earthquake? There's this building my god you think things are solid but 
+<div class = "one"> Have you seen the earthquake? There's this building my god you think things are solid but </div>
 they just break. 
-- Yes I've seen it. 
-- Imagine being in it, imagine you're lying on your back and there's this wall a few inches 
-above your face and you can't sit up even an inch and if you do it might come down on you. 
-And the air running out, you keep trying to get a deep breath but you can't breathe deeply 
-enough because very soon there's going to be no more oxygen. And if you were injured if 
-you're in pain while all that's going on and where are your family are they dead or in agony 
-and will anyone come to get you out and how many hours or days, I'm just so upset by it. 
-- I wouldn't want to be in it obviously, poor them of course. I mean I do know about it. 
-- But you don't care. 
-- I can't say I feel it, no. You really feel it? 
-- I cried. Of course I feel it. I cried. 
-- Ok. 
-- And imagine the wave coming, imagine hearing it coming and running away and you can't get 
-away, it came so fast did you see how fast it came? 
-- Yes, I saw it. 
-- You're not upset though. 
-- That black wave with the cars in it was awesome. 
+<div class = "one"> Yes I've seen it. </div>
+<div class = "two"> Imagine being in it, imagine you're lying on your back and there's this wall a few inches above your face and you can't sit up even an inch and if you do it might come down on you. And the air running out, you keep trying to get a deep breath but you can't breathe deeply enough because very soon there's going to be no more oxygen. And if you were injured if you're in pain while all that's going on and where are your family are they dead or in agony and will anyone come to get you out and how many hours or days, I'm just so upset by it. </div>
+<div class = "one"> I wouldn't want to be in it obviously, poor them of course. I mean I do know about it. </div>
+<div class = "two"> But you don't care. </div>
+<div class = "one"> I can't say I feel it, no. You really feel it? </div>
+<div class = "two"> I cried. Of course I feel it. I cried. </div>
+<div class = "one"> Ok. </div>
+<div class = "two"> And imagine the wave coming, imagine hearing it coming and running away and you can't get away, it came so fast did you see how fast it came? </div>
+<div class = "one"> Yes, I saw it. </div>
+<div class = "two"> You're not upset though. </div>
+<div class = "one"> That black wave with the cars in it was awesome. </div>
 
 [[return|previous()]]
 <<run $ScenesSix.delete(passage())>>
 
-::07.01
+::07.07 [nobr]
 <h2>CHINESE POETRY </h2>\
 'The girl waits at the door of her house on the mountain.' 
-- What it literally says is 'mountain girl door'. 
-- So maybe 
-- A girl from the mountain is waiting outside my door. A girl climbs the mountain and comes 
-to a door. 
-- To get the girl you have to go through a door into the mountain. 
-- The mountain is a door only a girl can open. 
-- The girl's as big as a mountain and can't get through the door. 
-- What's the next line? 
+<div class = "one"> What it literally says is 'mountain girl door'. </div>
+<div class = "two"> So maybe </div>
+<div class = "one"> A girl from the mountain is waiting outside my door. A girl climbs the mountain and comes to a door. </div>
+<div class = "two"> To get the girl you have to go through a door into the mountain. </div>
+<div class = "one"> The mountain is a door only a girl can open. </div>
+<div class = "two"> The girl's as big as a mountain and can't get through the door. </div>
+<div class = "one"> What's the next line? </div>
 
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.02
+::07.07 [nobr]
 <h2>MANIC </h2>\
-- My god, look at that flower, thank you so much, have you ever seen such a red, red is blood 
-and bullfights and seeing red is anger but red is joyful, red is celebration, 
-- yes, I like it 
-- in China red is lucky how lucky we are to have red flowers 
-- shall I get a vase? 
-- in China white is death and here black is death but ghosts are white of course so a 
-chessboard is death against death, and blood of course could be death but it's lifeblood 
-isn't it, if you look at the flower it's so astounding 
-- yes 
-- it means so much to me that you gave me red flowers because red is so significant don't you 
-think? It means stop and of course it means go because it's the colour of energy and red cars 
-have the most accidents because people are excited by red or people who are already excited 
-like to have red, I'd like to have red, I'll buy a red car this afternoon and we can go for a 
-drive, we can go right up through the whole country don't you think, we can go to Scotland we 
-can go to John o'Groats, did he eat a lot of porridge do you think? But we don't have to 
-start from Land's End or Land's Beginning we should say if we start from there but we won't 
-we'll start from here because here is always the place we start from, isn't that funny, and I 
-need to drive along all the roads in the country because I have to see to the traffic because 
-there are too many cars as everyone knows but our car won't be one too many you'll be quite 
-safe, we'll make sure it's all flowing smoothly in every direction because cars do go in 
-every direction possible and everything goes in every possible direction, so we'll find a 
-vase for the flowers, 
-- yes 
-- I think a green vase because of the primary colours and if they were blue I'd put them in 
-an orange vase and if they were yellow I'd put them in a purple vase, yellow and purple is 
-Easter of course so that's why crocuses, and red and green is Christmas which isn't right now 
-of course it's the wrong time of year, I might have to sort that out when I've got a minute. 
+<div class = "one"> My god, look at that flower, thank you so much, have you ever seen such a red, red is blood and bullfights and seeing red is anger but red is joyful, red is celebration, </div>
+<div class = "two"> yes, I like it </div>
+<div class = "one"> in China red is lucky how lucky we are to have red flowers </div>
+<div class = "two"> shall I get a vase? </div>
+<div class = "one"> in China white is death and here black is death but ghosts are white of course so a chessboard is death against death, and blood of course could be death but it's lifeblood isn't it, if you look at the flower it's so astounding </div>
+<div class = "two"> yes </div>
+<div class = "one"> it means so much to me that you gave me red flowers because red is so significant don't you think? It means stop and of course it means go because it's the colour of energy and red cars have the most accidents because people are excited by red or people who are already excited like to have red, I'd like to have red, I'll buy a red car this afternoon and we can go for a drive, we can go right up through the whole country don't you think, we can go to Scotland we can go to John o'Groats, did he eat a lot of porridge do you think? But we don't have to start from Land's End or Land's Beginning we should say if we start from there but we won't we'll start from here because here is always the place we start from, isn't that funny, and I need to drive along all the roads in the country because I have to see to the traffic because there are too many cars as everyone knows but our car won't be one too many you'll be quite safe, we'll make sure it's all flowing smoothly in every direction because cars do go in every direction possible and everything goes in every possible direction, so we'll find a vase for the flowers, </div>
+<div class = "two"> yes </div>
+<div class = "one"> I think a green vase because of the primary colours and if they were blue I'd put them in an orange vase and if they were yellow I'd put them in a purple vase, yellow and purple is Easter of course so that's why crocuses, and red and green is Christmas which isn't right now of course it's the wrong time of year, I might have to sort that out when I've got a minute. </div>
 
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.03
+::07.07 [nobr]
 <h2>GRIEF </h2>\
-- Are you sleeping? 
-- I wake up early but that's all right in the summer. 
-- Eating? 
-- Oh enough. Don't fuss. 
-- I've never had someone die. 
-- I'm sorry, I've nothing to say. Nothing seems very interesting. 
-- He must have meant everything to you. 
-- Maybe. We'll see. 
+<div class = "one"> Are you sleeping? </div>
+<div class = "two"> I wake up early but that's all right in the summer. </div>
+<div class = "one"> Eating? </div>
+<div class = "two"> Oh enough. Don't fuss. </div>
+<div class = "one"> I've never had someone die. </div>
+<div class = "two"> I'm sorry, I've nothing to say. Nothing seems very interesting. </div>
+<div class = "one"> He must have meant everything to you. </div>
+<div class = "two"> Maybe. We'll see. </div>
 
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.04
+::07.07 [nobr]
 <h2>FATE </h2>\
-- I'm just saying you've got no choice 
-- I have 
-- you have of course you feel as if you have 
-- I have got a choice 
-- you've got a choice but you've no choice about what that choice is, you'll make whichever 
-choice 
-- whichever choice I want 
-- whichever choice you want but you'll want what you want because you have to want what 
-- I don't have to want 
-- you do because of what you're like, that's what what you're like means that you're going to 
-want what you want, because there's your genes and everything that's happened to you and 
-everything else that's happening and all that stuff makes your brain be like that 
-- like what? 
-- like it is 
-- what's it like? 
-- I don't know of course I don't know nobody knows, but if someone could have that 
-information they'd know exactly what you were going to 
-- they can't know 
-- you're crying about it now 
-- I'm not 
-- I knew you would 
-- But there's random 
-- oh there's random 
-- there's random particles you can't 
-- if you think you're like a random particle 
-- no but 
-- if you think you're a random particle just fizzing 
-- but you can't predict even where 
-- if you think free will is a random particle there's nothing very noble 
-- I didn't say noble 
-- so what is free will if it's not what you're like? 
-- No one could possibly have all that information. 
-- No, of course not. 
-- So maybe that's all right. 
-- I think it's fine. But it does change how you feel, don't you think? 
-- I feel a bit funny 
-- yes you feel as if you're hurtling 
-- hurtling through my life 
-- like the front seat of a roller-coaster 
-- but I feel like I'm choosing 
-- yes of course 
-- but I feel like I'm in the front seat of a roller-coaster 
+<div class = "one"> I'm just saying you've got no choice </div>
+<div class = "two"> I have </div>
+<div class = "one"> you have of course you feel as if you have </div>
+<div class = "two"> I have got a choice </div>
+<div class = "one"> you've got a choice but you've no choice about what that choice is, you'll make whichever choice </div>
+<div class = "two"> whichever choice I want </div>
+<div class = "one"> whichever choice you want but you'll want what you want because you have to want what </div>
+<div class = "two"> I don't have to want </div>
+<div class = "one"> you do because of what you're like, that's what what you're like means that you're going to want what you want, because there's your genes and everything that's happened to you and everything else that's happening and all that stuff makes your brain be like that </div>
+<div class = "two"> like what? </div>
+<div class = "one"> like it is </div>
+<div class = "two"> what's it like? </div>
+<div class = "one"> I don't know of course I don't know nobody knows, but if someone could have that information they'd know exactly what you were going to </div>
+<div class = "two"> they can't know </div>
+<div class = "one"> you're crying about it now </div>
+<div class = "two"> I'm not </div>
+<div class = "one"> I knew you would </div>
+<div class = "two"> But there's random </div>
+<div class = "one"> oh there's random </div>
+<div class = "two"> there's random particles you can't </div>
+<div class = "one"> if you think you're like a random particle </div>
+<div class = "two"> no but </div>
+<div class = "one"> if you think you're a random particle just fizzing </div>
+<div class = "two"> but you can't predict even where </div>
+<div class = "one"> if you think free will is a random particle there's nothing very noble </div>
+<div class = "two"> I didn't say noble </div>
+<div class = "one"> so what is free will if it's not what you're like? </div>
+<div class = "two"> No one could possibly have all that information. </div>
+<div class = "one"> No, of course not. </div>
+<div class = "two"> So maybe that's all right. </div>
+<div class = "one"> I think it's fine. But it does change how you feel, don't you think? </div>
+<div class = "two"> I feel a bit funny </div>
+<div class = "one"> yes you feel as if you're hurtling </div>
+<div class = "two"> hurtling through my life </div>
+<div class = "one"> like the front seat of a roller-coaster </div>
+<div class = "two"> but I feel like I'm choosing </div>
+<div class = "one"> yes of course </div>
+<div class = "two"> but I feel like I'm in the front seat of a roller-coaster </div>
 
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.05
+::07.07 [nobr]
 <h2>STONE </h2>\
-- He's got a special stone. 
-- Is that what he's holding? 
-- Yes he's always got it in his hand. 
-- I know he's always holding 
-- never puts it down 
-- have you seen it? 
-- saw it once 
-- how 
-- made him open his 
-- shall we get it? 
-- I think he needs it 
-- yes shall we get it? 
-- I think he needs it 
-- yes shall we get it? 
-  //They get the stone and throw it away.// 
-- Go and get it then 
-- it's over there 
-- will he know which one? 
-- he can get another one 
-- he might want that one 
-- shall we get him one? 
-- Here have a stone 
-- have another stone 
-- have a stone 
-  //Throwing them.// 
+<div class = "one"> He's got a special stone. </div>
+<div class = "two"> Is that what he's holding? </div>
+<div class = "one"> Yes he's always got it in his hand. </div>
+<div class = "two"> I know he's always holding </div>
+<div class = "one"> never puts it down </div>
+<div class = "two"> have you seen it? </div>
+<div class = "one"> saw it once </div>
+<div class = "two"> how </div>
+<div class = "one"> made him open his </div>
+<div class = "two"> shall we get it? </div>
+<div class = "one"> I think he needs it </div>
+<div class = "two"> yes shall we get it? </div>
+<div class = "one"> I think he needs it </div>
+<div class = "two"> yes shall we get it? </div>
+<div class = "direction">They get the stone and throw it away.</div> 
+<div class = "one"> Go and get it then </div>
+<div class = "two"> it's over there </div>
+<div class = "one"> will he know which one? </div>
+<div class = "two"> he can get another one </div>
+<div class = "one"> he might want that one </div>
+<div class = "two"> shall we get him one? </div>
+<div class = "one"> Here have a stone </div>
+<div class = "two"> have another stone </div>
+<div class = "one"> have a stone </div>
+<div class = "direction">Throwing them.</div> 
 
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.06
+::07.07 [nobr]
 <h2>VIRTUAL </h2>\
-- I don't care what you say 
-- no but listen 
-- I've never felt like this 
-- that's not the point what you feel 
-- it's the only 
-- because she doesn't exist 
-- I'm not listening. 
-- She doesn't 
-- have you seen her? 
-- yes I've seen her but she doesn't 
-- have you talked to her? 
-- I don't want to talk to 
-- then what do you know about it? 
-- she's not a real 
-- so? 
-- so you admit she's not 
-- she exists she still exists 
-- fine all right she exists but so does your shoe or a can of 
-- you're saying she's no different than a shoe? 
-- she's got no more feelings than 
-- what do you know about 
-- she's a thing she's a thing 
-- Look I appreciate your concern but just 
-- look 
-- she's beautiful she's intelligent she understands me 
-- she doesn't understand you 
-- she listens to me she likes my poems she's the only 
-- doesn't understand any 
-- she reads my mind she's sensitive to my every 
-- but she's virtual 
-- so? 
-- so she's not 
-- I can't believe just because soneone's not flesh and blood you'd 
-- she's just information 
-- and what are you if you're not 
-- yes I know we're 
-- so we're information our genes our 
-- yes but she hasn't 
-- what? 
-- hasn't got an inside to her mind she's not conscious she can't 
-- how do you know she 
-- she's a computer she's a computer game she's not 
-- and can you tell that from what she says? 
-- I don't need to 
-- but can you tell 
-- because she can't 
-- she might and how could she prove it because you wouldn't believe 
-- I certainly wouldn't 
-- because she says she has 
-- what, thoughts 
-- of course thoughts feeligns because she's that complicated she says she loves 
-- she can't possibly 
-- we know people won't understand but we don't care what you 
-- and what about sex 
-- what about 
-- she hasn't got a body 
-- she's got a fantastic 
-- but not a body you can 
-- she's not in this country at the moment 
-- she can't ever 
-- and the sex is great 
-- it's virtual 
-- it's virtual and great 
-- but she never feels 
-- I don't care what you say 
-- no but listen 
-- I've never felt like this about anyone. 
+<div class = "one"> I don't care what you say </div>
+<div class = "two"> no but listen </div>
+<div class = "one"> I've never felt like this </div>
+<div class = "two"> that's not the point what you feel </div>
+<div class = "one"> it's the only </div>
+<div class = "two"> because she doesn't exist </div>
+<div class = "one"> I'm not listening. </div>
+<div class = "two"> She doesn't </div>
+<div class = "one"> have you seen her? </div>
+<div class = "two"> yes I've seen her but she doesn't </div>
+<div class = "one"> have you talked to her? </div>
+<div class = "two"> I don't want to talk to </div>
+<div class = "one"> then what do you know about it? </div>
+<div class = "two"> she's not a real </div>
+<div class = "one"> so? </div>
+<div class = "two"> so you admit she's not </div>
+<div class = "one"> she exists she still exists </div>
+<div class = "two"> fine all right she exists but so does your shoe or a can of </div>
+<div class = "one"> you're saying she's no different than a shoe? </div>
+<div class = "two"> she's got no more feelings than </div>
+<div class = "one"> what do you know about </div>
+<div class = "two"> she's a thing she's a thing </div>
+<div class = "one"> Look I appreciate your concern but just </div>
+<div class = "two"> look </div>
+<div class = "one"> she's beautiful she's intelligent she understands me </div>
+<div class = "two"> she doesn't understand you </div>
+<div class = "one"> she listens to me she likes my poems she's the only </div>
+<div class = "two"> doesn't understand any </div>
+<div class = "one"> she reads my mind she's sensitive to my every </div>
+<div class = "two"> but she's virtual </div>
+<div class = "one"> so? </div>
+<div class = "two"> so she's not </div>
+<div class = "one"> I can't believe just because soneone's not flesh and blood you'd </div>
+<div class = "two"> she's just information </div>
+<div class = "one"> and what are you if you're not </div>
+<div class = "two"> yes I know we're </div>
+<div class = "one"> so we're information our genes our </div>
+<div class = "two"> yes but she hasn't </div>
+<div class = "one"> what? </div>
+<div class = "two"> hasn't got an inside to her mind she's not conscious she can't </div>
+<div class = "one"> how do you know she </div>
+<div class = "two"> she's a computer she's a computer game she's not </div>
+<div class = "one"> and can you tell that from what she says? </div>
+<div class = "two"> I don't need to </div>
+<div class = "one"> but can you tell </div>
+<div class = "two"> because she can't </div>
+<div class = "one"> she might and how could she prove it because you wouldn't believe </div>
+<div class = "two"> I certainly wouldn't </div>
+<div class = "one"> because she says she has </div>
+<div class = "two"> what, thoughts </div>
+<div class = "one"> of course thoughts feeligns because she's that complicated she says she loves </div>
+<div class = "two"> she can't possibly </div>
+<div class = "one"> we know people won't understand but we don't care what you </div>
+<div class = "two"> and what about sex </div>
+<div class = "one"> what about </div>
+<div class = "two"> she hasn't got a body </div>
+<div class = "one"> she's got a fantastic </div>
+<div class = "two"> but not a body you can </div>
+<div class = "one"> she's not in this country at the moment </div>
+<div class = "two"> she can't ever </div>
+<div class = "one"> and the sex is great </div>
+<div class = "two"> it's virtual </div>
+<div class = "one"> it's virtual and great </div>
+<div class = "two"> but she never feels </div>
+<div class = "one"> I don't care what you say </div>
+<div class = "two"> no but listen </div>
+<div class = "one"> I've never felt like this about anyone. </div>
 
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::07.07
+::07.07 [nobr]
 <h2>SMALL THING </h2>\
-- What are you looking at? 
-- A snail. 
-- Is that the same snail? 
-- Yes. I've been looking at it for a while. 
-- And? 
-- I'm just looking at it.
+<div class = "one"> What are you looking at? </div>
+<div class = "two"> A snail. </div>
+<div class = "one"> Is that the same snail? </div>
+<div class = "two"> Yes. I've been looking at it for a while. </div>
+<div class = "one"> And? </div>
+<div class = "two"> I'm just looking at it.</div>
 
 [[return|previous()]]
 <<run $ScenesSeven.delete(passage())>>
 
-::08.01
+::08.08 [nobr]
 <h2>FACTS (LAST SCENE) </h2>\
-- Who was the president of Coca-Cola from nineteen twenty-five to seven? 
-- HB Jones 
-- What is the smallest village in Central Asia? 
-- Qat. 
-- Where would you see a huish? 
-- In a gnu's fur. 
-- How many diamonds were mined in 1957? 
-- Sixty thousand four hundred and twenty-eight. 
-- Name two traditional ingredients of poulash. 
-- Duck and fennel. 
-- In 1647 what day was the battle of Stoneham? 
-- June the third. Tuesday. 
-- How far is it from here to the quasar d 66? 
-- Three point four billion light years. 
-- What sound does a capercaillie make? 
-- Aaaah. 
-- Who had the longest hair? 
-- Matilda Lucas. 
-- Of? 
-- Brighouse, Connecticut. 
-- What colour is the caterpillar of the brown-haired bath moth? 
-- Pale orange with black stripes. 
-- Do you love me? 
-- Don't do that. 
-- What is the formula that disproves Godel's theorem? 
-- X bracket a over t minus pi sigma close bracket to the power of ten minus n to the power of 
+<div class = "one"> Who was the president of Coca-Cola from nineteen twenty-five to seven? </div>
+<div class = "two"> HB Jones </div>
+<div class = "one"> What is the smallest village in Central Asia? </div>
+<div class = "two"> Qat. </div>
+<div class = "one"> Where would you see a huish? </div>
+<div class = "two"> In a gnu's fur. </div>
+<div class = "one"> How many diamonds were mined in 1957? </div>
+<div class = "two"> Sixty thousand four hundred and twenty-eight. </div>
+<div class = "one"> Name two traditional ingredients of poulash. </div>
+<div class = "two"> Duck and fennel. </div>
+<div class = "one"> In 1647 what day was the battle of Stoneham? </div>
+<div class = "two"> June the third. Tuesday. </div>
+<div class = "one"> How far is it from here to the quasar d 66? </div>
+<div class = "two"> Three point four billion light years. </div>
+<div class = "one"> What sound does a capercaillie make? </div>
+<div class = "two"> Aaaah. </div>
+<div class = "one"> Who had the longest hair? </div>
+<div class = "two"> Matilda Lucas. </div>
+<div class = "one"> Of? </div>
+<div class = "two"> Brighouse, Connecticut. </div>
+<div class = "one"> What colour is the caterpillar of the brown-haired bath moth? </div>
+<div class = "two"> Pale orange with black stripes. </div>
+<div class = "one"> Do you love me? </div>
+<div class = "two"> Don't do that. </div>
+<div class = "one"> What is the formula that disproves Godel's theorem? </div>
+<div class = "two"> X bracket a over t minus pi sigma close bracket to the power of ten minus n to the power of </div>
 minus one squared 
-- What is a plok? 
-- A stringed instrument played by the Larts of the the Gobi Desert 
-- By what name do we usually refer to Oceanus Australensis Picardia? 
-- I do yes I do. Sea anemone. 
+<div class = "one"> What is a plok? </div>
+<div class = "two"> A stringed instrument played by the Larts of the the Gobi Desert </div>
+<div class = "one"> By what name do we usually refer to Oceanus Australensis Picardia? </div>
+<div class = "two"> I do yes I do. Sea anemone. </div>
 
 [[end->end]]
 
 ::end
 <h2>END</h2>\
 
-::09.00
+::09.09 [nobr]
 <h2>RANDOM </h2>\
-- These things can happen in any section. DEPRESSION is an essential part of the play. The 
-other random items[::09.01-19] are optional. 
+<div class = "one"> These things can happen in any section. DEPRESSION is an essential part of the play. The </div>
+other random items[::09.09 [nobr]-19] are optional. 
 
-::09.01
+::09.09 [nobr]
 <h2>DEPRESSION 1</h2>\
   //Each of these is a separate random item. Each is said by one person to another who 
 doesn't respond. The characters can be the same each time, or the depressed person can be the 
@@ -1864,194 +1739,190 @@ same and the others different, or they can all be different.//
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.02
+::09.09 [nobr]
 <h2>DEPRESSION 2</h2>\
-- we could go for a walk it's a beautiful
+<div class = "one"> we could go for a walk it's a beautiful</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.03
+::09.09 [nobr]
 <h2>DEPRESSION 3</h2>\
-- there's an exhibition of expressionist
+<div class = "one"> there's an exhibition of expressionist</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.04
+::09.09 [nobr]
 <h2>DEPRESSION 4</h2>\
-- chicken tikka masala
+<div class = "one"> chicken tikka masala</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.05
+::09.09 [nobr]
 <h2>DEPRESSION 5</h2>\
-- programme starts at 6.40 or if you'd rather we could
+<div class = "one"> programme starts at 6.40 or if you'd rather we could</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.06
+::09.09 [nobr]
 <h2>DEPRESSION 6</h2>\
-- glass of red or
+<div class = "one"> glass of red or</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.07
+::09.09 [nobr]
 <h2>DEPRESSION 7</h2>\
-- thinking of taking one of the kittens there's a ginger one or a
+<div class = "one"> thinking of taking one of the kittens there's a ginger one or a</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.08
+::09.09 [nobr]
 <h2>DEPRESSION 8</h2>\
-- maybe you could read them a story tonight or
+<div class = "one"> maybe you could read them a story tonight or</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.09
+::09.09 [nobr]
 <h2>DEPRESSION 9</h2>\
-- the difficulty of getting the Israelis and Palestinians to
+<div class = "one"> the difficulty of getting the Israelis and Palestinians to</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.10
+::09.09 [nobr]
 <h2>DEPRESSION 10</h2>\
-- and he only has two months to live so I thought we could
+<div class = "one"> and he only has two months to live so I thought we could</div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::09.11
+::09.09 [nobr]
 <h2>DEPRESSION 11</h2>\
-- a fountain of antimatter in the Milky Way that nobody knew 
+<div class = "one"> a fountain of antimatter in the Milky Way that nobody knew </div>
 
 [[return|previous()]]
 <<run $ScenesNine.delete(passage())>>
 
-::10.01
+::10.10 [nobr]
 <h2>SEMAPHORE </h2>\
 
 [[return|previous()]]
 
-::10.02
+::10.10 [nobr]
 <h2>MORSE </h2>\
 
 [[return|previous()]]
 
-::10.03
+::10.10 [nobr]
 <h2>SIGN LANGUAGE </h2>\
 
 [[return|previous()]]
 
-::10.04
+::10.10 [nobr]
 <h2>BIRDSONG </h2>\
 
 [[return|previous()]]
 
-::10.05
+::10.10 [nobr]
 <h2>DANCE </h2>\
 
 [[return|previous()]]
 
-::10.06
+::10.10 [nobr]
 <h2>FLAGS </h2>\
 
 [[return|previous()]]
 
-::10.07
+::10.10 [nobr]
 <h2>PAINTING </h2>\
-  //Someone has a large canvas and is flicking paint at it.// 
+<div class = "direction">Someone has a large canvas and is flicking paint at it.</div> 
 
 [[return|previous()]]
 
-::10.08
+::10.10 [nobr]
 <h2>PIG LATIN </h2>\
-- Ancay ouyay eakspay igpay atinlay? 
+<div class = "one"> Ancay ouyay eakspay igpay atinlay? </div>
 
 [[return|previous()]]
 
-::10.09
+::10.10 [nobr]
 <h2>SANTA </h2>\
-- Father Christmas lands his sleigh on the roof and comes down the chimney with his big sack 
-of toys and he'll put presents in your stocking 
+<div class = "one"> Father Christmas lands his sleigh on the roof and comes down the chimney with his big sack of toys and he'll put presents in your stocking </div>
 
 [[return|previous()]]
 
-::10.10
+::10.10 [nobr]
 <h2>TABLES </h2>\
-- Seven sevens are forty-nine, seven eights are fifty-six, seven nines are sixty-three, seven 
-tens are seventy, seveven elevens are seventy-seven, seven twelves are eighty-four, seven 
-thirteens are ninety-one 
+<div class = "one"> Seven sevens are forty-nine, seven eights are fifty-six, seven nines are sixty-three, seven tens are seventy, seveven elevens are seventy-seven, seven twelves are eighty-four, seven thirteens are ninety-one </div>
 
 [[return|previous()]]
 
-::10.11
+::10.10 [nobr]
 <h2>GENES </h2>\
-- AGT TCG AGC CCT TGA CTT GAT TGT GCA TAC 
-- CGT GCT TGA GTC ATG TTG CAC AAC TTG TCG 
-- GTC TCA GTA TGC CCG TGA AAT GTA CAT GTC 
-- GGG TCC GAA TCT GAT TGC CCT TTG TGG AAC 
-- TGT GTG GCA TAG CTA GCC TGG GAC CCT TTG 
-- GGC TGC ACT TGA TTG TCA CCA GGT TGT TCT 
-- GTT GAA TCA TGA TCG GAC CCA CGT CGG CTG 
-- GCC GAC TTT GAC CGG AGT GGT TGT ACC TTG 
-- GTC AGG AAT TGA ACG 
+<div class = "one"> AGT TCG AGC CCT TGA CTT GAT TGT GCA TAC </div>
+<div class = "two"> CGT GCT TGA GTC ATG TTG CAC AAC TTG TCG </div>
+<div class = "one"> GTC TCA GTA TGC CCG TGA AAT GTA CAT GTC </div>
+<div class = "two"> GGG TCC GAA TCT GAT TGC CCT TTG TGG AAC </div>
+<div class = "one"> TGT GTG GCA TAG CTA GCC TGG GAC CCT TTG </div>
+<div class = "two"> GGC TGC ACT TGA TTG TCA CCA GGT TGT TCT </div>
+<div class = "one"> GTT GAA TCA TGA TCG GAC CCA CGT CGG CTG </div>
+<div class = "two"> GCC GAC TTT GAC CGG AGT GGT TGT ACC TTG </div>
+<div class = "one"> GTC AGG AAT TGA ACG </div>
 
 [[return|previous()]]
 
-::10.12
+::10.10 [nobr]
 <h2>DOG </h2>\
-- Come. Sit. Stay. Come. Good dog. Fetch. Drop it. Fetch. Good dog. Roll over. Good dog. 
-Come. Heel. No. Come. 
+<div class = "one"> Come. Sit. Stay. Come. Good dog. Fetch. Drop it. Fetch. Good dog. Roll over. Good dog. Come. Heel. No. Come. </div>
 
 [[return|previous()]]
 
-::10.13
+::10.10 [nobr]
 <h2>KEYS </h2>\
-- You don't know where I put the car keys, do you? 
+<div class = "one"> You don't know where I put the car keys, do you? </div>
 
 [[return|previous()]]
 
-::10.14
+::10.10 [nobr]
 <h2>MAGAZINE </h2>\
-- she's lost two stone... he was going to leave her... look, he's coming out of a club with 
+<div class = "one"> she's lost two stone... he was going to leave her... look, he's coming out of a club with </div>
 an unnamed blonde... 
 
 [[return|previous()]]
 
-::10.15
+::10.10 [nobr]
 <h2>GOOGLE </h2>\
-- There's a train at 4.22 gets in at half-past eight. 
+<div class = "one"> There's a train at 4.22 gets in at half-past eight. </div>
 
 [[return|previous()]]
 
-::10.16
+::10.10 [nobr]
 <h2>TWITTER </h2>\
-- He's in the kitchen cooking spaghetti and he's upset about the news from Tripoli. 
+<div class = "one"> He's in the kitchen cooking spaghetti and he's upset about the news from Tripoli. </div>
 
 [[return|previous()]]
 
-::10.17
+::10.10 [nobr]
 <h2>ZEN </h2>\
-- What's the sound of one hand clapping? I've heard that one. 
+<div class = "one"> What's the sound of one hand clapping? I've heard that one. </div>
 
 [[return|previous()]]
 
-::10.18
+::10.10 [nobr]
 <h2>COLD </h2>\
-  //Someone sneezes.// 
+<div class = "direction">Someone sneezes.</div> 
 
 [[return|previous()]]
 
-::10.19
+::10.10 [nobr]
 <h2>SILENCE </h2>\
-  //This can happen more than once, for different lengths of time.//
+<div class = "direction">This can happen more than once, for different lengths of time.</div>
 
 [[return|previous()]]
 
@@ -2061,4 +1932,3 @@ an unnamed blonde...
 ::StoryIFID[twee2]
 Twee2::build_config.story_ifid = '85feb792-1a28-4ac3-9f22-20bb321192b3'
 Twee2::build_config.story_format = 'SugarCube2'
-
